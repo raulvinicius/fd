@@ -136,5 +136,10 @@
 
         <![endif]-->
 
+        <div class="moldura t"></div>
+        <div class="moldura r"></div>
+        <div class="moldura b"></div>
+        <div class="moldura l"></div>
+
 
         

@@ -17,19 +17,112 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 
-/*INCLUA SUAS FONTES AQUI*/
-/* 
+/*----------------------FONTES----------------------*/
+
 @font-face {
-    font-family: 'dinprolight';
-    src: url(fonts/dinpro-light-webfont.eot);
-    src: url(fonts/dinpro-light-webfont.eot?#iefix) format('embedded-opentype'),
-         url(fonts/dinpro-light-webfont.woff) format('woff'),
-         url(fonts/dinpro-light-webfont.ttf) format('truetype'),
-         url(fonts/dinpro-light-webfont.svg#ralewaylight) format('svg');
+    font-family: 'clemente-hairline';
+    src: url(fonts/clementepdaa-hairline.eot);
+    src: url(fonts/clementepdaa-hairline.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdaa-hairline.woff) format('woff'),
+         url(fonts/clementepdaa-hairline.ttf) format('truetype'),
+         url(fonts/clementepdaa-hairline.svg#clementepdaa-hairline) format('svg');
     font-weight: normal;
     font-style: normal;
 }
-*/
+
+@font-face {
+    font-family: 'clemente';
+    src: url(fonts/clementepdai-regular.eot);
+    src: url(fonts/clementepdai-regular.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdai-regular.woff) format('woff'),
+         url(fonts/clementepdai-regular.ttf) format('truetype'),
+         url(fonts/clementepdai-regular.svg#clementepdai-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-light';
+    src: url(fonts/clementepdae-light.eot);
+    src: url(fonts/clementepdae-light.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdae-light.woff) format('woff'),
+         url(fonts/clementepdae-light.ttf) format('truetype'),
+         url(fonts/clementepdae-light.svg#clementepdae-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-italic';
+    src: url(fonts/clementepdaj-regularitalic.eot);
+    src: url(fonts/clementepdaj-regularitalic.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdaj-regularitalic.woff) format('woff'),
+         url(fonts/clementepdaj-regularitalic.ttf) format('truetype'),
+         url(fonts/clementepdaj-regularitalic.svg#clementepdaj-regularitalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-heavy-italic';
+    src: url(fonts/clementepdap-heavyitalic.eot);
+    src: url(fonts/clementepdap-heavyitalic.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdap-heavyitalic.woff) format('woff'),
+         url(fonts/clementepdap-heavyitalic.ttf) format('truetype'),
+         url(fonts/clementepdap-heavyitalic.svg#clementepdap-heavyitalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ludicrous';
+    src: url(fonts/ludicrous.eot);
+    src: url(fonts/ludicrous.eot?#iefix) format('embedded-opentype'),
+         url(fonts/ludicrous.woff) format('woff'),
+         url(fonts/ludicrous.ttf) format('truetype'),
+         url(fonts/ludicrous.svg#ludicrous) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(fonts/montserrat-regular.eot);
+    src: url(fonts/montserrat-regular.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-regular.woff) format('woff'),
+         url(fonts/montserrat-regular.ttf) format('truetype'),
+         url(fonts/montserrat-regular.svg#montserrat-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-light';
+    src: url(fonts/montserrat-light.eot);
+    src: url(fonts/montserrat-light.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-light.woff) format('woff'),
+         url(fonts/montserrat-light.ttf) format('truetype'),
+         url(fonts/montserrat-light.svg#montserrat-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-ultralight';
+    src: url(fonts/montserrat-ultralight.eot);
+    src: url(fonts/montserrat-ultralight.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-ultralight.woff) format('woff'),
+         url(fonts/montserrat-ultralight.ttf) format('truetype'),
+         url(fonts/montserrat-ultralight.svg#montserrat-ultralight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*----------------------FONTES----------------------*/
 
 
 
@@ -96,8 +189,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 
-
-
 .untouchable
 {
 	-webkit-touch-callout: none;
@@ -107,6 +198,59 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	-ms-user-select: none;
 	user-select: none;
 }
+
+.container, .container-fluid
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.clemente-hair
+{
+    font-family: 'clemente-hairline', Arial, sans-serif;
+}
+
+.clemente-light
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+}
+
+.clemente
+{
+    font-family: 'clemente', Arial, sans-serif;
+}
+
+.clemente-i
+{
+    font-family: 'clemente-italic', Arial, sans-serif;
+}
+
+.clemente-h-i
+{
+    font-family: 'clemente-heavy-italic', Arial, sans-serif;
+}
+
+.lud
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+}
+
+.mont
+{
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+.mont-light
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+}
+
+.mont-ultralight
+{
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+}
+
 
 /*----------------------CLASSES----------------------*/
 
@@ -148,7 +292,7 @@ body
 
 body
 {
-	font-family: 'dinproregular', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'montserrat-light', Arial, sans-serif;
 }
 
 *, *:before, *:after
@@ -157,9 +301,6 @@ body
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-
 
 
 /*----------------------ANIMAÇÃO ON SCROLL----------------------*/
@@ -203,8 +344,603 @@ body
 
 
 
-/*-------------------LINK 01-------------------*/
-/*-------------------LINK 02-------------------*/
-/*-------------------LINK 03-------------------*/
-/*-------------------LINK 04-------------------*/
+/*-------------------MOLDURA-------------------*/
+
+.moldura
+{
+    position: fixed;
+    z-index: 10000;
+}
+
+.moldura.t,
+.moldura.b
+{
+    left: 0;
+    right: 0;
+}
+
+.moldura.l,
+.moldura.r
+{
+    width: 51px;
+    top: 0;
+    bottom: 0;
+}
+
+.moldura.t
+{
+    background: url(img/fernando-duarte-moldura-top.png) bottom;
+    height: 51px;
+    border-top: 40px solid white;
+    top: 0;
+}
+
+.moldura.b
+{
+    background: url(img/fernando-duarte-moldura-bottom.png) top;
+    height: 58px;
+    border-bottom: 40px solid white;
+    bottom: 0;
+}
+
+.moldura.l
+{
+    background: url(img/fernando-duarte-moldura-left.png) right;
+    border-left: 40px solid white;
+    left: 0px;
+}
+
+.moldura.r
+{
+    background: url(img/fernando-duarte-moldura-right.png) left;
+    border-right: 40px solid white;
+    right: 0px;
+}
+
+/*-------------------MOLDURA-------------------*/
+
+
+
+
+
+/*-------------------MENU-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-btn
+{
+    width: 51px;
+    height: 174px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: gray;
+    padding: 1px 8px;
+    outline: none;
+}
+
+.menu-btn i
+{
+    width: 16px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    margin-top: 3px;
+    transition: all .2s cubic-bezier(.6,.2,.5,.9);
+}
+
+.menu-btn i.b
+{
+    transform-origin: left;
+    -webkit-transform: scaleX(.56);
+    transform: scaleX(.56);
+}
+
+.menu-btn:hover i.b
+{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);    
+}
+
+/*-------------------MENU-------------------*/
+
+
+
+
+/*-------------------APRESENTACAO-------------------*/
+.apresentacao
+{
+    background: url(img/fernando-duarte-bg-home.jpg);
+    height: 100%;
+}
+
+.apresentacao .logo-apresentacao
+{
+    margin-top: 120px;
+}
+
+.apresentacao ul
+{
+    padding: 0;
+    margin-top: 90px;
+}
+
+.apresentacao ul li
+{
+    list-style: none;
+    position: relative;
+}
+
+.apresentacao ul li i
+{
+    position: absolute;
+    left: -70px;
+}
+
+.apresentacao ul li h2
+{
+    font-size: 53px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    display: inline-block;
+    margin: 0;
+}
+
+.apresentacao ul li p span
+{
+    font-size: 56px;
+}
+
+/*-------------------APRESENTACAO-------------------*/
+
+
+
+
+/*-------------------PRODUTOS-------------------*/
+.solucoes
+{
+    background: url(img/fernando-duarte-bg-solucoes.jpg);
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.solucoes .title-solucoes
+{
+    background: url(img/fernando-duarte-bg-asas.png) center top no-repeat;
+    margin-top: 89px;
+    color: white;
+    font-size: 16px;
+}
+
+.solucoes .title-solucoes img
+{
+    margin-top: -24px;
+}
+
+.solucoes .title-solucoes p
+{
+    padding: 0 80px;
+    margin: 34px 0;
+}
+
+.solucoes ul
+{
+    margin-top: 175px;
+    padding: 0;
+}
+
+.solucoes ul li
+{
+    border: 1px solid #eeb85e;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    display: inline-block;
+    margin: -63px 49px 0;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+.solucoes ul li a
+{
+    width: 196px;
+    height: 196px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.solucoes ul li a .conteudo
+{
+    transform: rotate(+45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 23px;
+}
+
+.solucoes ul li a:hover .conteudo
+{
+    padding-top: 10px;
+}
+
+.solucoes ul li a .conteudo i
+{
+    height: 109px;
+    display: block;
+}
+
+.solucoes ul li a:hover .conteudo i
+{
+    height: 91px;
+}
+
+.solucoes ul li a .conteudo i img
+{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.solucoes ul li a .conteudo p
+{
+    font-size: 13px;
+    color: #333;
+    font-family: 'clemente-italic', Arial, sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 15px;
+    padding: 0 40px;
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+.solucoes ul li a:hover .conteudo p
+{
+    font-size: 13.74px;
+}
+
+.solucoes ul li a .conteudo span
+{
+    height: 40px;
+    background: #216382;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+}
+
+.solucoes ul li a .conteudo span p
+{
+    color: white;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 40px;
+}
+
+.solucoes ul li a:hover .conteudo span p
+{
+    font-size: 12.68px;
+}
+
+.solucoes ul li a:hover .conteudo span
+{
+    bottom: 0;
+}
+
+/*-------------------PRODUTOS-------------------*/
+
+
+
+/*-------------------CONTATO-------------------*/
+
+.contato
+{
+    background: url(img/fernando-duarte-bg-contato.jpg);
+    background-size: cover;
+    padding-top: 103px;
+    padding-bottom: 200px;
+}
+
+.contato p
+{
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.contato p.mont
+{
+    margin-bottom: 16px;
+}
+
+.contato p i
+{
+    vertical-align: -12px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.contato p i.email
+{
+    background: url(img/fernando-duarte-icon-email.png);
+
+}
+
+.contato p i.telefone
+{
+    background: url(img/fernando-duarte-icon-telefone.png);
+}
+
+.contato form
+{
+    margin-top: 29px;
+    background: white;
+}
+
+.contato form #dados label.error
+{
+    font-size: 12px;
+    color: #FF4C35;
+    line-height: 2;
+    height: auto;
+    display: block;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+.contato form #dados
+{
+    margin-bottom: 20px;
+}
+
+.contato form #dados .linha
+{
+    color: #ffcd0d;
+    font-style: italic;
+    border-bottom: 1px dashed #287da6;
+}
+
+.contato form #dados #campo-mensagem.linha
+{
+    border: none;
+}
+
+.contato form #dados label
+{
+    color: #777777;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'montserrat', Arial, sans-serif;
+    line-height: 94px;
+    height: 90px;
+    padding-right: 30px;
+    padding-left: 13px;
+    position: relative;
+    vertical-align: top;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.contato form #dados label:after
+{
+    content: "";
+    display: block;
+    background: url(img/fernando-duarte-after-form.png);
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    right: 11px;
+    top: 41px;
+
+}
+
+.contato form #dados #w-input
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.contato form #dados #campo-nome label
+{
+    margin-left: -86px;
+    left: 96px;
+}
+
+.contato form #dados #campo-nome #w-input
+{
+    padding-left: 96px;
+}
+
+.contato form #dados #campo-email label
+{
+    margin-left: -90px;
+    left: 100px;
+}
+
+.contato form #dados #campo-email #w-input
+{
+    padding-left: 100px;
+}
+
+.contato form #dados #campo-mensagem label
+{
+    margin-left: -120px;
+    left: 130px;
+}
+
+.contato form #dados #campo-mensagem #w-input
+{
+    padding-left: 118px;
+}
+
+.contato form #dados input,
+.contato form #dados textarea
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    height: 90px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    background: none;
+    width: 100%;
+}
+
+.contato form #dados #campo-nome:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -22px;
+    margin-top: 34px;
+    border: 11px solid transparent;
+    border-right-color: white;
+}
+
+.contato form #dados textarea
+{
+    resize: none;
+    padding: 0px 12px 10px;
+    height: 105px;
+    margin-top: 35px;
+}
+
+.contato form input[type="submit"]
+{
+    width: 100%;
+    padding: 28px 0px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    letter-spacing: 0.08em;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #ff9b0d;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.contato form input[type="submit"]:hover
+{
+    content: "*";
+}
+
+
+.contato form input[type="submit"]:disabled
+{
+    color: #ffb76c;
+}
+
+
+.contato form #notificacoes
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.contato form #notificacoes #processando,
+.contato form #notificacoes #sucesso,
+.contato form #notificacoes #erro
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-left: 100%;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    padding: 110px;
+    top: 0;
+}
+
+.contato form #notificacoes #processando img
+{
+    margin-top: 20px;
+}
+
+.contato form #notificacoes #sucesso
+{
+    /*margin-left: 0;*/
+}
+
+.contato form #notificacoes #sucesso #green
+{
+    font-family: 'lato-black', Arial, sans-serif;
+    color: #0e4c8c;
+    display: block;
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.contato form #notificacoes button
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+
+
+
+/*-------------------CONTATO-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------FOOTER-------------------*/
+
+
+
+
+.padding-bot
+{
+    height: 50px;
+}
+/*-------------------FOOTER-------------------*/
 
