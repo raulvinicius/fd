@@ -13,7 +13,7 @@
 
 				<li>
 					<i><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-icon-dm.png" alt=""></i>
-					<h2>Mais de <span class="lud">80.000 pessoas</span> já ouviram sobre valores humanos nas palestras</h2>
+					<h2>Mais de <span>80.000 pessoas</span> já ouviram sobre valores humanos nas palestras</h2>
 				</li>
 
 			</ul>
@@ -21,6 +21,24 @@
 
 	</di>
 </section>
+
+
+<section class="container-fluid sobre">
+	<div class="row">
+		<div class="container">
+			<div class="col-sm-offset-2 col-sm-8">
+				<figure><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-foto-fernando.png" alt=""></figure>
+				<h3>Lorem ipsum <span>adipisicing</span></h3>
+				<h6>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h6>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+				<a href="#">Conheça mais da minha a história</a>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <section class="container-fluid solucoes">
 	<div class="row">
@@ -183,11 +201,6 @@
 
 
 
-<!-- <button class="menu-btn">
-	<i class="t"></i>
-	<i class="m"></i>
-	<i class="b"></i>
-</button> -->
 
 
 <?php get_footer(); ?>

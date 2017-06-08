@@ -136,10 +136,85 @@
 
         <![endif]-->
 
-        <div class="moldura t"></div>
-        <div class="moldura r"></div>
-        <div class="moldura b"></div>
-        <div class="moldura l"></div>
+    <div class="moldura t"></div>
+    <div class="moldura r"></div>
+    <div class="moldura b"></div>
 
 
         
+<!--     <header>
+        <nav class="menu fechado">
+            <a href="<?php bloginfo('url') ?>"><h1 class="logo">FEICOTUR</h1></a>
+            <ul id="main-links" class="ani-04">
+                <li><a class="ani-04" href="#">A Feira</a>
+                </li><li>
+                    <a class="ani-04" href="#">Institucional</a>
+                </li><li class="submenu">
+                    <a class="ani-04">Fotos</a>
+                    <ul class="ani-02">
+
+                        <li><a class="ani-02" href="<?php bloginfo('url') ?>/fotos/2017">2017</a></li>
+                        <li><a class="ani-02" href="<?php bloginfo('url') ?>/fotos/2016">2016</a></li>
+                        <li><a class="ani-02" href="<?php bloginfo('url') ?>/fotos/2015">2015</a></li>
+
+                    </ul>
+                </li><li>
+                    <a class="ani-04" href="#">Contato</a></li>
+            </ul>
+            <span class="bt-toggle"></span>
+        </nav>
+    </header> -->
+
+
+<nav class="menu aberto">
+    <div class="wrap-menu">
+
+        <div class="moldura-l"></div>
+        
+        <button class="menu-btn">
+            <i class="t"></i>
+            <i class="m"></i>
+            <i class="b"></i>
+            <span class="fecha-menu"></span>
+        </button>
+
+        <h1><a href="#">Fernando Duarte</a></h1>
+
+        <ul>
+            <li><a class="ani-02" href="#">Quem sou</a></li>
+            <li>
+                <a class="ani-02" href="#">Palestras</a>
+                <ul class="submenu">
+                    <li>
+                        <h6>Jovens</h6>
+                        <a href="#">Deixando Marcas</a>
+                        <a href="#">Rumo ao Topo</a>
+                        <a href="#">Jornada do Herói</a>
+                    </li>
+                    <li>
+                        <h6>Empresas</h6>
+                        <a href="#">Deixando Marcas Corporativo</a>
+                    </li>
+                    
+                    <li>
+                        <h6>Instituições</h6>
+                        <a href="#">Alma do Educador</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="ani-02" href="#">Soluções</a>
+                <ul class="submenu">
+                    <h6>Empresas</h6>
+                    <a href="#">[hi] Corporativo</a>
+                    <a href="#">[hi] Comemoração</a>
+                    <a href="#">[hi] School</a>
+                </ul>
+            </li>
+            <li><a class="ani-02" href="#">Clientes</a></li>
+            <li><a class="ani-02" href="#">Artigos</a></li>
+            <li><a class="ani-02" href="#">Contato</a></li>
+        </ul>
+
+    </div>
+</nav>
