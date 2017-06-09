@@ -166,12 +166,12 @@
     </header> -->
 
 
-<nav class="menu aberto">
+<nav class="menu fechado">
     <div class="wrap-menu">
 
         <div class="moldura-l"></div>
         
-        <button class="menu-btn">
+        <button class="menu-btn ani-02">
             <i class="t"></i>
             <i class="m"></i>
             <i class="b"></i>
@@ -182,33 +182,35 @@
 
         <ul>
             <li><a class="ani-02" href="#">Quem sou</a></li>
-            <li>
+            <li class="submenu">
                 <a class="ani-02" href="#">Palestras</a>
-                <ul class="submenu">
+<!--                 <ul class="ani-02">
                     <li>
                         <h6>Jovens</h6>
-                        <a href="#">Deixando Marcas</a>
-                        <a href="#">Rumo ao Topo</a>
-                        <a href="#">Jornada do Herói</a>
+                        <a class="ani-02" href="#">Deixando Marcas</a>
+                        <a class="ani-02" href="#">Rumo ao Topo</a>
+                        <a class="ani-02" href="#">Jornada do Herói</a>
                     </li>
                     <li>
                         <h6>Empresas</h6>
-                        <a href="#">Deixando Marcas Corporativo</a>
+                        <a class="ani-02" href="#">Deixando Marcas Corporativo</a>
                     </li>
                     
                     <li>
                         <h6>Instituições</h6>
-                        <a href="#">Alma do Educador</a>
+                        <a class="ani-02" href="#">Alma do Educador</a>
                     </li>
-                </ul>
+                </ul> -->
             </li>
-            <li>
-                <a class="ani-02" href="#">Soluções</a>
-                <ul class="submenu">
-                    <h6>Empresas</h6>
-                    <a href="#">[hi] Corporativo</a>
-                    <a href="#">[hi] Comemoração</a>
-                    <a href="#">[hi] School</a>
+            <li class="submenu">
+                <a class="ani-02 click" href="#">Soluções</a>
+                <ul class="ani-02">
+                    <li>
+                        <h6>Empresas</h6>
+                        <a class="ani-02" href="#">[hi] Corporativo</a>
+                        <a class="ani-02" href="#">[hi] Comemoração</a>
+                        <a class="ani-02" href="#">[hi] School</a>
+                    </li>
                 </ul>
             </li>
             <li><a class="ani-02" href="#">Clientes</a></li>

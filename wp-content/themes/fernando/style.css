@@ -480,11 +480,6 @@ h4 span
     right: -11px;
 }
 
-.menu .submenu
-{
-    display: none;
-}
-
 .menu h1
 {
     display: inline-block;
@@ -527,7 +522,8 @@ h4 span
     background-position-y: 49px;
 }
 
-.menu ul li a:hover
+.menu ul li a:hover,
+.menu.sub .submenu .click
 {
     text-decoration: none;
     font-style: italic;
@@ -536,6 +532,71 @@ h4 span
     background: url(img/fernando-duarte-bg-hover-menu.png) repeat-x;
     background-position-y: 49px;
 }
+
+.submenu.click
+{
+    /*padding-right: 0;*/
+}
+
+.menu ul li a:focus
+{
+    text-decoration: none;
+}
+
+
+.menu.sub .submenu ul
+{
+    width: 521px;
+}
+
+.menu .submenu ul
+{
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    bottom: 70px;
+    left: 750px;
+    margin: 0;
+    padding: 0;
+    background-color: #155879;
+}
+
+.menu .submenu ul h6
+{
+    font-size: 30.82px;
+    text-transform: lowercase;
+    padding: 13px 0 13px 22px;
+    background-color: #145475;
+    margin-top: 60px;
+}
+
+.menu .submenu ul li
+{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu .submenu ul li a
+{
+    color: white;
+    padding: 0;
+    padding-left: 30px;
+    white-space: nowrap;
+}
+
+.menu .submenu ul li a:hover
+{
+    background: none;
+    padding-left: 35px;
+}
+
+
+
+
+
 
 
 
@@ -591,6 +652,11 @@ h4 span
     background: url(img/fernando-duarte-bg-button-fecha-menu.png);
 }
 
+.menu.sub .menu-btn
+{
+    width: 51px;
+    right: -628px;
+}
 /*-------------------MENU-------------------*/
 
 
