@@ -199,7 +199,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	user-select: none;
 }
 
-.container, .container-fluid
+.container-fluid
 {
     padding-left: 50px;
     padding-right: 50px;
@@ -250,6 +250,65 @@ Use it to make something cool, have fun, and share what you've learned with othe
 {
     font-family: 'montserrat-ultralight', Arial, sans-serif;
 }
+
+
+
+.circle
+{
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+
+a.bt
+{
+    color: #2767ab;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+a.bt:before,
+a.bt:after
+{
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #2767ab;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transition: all .2s cubic-bezier(.6,.2,.5,.9);
+    transform-origin: left;
+    -webkit-transform: scaleX(.7);
+    transform: scaleX(.7);
+}
+
+
+a.bt:after
+{
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 10%;
+    transform-origin: right;
+}
+
+
+a.bt:hover:before,
+a.bt:hover:after
+{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);    
+}
+
 
 
 /*----------------------CLASSES----------------------*/
@@ -333,6 +392,15 @@ h4
 h4 span
 {
     font-size: 36px;
+}
+
+h6
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 24px;
+    color: #666666;
+    letter-spacing: 0.05em;
+    line-height: 30px;
 }
 
 
@@ -533,11 +601,6 @@ h4 span
     background-position-y: 49px;
 }
 
-.submenu.click
-{
-    /*padding-right: 0;*/
-}
-
 .menu ul li a:focus
 {
     text-decoration: none;
@@ -592,12 +655,6 @@ h4 span
     background: none;
     padding-left: 35px;
 }
-
-
-
-
-
-
 
 
 .menu-btn
@@ -711,26 +768,9 @@ h4 span
     padding-bottom: 150px;
 }
 
-.sobre figure
-{
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
 .sobre h3
 {
     color: #2767ab;
-}
-
-.sobre h6
-{
-    font-family: 'clemente-light', Arial, sans-serif;
-    font-size: 24px;
-    color: #666666;
-    letter-spacing: 0.05em;
-    line-height: 30px;
 }
 
 .sobre p
@@ -741,53 +781,6 @@ h4 span
     line-height: 26px;
     margin-top: 45px;
     margin-bottom: 90px;
-}
-
-.sobre a
-{
-    color: #2767ab;
-    font-size: 18px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    position: relative;
-}
-
-.sobre a:before,
-.sobre a:after
-{
-    content: "";
-    width: 80%;
-    height: 1px;
-    background-color: #2767ab;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    transition: all .2s cubic-bezier(.6,.2,.5,.9);
-    transform-origin: left;
-    -webkit-transform: scaleX(.7);
-    transform: scaleX(.7);
-}
-
-
-.sobre a:after
-{
-    top: auto;
-    left: auto;
-    bottom: 0;
-    right: 10%;
-    transform-origin: right;
-}
-
-
-.sobre a:hover:before,
-.sobre a:hover:after
-{
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);    
 }
 
 
@@ -1207,6 +1200,108 @@ h4 span
 }
 
 /*-------------------CONTATO-------------------*/
+
+
+/*-------------------CLIENTES-------------------*/
+.cliente-titulo
+{
+    background: url(img/fernando-duarte-bg-gray-clientes.jpg) center no-repeat;
+    text-align: center;
+    padding-top: 238px;
+}
+
+.cliente-titulo h3
+{
+    color: #2767ab;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.cliente-titulo h6
+{
+    margin-bottom: 345px;
+}
+
+.wrap-clientes
+{
+    background: url(img/fernando-duarte-bg-clientes.jpg) no-repeat;
+}
+
+.depoimentos 
+{
+    margin-top: -188px;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.depoimentos figure,
+.depoimentos figure img
+{
+    width: 100%;
+}
+
+.depoimentos p.depoimento
+{
+    color: #999999;
+    font-size: 16px;
+    padding-left: 45px;
+    line-height: 26px;
+    margin-bottom: 19px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+p.depoimento:before
+{
+    content: "";
+    width: 31px;
+    height: 22px;
+    background: url(img/fernando-duarte-icon-aspas.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p.depoimento:after
+{
+    content: "";
+    width: 75%;
+    height: 1px;
+    background-color: #dedede;
+    position: absolute;
+    left: 45px;
+    bottom: 0;
+}
+
+.nome
+{
+    background: url(img/fernando-duarte-bg-nome-depoimento.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding-left: 45px;
+    padding-right: 60px;
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nome p
+{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 3px;
+    padding-top: 27px;
+}
+
+.nome span
+{
+    color: #ced8de;
+    font-size: 16px;
+    padding-bottom: 17px;
+    display: block;
+}
+
+/*-------------------CLIENTES-------------------*/
 
 
 

@@ -27,13 +27,13 @@
 	<div class="row">
 		<div class="container">
 			<div class="col-sm-offset-2 col-sm-8">
-				<figure><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-foto-fernando.png" alt=""></figure>
+				<figure class="circle"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-foto-fernando.png" alt=""></figure>
 				<h3>Lorem ipsum <span>adipisicing</span></h3>
 				<h6>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h6>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-				<a href="#">Conheça mais da minha a história</a>
+				<a class="bt" href="#">Conheça mais da minha a história</a>
 			</div>
 		</div>
 	</div>
