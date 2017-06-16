@@ -257,7 +257,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 {
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 30px;
     display: inline-block;
 }
 
@@ -771,6 +770,7 @@ h6
 .sobre h3
 {
     color: #2767ab;
+    margin-top: 50px;
 }
 
 .sobre p
@@ -1231,6 +1231,7 @@ h6
 {
     margin-top: -188px;
     padding-top: 80px;
+    padding-bottom: 25px;
     background-color: white;
 }
 
@@ -1251,7 +1252,7 @@ h6
     padding-bottom: 25px;
 }
 
-p.depoimento:before
+.depoimentos p.depoimento:before
 {
     content: "";
     width: 31px;
@@ -1262,7 +1263,7 @@ p.depoimento:before
     left: 0;
 }
 
-p.depoimento:after
+.depoimentos p.depoimento:after
 {
     content: "";
     width: 75%;
@@ -1273,7 +1274,7 @@ p.depoimento:after
     bottom: 0;
 }
 
-.nome
+.depoimentos .nome
 {
     background: url(img/fernando-duarte-bg-nome-depoimento.png) no-repeat;
     background-size: 100% 100%;
@@ -1285,7 +1286,7 @@ p.depoimento:after
     font-weight: bold;
 }
 
-.nome p
+.depoimentos .nome p
 {
     color: white;
     font-size: 18px;
@@ -1293,12 +1294,128 @@ p.depoimento:after
     padding-top: 27px;
 }
 
-.nome span
+.depoimentos .nome span
 {
     color: #ced8de;
     font-size: 16px;
     padding-bottom: 17px;
     display: block;
+}
+
+.buttons
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.buttons button
+{
+    width: 29px;
+    height: 29px;
+    border: none;
+    outline: none;
+}
+
+.buttons .seta-left
+{
+    background: url(img/fernando-duarte-bg-bt-left.png) center no-repeat;
+    background-color: #cacaca;
+    margin-right: 15px;
+}
+
+.buttons .seta-right
+{
+    background: url(img/fernando-duarte-bg-bt-right.png) center no-repeat;
+    background-color: #cacaca;
+    margin-left: 15px;
+}
+
+.buttons button:hover
+{
+    background-color: #2767ab;
+}
+
+.buttons .passadores
+{
+    display: inline-block;
+    vertical-align: 8px;
+}
+
+.buttons .passadores span
+{
+    width: 10px;
+    height: 10px;
+    background-color: #dedede;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.buttons .passadores span.ativo
+{
+    background-color: #2767ab;
+}
+
+.wrap-clientes
+{
+    padding-bottom: 117px;
+}
+
+.clientes
+{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.clientes ul
+{
+    margin-top: 125px;
+    padding: 0;
+}
+
+.clientes ul li
+{
+    width: 259px;
+    height: 259px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: -71px 64px 0;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    position: relative;
+}
+
+.clientes ul li .conteudo
+{
+    transform: rotate(+45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 40px;
+}
+
+.clientes ul li .conteudo i
+{
+    height: 165px;
+    display: block;
+}
+
+.clientes ul li:hover .conteudo i
+{
+    height: 175px;
+}
+
+.clientes ul li .conteudo i img
+{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.clientes ul li .conteudo p
+{
+    display: none;
 }
 
 /*-------------------CLIENTES-------------------*/

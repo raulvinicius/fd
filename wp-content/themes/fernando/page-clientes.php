@@ -30,92 +30,91 @@
 				</div>
 			</div>
 
+			<div class="col-sm-12 buttons">
+				<button class="seta-left circle ani-06"></button>
+				<div class="passadores">
+					<span class="circle ani-04 ativo"></span>
+					<span class="circle ani-04"></span>
+					<span class="circle ani-04"></span>
+				</div>
+				<button class="seta-right circle ani-06"></button>
+			</div>
+
 		</div>
 	</section>
 
-	<section class="container-fluid solucoes">
+	<section class="container clientes">
 		<div class="row">
-			<div class="container">
+
+			<div class="col-sm-12">
 				<div class="row">
 					
-					<div class="col-sm-offset-3 col-sm-6 title-solucoes">
-						<img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-selo.png" alt="">
-						<p>Uma variedade de produtos desenvolvidos para buscar o melhor de cada um.</p>
-					</div>
+				<ul>
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente.png" alt=""></i>
+							<p>Chanel</p>
+						</div>
+					</li>
 
-					<div class="col-sm-offset- col-sm-12">
-						<ul>
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-vertical.png" alt=""></i>
+							<p>WWF</p>
+						</div>
+					</li>
 
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-dm.png" alt=""></i>
-										<p class="ani-02">Deixando Marcas</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-quadrada.png" alt=""></i>
+							<p>Aple</p>
+						</div>
+					</li>
 
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-av.png" alt=""></i>
-										<p class="ani-02">Alçando </br>Voo</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
+					<div class="clearfix"></div>
 
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-jh.png" alt=""></i>
-										<p class="ani-02">Jornada </br>do Herói</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-horizontal.png" alt=""></i>
+							<p>Puma</p>
+						</div>
+					</li>
 
-							<div class="clearfix"></div>
-
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-rt.png" alt=""></i>
-										<p class="ani-02">Rumo ao </br>Topo</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
-
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-delions.png" alt=""></i>
-										<p class="ani-02">Delions</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
-
-							<div class="clearfix"></div>
-
-							<li>
-								<a href="#" class="produto">
-									<div class="conteudo">
-										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-hi-school.png" alt=""></i>
-										<p class="ani-02">[hi] School</p>
-										<span class="ani-02"><p>Saber mais</p></span>
-									</div>
-								</a>
-							</li>
-
-						</ul>
-					</div>
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente.png" alt=""></i>
+							<p>Chanel</p>
+						</div>
+					</li>
 
 
+					<div class="clearfix"></div>
+
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-vertical.png" alt=""></i>
+							<p>WWF</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-quadrada.png" alt=""></i>
+							<p>Aple</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="conteudo">
+							<i class="ani-02"><img nopin="nopin" src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-cliente-horizontal.png" alt=""></i>
+							<p>Puma</p>
+						</div>
+					</li>
+
+				</ul>
 				</div>
 			</div>
+
 		</div>
 	</section>
 </div>
