@@ -397,7 +397,6 @@ h6
 {
     font-family: 'clemente-light', Arial, sans-serif;
     font-size: 24px;
-    color: #666666;
     letter-spacing: 0.05em;
     line-height: 30px;
 }
@@ -765,6 +764,11 @@ h6
     text-align: center;
     padding-top: 73px;
     padding-bottom: 150px;
+}
+
+.sobre h6
+{
+    color: #666666;
 }
 
 .sobre h3
@@ -1220,6 +1224,7 @@ h6
 .cliente-titulo h6
 {
     margin-bottom: 345px;
+    color: #666666;
 }
 
 .wrap-clientes
@@ -1419,6 +1424,152 @@ h6
 }
 
 /*-------------------CLIENTES-------------------*/
+
+
+
+/*-------------------QUEM SOU-------------------*/
+.title-quem-sou
+{
+    background: url(img/fernando-duarte-bg-quem-sou.jpg) no-repeat;
+    text-align: center;
+    padding-top: 152px;
+    padding-bottom: 259px;
+    color: white;
+}
+
+.title-quem-sou h3
+{
+    letter-spacing: 0.05em;
+}
+
+.quem-sou p
+{
+    font-size: 16px;
+    padding: 0 9%;
+    line-height: 26px;
+    margin-top: 45px;
+}
+
+.timeline
+{
+    background-color: #f5f5f5;
+}
+
+.timeline ul
+{
+    margin-top: -155px;
+}
+
+.timeline ul li.midia figure
+{
+    width: 100%;
+}
+
+.timeline ul li.midia figure img
+{
+    width: 100%;
+}
+
+.timeline ul li h2
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 58px;
+}
+
+.timeline ul li.midia h2
+{
+    font-size: 72px;
+}
+
+.timeline ul li h2,
+.timeline ul li h3
+{
+    color: #2767ab;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.timeline ul li h6
+{
+    color: #666666;
+    margin-top: 5px;
+}
+
+.timeline ul li p
+{
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li
+{
+    padding: 80px 0;
+}
+
+.timeline ul li.midia h2
+{
+    margin-top: 134px;
+}
+
+.timeline ul li .container .col-sm-5
+{
+    text-align: right;
+}
+
+.timeline ul li .ano
+{
+    text-align: right;
+}
+
+.timeline ul li .txt
+{
+    text-align: left;
+}
+
+.timeline ul li .pin
+{
+    text-align: center;
+}
+
+.timeline ul li.inverte .ano
+{
+    text-align: left;
+}
+
+.timeline ul li.inverte .txt
+{
+    text-align: right;
+}
+
+.timeline ul li.inverte
+{
+    background-color: #efefef;
+}
+
+.timeline ul li .circle
+{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #efb23e;
+    margin-top: 20px;
+}
+
+/*
+.timeline ul li.focus .circle
+{
+    width: 23px;
+    height: 23px;
+    margin-top: 9px;
+}
+*/
+
+.timeline ul li.midia .circle
+{
+    margin-top: 158px;
+}
+
+/*-------------------QUEM SOU-------------------*/
 
 
 
