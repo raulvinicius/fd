@@ -308,7 +308,55 @@ a.bt:hover:after
     transform: scaleX(1);    
 }
 
+.contador-ferds button
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    margin: 5px;
+}
 
+.contador-ferds button#ant
+{
+    background: url(img/fernando-duarte-seta-dir-contador.jpg) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+
+.contador-ferds button#pro
+{
+    background: url(img/fernando-duarte-seta-esq-contador.jpg) no-repeat center;
+    width: 30px;
+    height: 30px;
+}
+
+.contador-ferds #item
+{
+    display: inline-block;
+    margin: 10px;
+    background: #dedede;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.contador-ferds #item.highlight
+{
+    background: #2767ab;
+}
+
+.carousel li
+{
+    display: none;
+}
+
+.carousel li.highlight
+{
+    display: block;
+}
 
 /*----------------------CLASSES----------------------*/
 
@@ -353,6 +401,17 @@ body
     font-family: 'montserrat-light', Arial, sans-serif;
 }
 
+ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
 *, *:before, *:after
 {
     -webkit-box-sizing: border-box;
@@ -370,7 +429,7 @@ h2, h3, h4
 h2 span, h3 span, h4 span
 {
     font-family: 'ludicrous', Arial, sans-serif;
-    font-size: 56px;
+    font-size: 110%;
 }
 
 h3
@@ -458,7 +517,8 @@ h6
     right: 0;
 }
 
-.moldura.r
+.moldura.r,
+.moldura.l
 {
     width: 51px;
     top: 0;
@@ -467,17 +527,18 @@ h6
 
 .moldura.t
 {
+    display: none;
     background: url(img/fernando-duarte-moldura-top.png) bottom;
-    height: 51px;
-    border-top: 40px solid white;
+    height: 81px;
+    border-top: 70px solid white;
     top: 0;
 }
 
 .moldura.b
 {
     background: url(img/fernando-duarte-moldura-bottom.png) top;
-    height: 58px;
-    border-bottom: 40px solid white;
+    height: 78px;
+    border-bottom: 60px solid white;
     bottom: 0;
 }
 
@@ -488,6 +549,13 @@ h6
     right: 0px;
 }
 
+.moldura.l
+{
+    background: url(img/fernando-duarte-moldura-left.png) left;
+    border-left: 40px solid white;
+    left: 0px;
+}
+
 /*-------------------MOLDURA-------------------*/
 
 
@@ -495,6 +563,7 @@ h6
 
 
 /*-------------------MENU-------------------*/
+/* RAISSA------------------
 .menu
 {
     top: 0;
@@ -544,7 +613,7 @@ h6
     top: 0;
     bottom: 0;
     right: -11px;
-}
+} 
 
 .menu h1
 {
@@ -712,7 +781,196 @@ h6
     width: 51px;
     right: -628px;
 }
+RAISSA-------------------
+
+*/
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+    background: #fff;
+}
+
+.menu:after
+{
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-moldura-top.png) bottom;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    z-index: 5000;
+}
+
+.menu h1
+{
+    display: inline-block;
+    margin: 0 0 0 50px;
+    vertical-align: top;
+}
+
+.menu h1 a
+{
+    outline: none;
+    width: 223px;
+    height: 40px;
+    background: url(img/fernando-duarte-logo-resumida.png) center left no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 16px;
+    text-indent: -9999px;
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.menu .menu-btn
+{
+    display: none;
+}
+
+.menu ul li
+{
+    list-style: none;
+}
+
+.menu ul li a
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: lowercase;
+    padding: 22px 30px;
+    letter-spacing: 0.05em;
+    display: block;
+}
+
+.menu ul a:hover,
+.menu .submenu.aberto .click
+{
+    background: #337ab7;
+    color: #fff;
+}
+
+.menu ul a:hover,
+.menu ul a:focus,
+.menu ul a:active
+{
+    text-decoration: none;
+}
+
+.menu ul .submenu a
+{
+    position: relative;
+    text-align: center;
+}
+
+.menu ul .submenu > a:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 16px;
+    background: url(img/fernando-duarte-seta-submenu.png) no-repeat center;
+    width: 12px;
+    height: 4px;
+}
+
+.menu .nv-1
+{
+    float: right;
+    margin-right: 15px;
+}
+
+.menu .nv-1 > li
+{
+    float: left;
+}
+
+.menu .submenu ul
+{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.menu .submenu#solucoes.aberto > ul
+{
+    height: 180px;
+}
+
+.menu .submenu#palestras.aberto > ul
+{
+    height: 360px;
+}
+
+.menu .submenu ul h6
+{
+    text-transform: lowercase;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    text-align: center;
+    color: #999;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+.menu .submenu ul li a
+{
+    font-size: 14px;
+    padding: 10px 18px;
+}
+
 /*-------------------MENU-------------------*/
+
+
+
+
+/*-------------------FOOTER-------------------*/
+
+footer
+{
+    position: fixed;
+    bottom: 8px;
+    left: 0px;
+    right: 0px;
+    z-index: 4000;
+    text-align: right;
+}
+
+footer p
+{
+    display: inline-block;
+    margin-left: 32px;
+    text-align: right;
+    color: #666666;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+ 
+footer p i
+{
+    text-align: left;
+    vertical-align: super;
+    background: url(img/fernando-duarte-icon-telefone.png);
+    text-indent: -9999px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+footer p #email
+{
+    background: url(img/fernando-duarte-icon-email.png);
+}
+
+/*-------------------FOOTER-------------------*/
 
 
 
@@ -720,25 +978,76 @@ h6
 /*-------------------APRESENTACAO-------------------*/
 .apresentacao
 {
-    background: url(img/fernando-duarte-bg-home.jpg);
-    height: 100%;
+    background-image: url(img/fernando-duarte-bg-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.apresentacao #tinta,
+.apresentacao #over
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/fernando-duarte-tinta-intro.png) no-repeat center top;
+    z-index: -1;
+}
+
+.apresentacao #over
+{
+    background-image: url(img/fernando-duarte-bg-home-over.png);
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .apresentacao .logo-apresentacao
 {
-    margin-top: 120px;
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.apresentacao #slogan
+{
+    font-size: 87px;
+    font-family: 'ludicrous', Arial, sans-serif;
+    color: #fff;
+    line-height: 0.9;
+    margin-top: 150px;
 }
 
 .apresentacao ul
 {
     padding: 0;
-    margin-top: 90px;
+    margin-top: 50px;
+    margin-left: 70px;
+    position: relative;
 }
 
 .apresentacao ul li
 {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
     list-style: none;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.apresentacao ul li.highlight
+{
+    opacity: 1;
+    filter: alpha(opacity=1);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
 }
 
 .apresentacao ul li i
@@ -751,6 +1060,8 @@ h6
 {
     color: white;
     margin: 0;
+    letter-spacing: 4px;
+    font-size: 40px;
 }
 
 /*-------------------APRESENTACAO-------------------*/
@@ -763,7 +1074,7 @@ h6
     background-color: #f5f5f5;
     text-align: center;
     padding-top: 73px;
-    padding-bottom: 150px;
+    padding-bottom: 270px;
 }
 
 .sobre h6
@@ -793,6 +1104,199 @@ h6
 
 
 
+/*-------------------FRASES-------------------*/
+
+.frases
+{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -130px;
+}
+
+.frases #box
+{
+    background: #fff;
+    padding: 72px;
+    padding-bottom: 24px;
+    color: #999;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.frases #box q
+{
+    position: relative;
+}
+
+.frases #box q:after
+{
+    display: inline;
+    content: none;
+}
+
+.frases #box q:before
+{
+    position: absolute;
+    top: 4px;
+    right: 100%;
+    margin-right: 15px;
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-pre-aspas-amarela.png) no-repeat center;
+    width: 31px;
+    height: 22px;
+}
+
+.frases #box small
+{
+    display: block;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 16px;
+    color: #2767ab;
+    font-style: italic;
+    border-top: 1px solid #dedede;
+    margin-top: 24px;
+    padding-top: 8px;
+}
+
+.frases #box .contador-ferds
+{
+    margin-top: 25px;
+    text-align: center;
+}
+
+/*-------------------FRASES-------------------*/
+
+
+
+
+/*-------------------ASPECTOS-------------------*/
+
+.aspectos
+{
+    margin-top: -260px;
+    padding-top: 250px;
+    background: url(img/fernando-duarte-bg-aspectos.jpg) top center;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+.aspectos h3
+{
+    margin-bottom: 0;
+}
+
+.aspectos #w-aspectos
+{
+    position: absolute;
+    left: 50px;
+    right: 50px;
+}
+
+.aspectos #w-aspectos
+{
+    bottom: 100px;
+}
+
+.aspectos ul
+{
+    bottom: 0px;
+}
+
+.aspectos ul li
+{
+    text-align: left;
+    list-style-image: url(img/fernando-duarte-bullet-list.png);
+    margin-bottom: 16px;
+    padding-left: 12px;
+}
+
+/*-------------------ASPECTOS-------------------*/
+
+
+
+
+/*-------------------DEPOIMENTOS-------------------*/
+
+.home .depoimentos
+{
+    background: url(img/fernando-duarte-bg-depoimentos-home.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.home .depoimentos #bg-box
+{
+    background: url(img/fernando-duarte-sombra-bg-depoimentos.png) repeat-y center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.home .depoimentos #box
+{
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.home .depoimentos #inner
+{
+    background: #fff;
+    padding-top: 32px;
+    padding-bottom: 12px;
+    padding-left: 57px;
+    padding-right: 57px;
+    border-bottom: 20px solid #ff9b0d;
+    font-style: italic;
+    color: #666;
+}
+
+.home .depoimentos #box img
+{
+    margin-bottom: 20px;
+}
+
+.home .depoimentos q:after,
+.home .depoimentos q:before
+{
+    display: none;
+    content: none;
+}
+
+.home .depoimentos q small
+{
+    display: block;
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.home .depoimentos q small span
+{
+    display: block;
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 14px;
+    color: #1f6181;
+    margin-top: -12px;
+}
+
+.home .depoimentos .contador-ferds
+{
+    margin-top: 20px;
+}
+
+/*-------------------DEPOIMENTOS-------------------*/
+
+
+
+
 /*-------------------PRODUTOS-------------------*/
 .solucoes
 {
@@ -803,26 +1307,54 @@ h6
 
 .solucoes .title-solucoes
 {
-    background: url(img/fernando-duarte-bg-asas.png) center top no-repeat;
-    margin-top: 89px;
+    background: url(img/marrom-40.png);
     color: white;
     font-size: 16px;
 }
 
-.solucoes .title-solucoes img
+.solucoes .tit
 {
-    margin-top: -24px;
+    background: url(img/fernando-duarte-bg-asas.png) center top no-repeat;
+    padding-top: 64px;
+}
+
+.solucoes .tit h3
+{
+    text-indent: -9999px;    
+    background: url(img/fernando-duarte-selo.png) no-repeat center;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 24px;
+}
+
+.solucoes .tit h6
+{
+    font-size: 22px;
 }
 
 .solucoes .title-solucoes p
 {
-    padding: 0 80px;
-    margin: 34px 0;
+    margin: 34px 0 16px;
+}
+
+.solucoes .title-solucoes input
+{
+    border: none;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    font-size: 30px;
+    color: #2767ab;
+    width: 80%;
+    padding: 16px 60px;
+    text-align: center;
+    outline: none;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 5;
 }
 
 .solucoes ul
 {
-    margin-top: 175px;
+    margin-top: 225px;
     padding: 0;
 }
 
@@ -837,7 +1369,7 @@ h6
     overflow: hidden;
 }
 
-.solucoes ul li a
+.solucoes ul li .produto
 {
     width: 196px;
     height: 196px;
@@ -846,7 +1378,7 @@ h6
     position: relative;
 }
 
-.solucoes ul li a .conteudo
+.solucoes ul li .produto .conteudo
 {
     transform: rotate(+45deg);
     position: absolute;
@@ -857,30 +1389,30 @@ h6
     padding-top: 23px;
 }
 
-.solucoes ul li a:hover .conteudo
+.solucoes ul li .produto:hover .conteudo
 {
     padding-top: 10px;
 }
 
-.solucoes ul li a .conteudo i
+.solucoes ul li .produto .conteudo i
 {
     height: 109px;
     display: block;
 }
 
-.solucoes ul li a:hover .conteudo i
+.solucoes ul li .produto:hover .conteudo i
 {
-    height: 91px;
+    height: 61px;
 }
 
-.solucoes ul li a .conteudo i img
+.solucoes ul li .produto .conteudo i img
 {
     height: 100%;
     display: block;
     margin: 0 auto;
 }
 
-.solucoes ul li a .conteudo p
+.solucoes ul li .produto .conteudo p
 {
     font-size: 13px;
     color: #333;
@@ -893,41 +1425,189 @@ h6
     margin-bottom: 0;
 }
 
-.solucoes ul li a:hover .conteudo p
+.solucoes ul li .produto:hover .conteudo p
 {
-    font-size: 13.74px;
+    font-size: 12px;
 }
 
-.solucoes ul li a .conteudo span
+.solucoes ul li .produto .conteudo span
 {
     height: 40px;
-    background: #216382;
     position: absolute;
-    bottom: -100px;
-    left: 0;
-    right: 0;
+    left: -40px;
+    right: -40px;
 }
 
-.solucoes ul li a .conteudo span p
+.solucoes ul li .produto .conteudo #mais
 {
+    padding-top: 13px;
+    background: #216382;
+    bottom: -100px;
+}
+
+.solucoes ul li .produto .conteudo #mais:hover
+{
+    background: #103653;
+}
+
+.solucoes ul li .produto .conteudo #orcamento
+{
+    padding-top: 6px;
+    background: #447c97;
+    bottom: -140px;
+}
+
+.solucoes ul li .produto .conteudo #orcamento:hover
+{
+    background: #224461;
+}
+
+.solucoes ul li .produto .conteudo span a
+{
+    display: block;
     color: white;
     font-family: 'montserrat-light', Arial, sans-serif;
     text-transform: uppercase;
     margin: 0;
-    line-height: 40px;
+    line-height: 1;
 }
 
-.solucoes ul li a:hover .conteudo span p
+.solucoes ul li .produto .conteudo span a:hover,
+.solucoes ul li .produto .conteudo span a:active,
+.solucoes ul li .produto .conteudo span a:focus
 {
-    font-size: 12.68px;
+    text-decoration: none;
 }
 
-.solucoes ul li a:hover .conteudo span
+.solucoes ul li .produto:hover .conteudo span a
 {
-    bottom: 0;
+    font-size: 13px;
+}
+
+.solucoes ul li .produto:hover .conteudo #mais
+{
+    bottom: 40px;
+}
+
+.solucoes ul li .produto:hover .conteudo #orcamento
+{
+    bottom: 0px;
 }
 
 /*-------------------PRODUTOS-------------------*/
+
+
+
+
+/*-------------------VIDEO-------------------*/
+
+.home .video
+{
+    background: url(img/fernando-duarte-bg-video.jpg) no-repeat;
+    position: relative;
+    padding-top: 270px;
+    padding-bottom: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home .video #msk
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background: url(img/azul-70.png);
+    z-index: 1;
+}
+
+.home .video #tv
+{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    text-align: left;
+}
+
+.home .video button
+{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    display: block;
+    background: url(img/fernando-duarte-ico-play.png) no-repeat center top;
+    padding-top: 103px;
+    border: none;
+    outline: none;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+.home .video button:hover,
+.home .video button:focus,
+.home .video button:active
+{
+    text-decoration: none;
+}
+
+.home .video button:hover,
+.home .video button:focus
+{
+    padding-top: 98px;
+    padding-bottom: 6px;
+}
+
+.home .video button:before,
+.home .video button:after
+{
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    height: 1px;
+    bottom: 0;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.home .video button:before
+{
+    right: 50%;
+    left: 50%;
+}
+
+.home .video button:after
+{
+    right: 50%;
+    left: 50%;
+}
+
+.home .video button:hover:before,
+.home .video button:focus:before
+{
+    right: 50%;
+    left: 0;
+}
+
+.home .video button:hover:after,
+.home .video button:focus:after
+{
+    left: 50%;
+    right: 0;
+}
+
+/*-------------------VIDEO-------------------*/
+
 
 
 
@@ -937,8 +1617,24 @@ h6
 {
     background: url(img/fernando-duarte-bg-contato.jpg);
     background-size: cover;
-    padding-top: 103px;
+    /*padding-top: 103px;*/
     padding-bottom: 150px;
+    padding-top: 110px;
+    margin-top: -270px;
+}
+
+.contato #box
+{
+    background: #fff;
+    z-index: 5;
+}
+
+.contato h3
+{
+    color: #216382;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contato p
@@ -976,7 +1672,57 @@ h6
 .contato form
 {
     margin-top: 29px;
-    background: white;
+}
+
+.contato form #assunto label
+{
+      
+    background: #eeeeee;
+    color: #666;
+    padding: 20px;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.contato form #assunto #checked
+{
+    background: #ff9b0d;
+    color: #fff;
+}
+
+.contato form #assunto label:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -3px;
+    width: 1px;
+    border: 7px solid transparent;
+    border-top-color: #eeeeee;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.contato form #assunto label#checked:after
+{
+    border-top-color: #ff9b0d;
+    margin-top: 0;
+}
+
+.contato form #assunto input
+{
+    display: none;
 }
 
 .contato form #dados label.error
@@ -993,6 +1739,18 @@ h6
 .contato form #dados
 {
     margin-bottom: 20px;
+}
+
+.contato form #dados input
+{
+    margin-top: 2px;
+    margin-left: 1px;
+    padding-right: 16px;
+}
+
+.contato form #dados input.required
+{
+    border-right: 5px solid #216382;
 }
 
 .contato form #dados .linha
@@ -1094,17 +1852,6 @@ h6
     width: 100%;
 }
 
-.contato form #dados #campo-nome:before
-{
-    content: "";
-    display: block;
-    position: absolute;
-    left: -22px;
-    margin-top: 34px;
-    border: 11px solid transparent;
-    border-right-color: white;
-}
-
 .contato form #dados textarea
 {
     resize: none;
@@ -1124,10 +1871,16 @@ h6
     letter-spacing: 0.08em;
     font-size: 18px;
     text-transform: uppercase;
-    background-color: #ff9b0d;
+    background-color: #515151;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+.contato form input[type="submit"]:hover,
+.contato form input[type="submit"]:active
+{
+    background-color: #ff9b0d;
 }
 
 .contato form input[type="submit"]:hover
@@ -1138,9 +1891,8 @@ h6
 
 .contato form input[type="submit"]:disabled
 {
-    color: #ffb76c;
+    color: #8e8e8e;
 }
-
 
 .contato form #notificacoes
 {
@@ -1203,7 +1955,66 @@ h6
     padding-right: 40px;
 }
 
+.contato .instrucao
+{
+    text-align: right;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
+    margin-top: 16px;
+    border-right: 5px solid  #216382;
+}
+
 /*-------------------CONTATO-------------------*/
+
+
+
+
+/*-------------------THEATER-------------------*/
+
+.theater
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/black-70.png);
+    z-index: 5000;
+}
+
+.theater #screen
+{
+    background: #fff;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.theater #bt-fechar
+{
+    width: 50px;
+    height: 50px;
+    background: url(img/fernando-duarte-x-fecha.png) no-repeat center;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+
+.theater #bt-fechar:hover
+{
+    background-color: #000;
+}
+
+/*-------------------THEATER-------------------*/
+
+
 
 
 /*-------------------CLIENTES-------------------*/
@@ -1234,7 +2045,7 @@ h6
 
 .depoimentos 
 {
-    margin-top: -188px;
+    /*margin-top: -188px;*/
     padding-top: 80px;
     padding-bottom: 25px;
     background-color: white;

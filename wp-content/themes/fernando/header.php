@@ -1,17 +1,3 @@
-<!-- CÓDIGO HTML VEM AQUI -->
-
-
-<?php if ( strpos( $_SERVER[ "REQUEST_URI" ], "frontend" ) ) : ?>
-
-    <!-- 
-        NÃO ESQUEÇA DE ADICIONAR UMA PÁGINA FRONTEND/"SUAPAGINA" NO PAINEL ADMIN 
-        E DE ALTERAR OS PERMALINKS PARA "NOME DO POST"
-    -->
-    <?php $frontendUrl = "/frontend"; //variável usada nos urls dentro do ambiente de desenvolvimento frontend?>
-
-<?php endif; ?>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <!--[if lt IE 7]>
@@ -47,7 +33,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title><?php echo ( $post->post_name != '' ) ? get_the_title() . " | " : ""; ?>Ignite by Humano</title>
+        <title><?php echo ( $post->post_name != '' ) ? get_the_title() . " | " : ""; ?>Fernando Duarte</title>
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -81,15 +67,17 @@
         <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#f7931e">
 
+        <?php if (!is_user_logged_in()): ?>
+            <meta http-equiv="refresh" content="0; URL=http://facebook.com/Ferds.Duarte">
+        <?php endif ?>
 
         <!-- PUBLICAÇÃO EM REDES SOCIAIS -->
 
         <!-- FACEBOOK -->
-        <meta property='fb:admins' content='fanpagedofacebook' /> <!-- essa configuração diz ao Facebook que você é o administrador da fanpage -->
+        <meta property='fb:admins' content='Ferds.Duarte' /> <!-- essa configuração diz ao Facebook que você é o administrador da fanpage -->
         <meta property='og:locale' content='pt_BR' />
-        <meta property='og:locale:alternate' content='en_US' /> <!-- idiomas alternativos em que o site também pode estar disponível -->
         <meta property='og:title' content='' /> <!-- título interessante para a página (ex.: Conhecendo a equipe) -->
-        <meta property='og:site_name' content='' /> <!-- nome do site (ex.: Empresa X) -->
+        <meta property='og:site_name' content='Fernando Duarte' /> <!-- nome do site (ex.: Empresa X) -->
         <meta property='og:description' content='' /> <!-- Descrição do conteúdo/site para intrigar os usuários (ex.: Fazendo o bem para o mundo), max: 200 caracteres -->
         <meta property='og:url' content='<?php bloginfo('url') ?>' />
         <meta property='og:image' content='<?php bloginfo('template_url') ?>/img/imagem.png'/>
@@ -122,6 +110,12 @@
 
     </head>
 
+    <?php if (!is_user_logged_in()): 
+
+    die();
+
+    endif ?>
+
     <body>
         <?php wp_path_to_js(); ?>
 
@@ -139,6 +133,7 @@
     <div class="moldura t"></div>
     <div class="moldura r"></div>
     <div class="moldura b"></div>
+    <div class="moldura l"></div>
 
 
     <header>
@@ -147,7 +142,7 @@
 
                 <div class="moldura-l"></div>
                 
-                <button class="menu-btn ani-02">
+                <button id="menu-btn" class=" menu-btn ani-02">
                     <i class="t"></i>
                     <i class="m"></i>
                     <i class="b"></i>
@@ -156,35 +151,42 @@
 
                 <h1><a href="#">Fernando Duarte</a></h1>
 
-                <ul>
+                <ul class="nv-1">
                     <li><a class="ani-02" href="#">Quem sou</a></li>
-                    <li class="submenu">
-                        <a class="ani-02" href="#">Palestras</a>
-        <!--                 <ul class="ani-02">
+                    <li id="palestras" class="submenu">
+                        <a class="ani-02 click" href="#">Palestras</a>
+                        <ul class="ani-02">
+                            <h6>Jovens</h6>
                             <li>
-                                <h6>Jovens</h6>
                                 <a class="ani-02" href="#">Deixando Marcas</a>
+                            </li>
+                            <li>
                                 <a class="ani-02" href="#">Rumo ao Topo</a>
+                            </li>
+                            <li>
                                 <a class="ani-02" href="#">Jornada do Herói</a>
                             </li>
+                            <h6>Empresas</h6>
                             <li>
-                                <h6>Empresas</h6>
                                 <a class="ani-02" href="#">Deixando Marcas Corporativo</a>
                             </li>
-                            
+                            <h6>Instituições</h6>
                             <li>
-                                <h6>Instituições</h6>
                                 <a class="ani-02" href="#">Alma do Educador</a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
-                    <li class="submenu">
+                    <li id="solucoes" class="submenu">
                         <a class="ani-02 click" href="#">Soluções</a>
                         <ul class="ani-02">
+                            <h6>Empresas</h6>
                             <li>
-                                <h6>Empresas</h6>
                                 <a class="ani-02" href="#">[hi] Corporativo</a>
+                            </li>
+                            <li>
                                 <a class="ani-02" href="#">[hi] Comemoração</a>
+                            </li>
+                            <li>
                                 <a class="ani-02" href="#">[hi] School</a>
                             </li>
                         </ul>
@@ -197,3 +199,4 @@
             </div>
         </nav>
     </header>        
+

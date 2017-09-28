@@ -218,3 +218,5 @@ function get_completaUrl ($urlAdicional = "")
 		return get_bloginfo('url') . $urlAdicional;
 	}
 }
+
+

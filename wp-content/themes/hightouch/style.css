@@ -1,0 +1,4179 @@
+/*
+Theme Name: [hi]
+Author: Humano Studio
+Author URI: http://humanostud.io
+Description: Tema desenvolvido exclusivamente para o Encontro Da Vinci.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: UX, UI, 
+Text Domain: sejahi.com.br
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+}
+
+body a:hover,
+body a:focus
+{
+	text-decoration: none;
+}
+
+
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.animado-02-in-out
+{
+	-webkit-transition: 0.2s all ease-in-out;
+	-moz-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	-ms-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
+.animado-04-in-out
+{
+	-webkit-transition: 0.4s all ease-in-out;
+	-moz-transition: 0.4s all ease-in-out;
+	-o-transition: 0.4s all ease-in-out;
+	-ms-transition: 0.4s all ease-in-out;
+	transition: 0.4s all ease-in-out;
+}
+
+.animado-06-in-out
+{
+	-webkit-transition: 0.6s all ease-in-out;
+	-moz-transition: 0.6s all ease-in-out;
+	-o-transition: 0.6s all ease-in-out;
+	-ms-transition: 0.6s all ease-in-out;
+	transition: 0.6s all ease-in-out;
+}
+
+
+
+.animado-delay-04
+{
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.animado-delay-06
+{
+	-webkit-transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	-ms-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+
+.animado-delay-08
+{
+	-webkit-transition-delay: 0.8s;
+	-moz-transition-delay: 0.8s;
+	-o-transition-delay: 0.8s;
+	-ms-transition-delay: 0.8s;
+	transition-delay: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.no-wrap
+{
+	white-space: nowrap;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+.pagina
+{
+	padding-top: 103px;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media (max-width: 1849px) and (min-width: 1400px) {
+
+	body #page-hi #wrap-header-hi
+	{
+		height: 480px;
+	}
+
+	body #page-hi #wrap-porque
+	{
+		margin-top: 457px;
+	}
+
+}
+
+@media (max-width: 1399px) and (min-width: 1025px) {
+
+	body #page-hi #wrap-header-hi
+	{
+		height: 390px;
+	}
+
+	body #page-hi #wrap-porque
+	{
+		margin-top: 352px;
+	}
+
+}
+
+@media (max-width: 1024px) {
+
+	html body .corporativo #desc-modulos .bg-azul
+	{
+		left: -29.5%
+	}
+
+	html body .hischool #mais-escolas ul li
+	{
+		font-size: 24px;
+		line-height: 26px;
+	}
+
+	html body .hischool #mais-escolas ul li li
+	{
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	html body .hischool #contrapartidas ul h2
+	{
+		font-size: 26px;
+		line-height: 28px;
+		padding: 0 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	html body .hischool #contrapartidas ul p
+	{
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .case-normal
+	{
+		-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+		filter: alpha(opacity=0);
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .case-hover
+	{
+		-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+		filter: alpha(opacity=100);
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		opacity: 1;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .tag-social
+	{
+		background: none;
+	}
+
+	body .comemoracao #intro h2,
+	body .hischool #intro h2
+	{
+		margin-top: 64px;
+		height: 80px;
+		margin-bottom: 40px;
+	}
+
+	body .comemoracao #intro h3,
+	body .comemoracao #intro h4,
+	body .hischool #intro h3,
+	body .hischool #intro h4
+	{
+		margin-top: 5px;
+		line-height: 1.1;
+	}
+
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+	body .comemoracao #intro h3,
+	body .comemoracao #intro h4,
+	body .hischool #intro h3,
+	body .hischool #intro h4
+	{
+		font-size: 22px;
+	}
+
+}
+
+@media (min-width: 463px) and (max-width: 1024px) and (orientation: portrait) {
+
+	body .comemoracao #intro h3,
+	body .comemoracao #intro h4,
+	body .hischool #intro h3,
+	body .hischool #intro h4
+	{
+		font-size: 30px;
+	}
+
+}
+
+@media (max-width: 462px) and (orientation: portrait) {
+
+	html body .comemoracao #intro h3,
+	html body .comemoracao #intro h4,
+	html body .hischool #intro h3,
+	html body .hischool #intro h4
+	{
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	body #hightouch #wrap-case #grade-cases li
+	{
+		width: 49.7% !important;
+	}
+
+}
+
+@media (max-width: 1200px) {
+	html body #hightouch #wrap-case-home p
+	{
+		font-size: 30px;
+		line-height: 1.1;
+	}
+
+	body .comemoracao #cases .case h2
+	{
+		display: block;
+		float: none;
+	}
+
+	body .comemoracao #cases .case .wrap-desc
+	{
+		padding-top: 10px;
+	}
+
+	body #page-contato #wrap-form #form
+	{
+		margin-left: 25.53191489361702%;
+		width: 48.93617021276595%;
+	}
+
+}
+
+@media (max-width: 1440px) {
+	html body .comemoracao #cases .case h2
+	{
+		font-size: 60px;
+		line-height: 1.1;
+	}
+
+	html body .comemoracao #cases .case .wrap-desc p
+	{
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	html body .comemoracao #cases #titulo,
+	html body .comemoracao #outros-clientes #titulo,
+	html body .hischool #escolas #titulo,
+	html body .hischool #mais-escolas #titulo,
+	html body .hischool #contrapartidas #titulo
+	{
+		font-size: 42px;
+	}
+
+	body .hischool #contrapartidas ul .span3
+	{
+		width: 48.717948717948715%;
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 1380px) and (min-width: 1025px) {
+	body .hischool #escolas ul li
+	{
+		height: 580px;
+	}
+
+	body .hischool #escolas ul li p
+	{
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 1280px and min-width: 1025px) {
+	html body .corporativo #desc-modulos .bg-azul
+	{
+		left: -17.5%
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	body .hischool #escolas ul li
+	{
+		height: 430px;
+	}
+
+	body .hischool #escolas ul li p
+	{
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	html body .corporativo #intro
+	{
+		height: 540px;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	body .hischool #mais-escolas .container-fluid
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+@media (max-width: 979px) {
+
+	html body #header.navbar-fixed-top
+	{
+		margin: 0;
+	}
+
+	html body #header #logo
+	{
+		background-position: center;
+		width: 130px;
+	}
+
+	html body #hightouch #wrap-case-home ul,
+	html body #hightouch #wrap-case-principal
+	{
+		position: static;
+	}
+
+	html body #hightouch #wrap-case-principal
+	{
+		margin-top: 0;
+	}
+
+	html body #hightouch #wrap-case-home ul #img-case
+	{
+		background-position: top center;
+	}
+	
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #lbl-role
+	{
+		right: 10px;
+		left: auto;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img
+	{
+		padding-top: 40px;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada .figcaption
+	{
+		margin-bottom: 70px;
+	}
+
+	html body #hightouch #section-case-home
+	{
+		margin-bottom: -104px; /*altura do menu*/
+	}
+
+	html body #hightouch #wrap-case-home:after
+	{
+		top: auto;
+		bottom: 57px;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial
+	{
+		top: 10%;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial #principal,
+	html body #hightouch #wrap-case-home #msg-inicial #secundario
+	{
+		padding: 0 50px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos
+	{
+		top: 40%;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .desc
+	{
+		font-size: 23px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos #ou p
+	{
+		font-size: 13px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos #ou p #line1
+	{
+		font-size: 17px;
+	}
+
+	html body #hightouch #wrap-case-home #myCarousel
+	{
+		margin-bottom: 0;
+	}
+
+	html body #hightouch #wrap-conheca-nos .row-fluid
+	{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	html body #hightouch #wrap-conheca-nos .row-fluid .span4
+	{
+		width: 40.42553191489362%;
+		*width: 40.372042553192%;
+	}
+
+	html body #hightouch #wrap-conheca-nos figure
+	{
+		text-align: center;
+		margin: 30px 0 60px;
+	}
+
+	html body #hightouch #wrap-conheca-nos img
+	{
+		float: none;
+	}
+
+	html body #hightouch #wrap-conheca-nos p:before, #hightouch #wrap-conheca-nos p
+	{
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	html body #hightouch #wrap-conheca-nos p:before,
+	html body #hightouch #wrap-conheca-nos p:after
+	{
+		display: none;
+	}
+
+	/*SINGLE CASE*/
+
+	html body .page-single-case #wrap-descricao-case .container,
+	html body .page-single-case #wrap-resumo-case .container
+	{
+		width: 90%;
+	}
+
+	html body .page-single-case #wrap-resumo-case .span3,
+	html body .page-single-case #wrap-resumo-case .span9
+	{
+		float: left;
+	}
+
+	/*END SINGLE CASE*/
+
+	/*CONTATO*/
+
+	html body #page-contato #map
+	{
+		pointer-events: none;
+		margin-top: -120px;
+	}
+
+	html body #page-contato #wrap-form #wrap-endereco figure
+	{
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+
+	html body #page-contato #wrap-form #wrap-endereco
+	{
+		text-align: center;
+	}
+
+	html body #page-contato #wrap-form #form
+	{
+		padding-top: 1px;
+		margin-left: 17.12707182320442%;
+		width: 65.74585635359117%;
+	}
+
+	html body #page-contato #wrap-form #wrap-endereco .span5
+	{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	html body #page-contato #wrap-form #wrap-endereco .span7
+	{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	html body #page-contato #wrap-form #wrap-endereco .span7
+	{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+
+	/*END CONTATO*/
+
+
+	/*SOBRE A HI*/
+
+	html body #page-hi #wrap-header-hi
+	{
+		position: static;
+		height: 280px;
+	}
+
+	html body #page-hi #wrap-porque
+	{
+		margin-top: 0;
+	}
+
+	html body #page-hi #wrap-porque h2
+	{
+		width: 100%;
+	}
+
+	/*END SOBRE A HI*/
+
+}
+
+@media (max-width: 939px) {
+
+	html body #hightouch #wrap-case-home #produtos #ou
+	{
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	body .container-fluid
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	body .pagina
+	{
+		padding-top: 64px;
+	}
+
+	html body #header
+	{
+		position: fixed !important;
+		height: 65px;
+	}
+
+	html body #header #menu
+	{
+		height: 65px;
+	}
+
+	html body #header #ico-open-menu
+	{
+		display: block;
+		background: none;
+		border:  none;
+		float: right;
+		margin-top: -35px;
+		margin-right: 30px;
+	}
+
+	html body #header #menu nav
+	{
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		right: -300px;
+		bottom: 0;
+		background: #00608E;
+		width: 300px;
+		overflow-y: auto;
+	}
+
+	html body #header #menu nav ul
+	{
+		margin-top: 85px;
+	}
+
+	html body #header #menu nav ul ul
+	{
+		margin-top: 0;
+	}
+
+	html body #header #menu nav ul li.space
+	{
+		margin-left: 0;
+	}
+
+	html body #header #menu nav ul li
+	{
+		display: block;
+		width: 100%;
+	}
+
+	html body #header #menu nav ul li.link a
+	{
+		padding: 15px 0;
+		width: 100%;
+	}
+
+	html body #header #menu ul li.link:hover
+	{
+		background: none;
+		border-bottom-color: transparent;
+	}
+
+	html body #header #menu nav ul li:hover:after
+	{
+		display: none;
+	}
+
+	html body #header #menu nav ul li.link.dropdown:after
+	{
+		-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+		filter: alpha(opacity=0);
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		opacity: 0;
+	}
+
+	html body #header #menu nav ul li.dropdown .dropdown-menu
+	{
+		position: static;
+		display: block;
+		float: none;
+		background: none;
+		border: none;
+		box-shadow: none;
+		font-size: 16px;
+		font-style: italic;
+		background: #00557D;
+		padding-top: 20px;
+	}
+
+	html body #header #menu nav ul li.dropdown .dropdown-menu li a
+	{
+		padding: 0 0 15px;
+		background-color: 
+	}
+
+	html body #header #menu nav ul li.dropdown .dropdown-menu
+	{
+
+	}
+
+	html body #header #menu ul li a
+	{
+		padding-top: 30px;
+	}
+
+	html body #header #logo
+	{
+		background-position: center;
+		background-size: contain;
+		height: 15px;
+		margin-top: 10px;
+	}
+
+	html body #hightouch #section-case-home,
+	html body #hightouch #wrap-case-home
+	{
+		height: auto;
+		margin-bottom: 0;
+	}
+
+	html body #hightouch #wrap-case-home
+	{
+		height: auto;
+		margin-bottom: 0;
+		padding-bottom: 70px !important;
+	}
+
+	html body #hightouch #wrap-case-home:after
+	{
+		bottom: -47px;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial
+	{
+		position: static;
+		margin-top: 130px;
+		margin-bottom: 80px;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial #principal
+	{
+		font-size: 40px;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial #secundario
+	{
+		font-size: 24px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos
+	{
+		position: static;
+	}
+
+	body #hightouch #wrap-case-home #produtos .produto
+	{
+		width: auto;
+		float: none;
+	}
+
+	body #hightouch #wrap-case-home #produtos .produto div
+	{
+		width: 60%;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto .ico-produto,
+	html body #hightouch #wrap-case-home #produtos .produto .desc
+	{
+		float: left;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto .desc
+	{
+		width: auto;
+		margin-top: -140px;
+		margin-left: 170px;
+		text-align: left;
+	}
+
+	html body #hightouch #wrap-case-home #produtos #ou
+	{
+		-webkit-background-size: initial;
+		background-size: initial;
+		width: 90px;
+		height: 90px;
+		margin: 20px auto;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto.appeared,
+	html body #hightouch #wrap-case-home #produtos #ou.appeared
+	{
+		-webkit-transition-delay: 0s !important;
+		-moz-transition-delay: 0s !important;
+		-o-transition-delay: 0s !important;
+		-ms-transition-delay: 0s !important;
+		transition-delay: 0s !important;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto div
+	{
+		margin: 0 auto;
+	}
+
+	html body #hightouch #wrap-conheca-nos .row-fluid .span4
+	{
+		width: 100% !important;
+		text-align: center;
+	}
+
+	html body #hightouch #wrap-conheca-nos .row-fluid #wrap-texto
+	{
+		text-align: center;
+	}
+
+	html body #hightouch #wrap-conheca-nos .row-fluid #wrap-texto p
+	{
+		margin: 0 auto 30px;
+		padding: 0 50px;
+		width: auto;
+	}
+
+	html body #hightouch #wrap-topo-case
+	{
+		margin-bottom: 60px;
+	}
+
+	html body #hightouch #wrap-topo-case .row-fluid
+	{
+		margin-top: 80px;
+	}
+
+	html body #hightouch #wrap-topo-case figure
+	{
+		text-align: center;
+	}
+
+	html body #hightouch #wrap-topo-case figure img
+	{
+		float: none !important;
+	}
+
+	html body #hightouch #wrap-topo-case p
+	{
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	html body #footer
+	{
+		padding-bottom: 40px;
+	}
+
+	html body #page-hi #wrap-header-hi
+	{
+		height: 190px;
+	}
+
+	html body #hightouch #wrap-case #grade-cases li
+	{
+		width: 100% !important;
+	}
+
+	html body #page-hi #wrap-porque .como .right
+	{
+		float: right;
+		margin-right: 0;
+	}
+
+	body #page-hi #wrap-porque
+	{
+		-webkit-background-size: 100% 100%;
+		background-size: 100% 100%;
+	}
+
+	body #page-hi #wrap-porque:before
+	{
+		padding: 0;
+		margin-left: 0;
+	}
+
+	html body #page-hi #wrap-porque p
+	{
+		text-align: center !important;
+		padding: 0 60px;
+		line-height: 28px;
+	}
+
+	html body #page-hi #wrap-porque h2
+	{
+		width: 100px;
+		height: 100px;
+	}
+
+	html body #page-hi #wrap-porque .porque,
+	html body #page-hi #wrap-porque .como,
+	html body #page-hi #wrap-porque .oque
+	{
+		margin-top: 30px;
+		margin-bottom: 70px;
+	}
+
+	html body .corporativo #intro h2
+	{
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	html body .corporativo #intro p
+	{
+		line-height: 35px;
+		padding: 0 30px;
+	}
+
+	body .corporativo #modulos p
+	{
+		padding: 0 30px;
+	}
+
+	html body .corporativo #desc-modulos article
+	{
+		padding-bottom: 100px;
+	}
+
+	html body .corporativo #desc-modulos article figure
+	{
+		margin-bottom: 0;
+	}
+
+	html body .corporativo #desc-modulos article h2,
+	html body .corporativo #desc-modulos article p,
+	html body .corporativo #desc-modulos article figure
+	{
+		margin-left: 0;
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	html body .corporativo #desc-modulos article ol
+	{
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	html body .corporativo #desc-modulos article  ol li:after
+	{
+		display: none;
+	}
+
+	body .comemoracao #intro,
+	body .hischool #intro
+	{
+		margin-bottom: -65px;
+	}
+
+	body .comemoracao #cases .case .wrap-desc p,
+	body .hischool #cases .case .wrap-desc p
+	{
+		display: block;
+		color: white;
+		width: 80%;
+		padding-left: 20px;
+	}
+
+	body .comemoracao #intro h3,
+	body .comemoracao #intro h4,
+	body .hischool #intro h3,
+	body .hischool #intro h4
+	{
+		width: 70%;
+	}
+
+	body .hischool #intro h3,
+	body .hischool #intro h4
+	{
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	body .comemoracao #cases #titulo,
+	body .comemoracao #outros-clientes #titulo,
+	body .hischool #escolas #titulo,
+	body .hischool #mais-escolas #titulo,
+	body .hischool #contrapartidas #titulo
+	{
+		margin-left: 20px;
+	}
+
+	body .comemoracao #cases .case h2,
+	body .hischool #cases .case h2
+	{
+		padding-left: 20px;
+	}
+
+	body .comemoracao #cases .case .wrap-desc .bt-mais
+	{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+
+	body .comemoracao #cases .case:hover
+	{
+		padding: 0;
+	}
+
+	body .comemoracao #cases .case:hover .bg-hover
+	{
+		background: transparent;
+	}
+
+	body .comemoracao #cases .case:hover .bg-hover h2
+	{
+		color: white;
+	}
+
+	body .hischool #escolas ul li.span4
+	{
+		width: 50%;
+		height: 380px;
+		float: left;
+	}
+
+	body .hischool #escolas ul li p
+	{
+		font-size: 30px;
+	}
+
+	body .hischool #contrapartidas .container-fluid
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	body .hischool #mais-escolas .container-fluid ul .span3
+	{
+		width: 50%;
+		float: left;
+	}
+
+	body .hischool #contrapartidas ul .span3
+	{
+		width: 100%;
+		margin-bottom: 110px;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	html body #page-contato #wrap-form div#form 
+	{
+	    margin-left: 0;
+	    width: 100%;
+	}
+
+}
+@media (max-width: 540px) and (min-width: 471px) {
+
+	html body #hightouch #wrap-case-home #produtos .produto div
+	{
+		width: 80%;
+	}
+
+	body .corporativo #modulos img
+	{
+		display: none;
+	}
+
+	body .corporativo #modulos
+	{
+		padding-bottom: 80px;
+	}
+
+	html body .corporativo #modulos p
+	{
+		margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 470px) {
+
+	html body #hightouch #wrap-case-home #msg-inicial #principal
+	{
+		font-size: 30px;
+	}
+
+	html body #hightouch #wrap-case-home #msg-inicial #secundario
+	{
+		font-size: 20px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto div
+	{
+		width: 100%;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto p.desc
+	{
+		 margin-top: 0; 
+		 margin-left: 0; 
+		 text-align: center; 
+		 padding: 0 15%;
+		 margin-bottom: 20px;
+	}
+
+	html body #hightouch #wrap-case-home #produtos .produto span.ico-produto,
+	html body #hightouch #wrap-case-home #produtos .produto p.desc
+	{
+		float: none;
+	}
+	html body .page-single-case #wrap-objetivo-case .span4
+	{
+		height: auto !important;
+		margin-bottom: 80px;
+		padding-top: 60px;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada .figcaption,
+	html body #hightouch #wrap-case-principal #img-case .figcaption
+	{
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img h2
+	{
+		padding-left: 5%;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #lbl-role
+	{
+		display: none;
+	}
+
+	html body #hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #lbl-role
+	{
+		display: none;
+	}
+
+	html body #hightouch #wrap-case-principal
+	{
+		height: auto;
+	}
+
+	html body #hightouch #wrap-case-principal #img-case,
+	html body #hightouch #wrap-case-principal #img-case #mascara-azul
+	{
+		height: auto;
+	}
+
+	html body .corporativo #intro h2
+	{
+		background-size: contain;
+		width: 90%;
+	}
+
+	html body .corporativo #intro p
+	{
+		font-size: 28px;
+		line-height: 30px;
+		padding: 0 20px;
+	}
+
+	html body .corporativo #modulos
+	{
+		padding-bottom: 50px;
+	}
+
+	html body .corporativo #modulos #todos
+	{
+		display: none;
+	}
+
+	html body .corporativo #desc-modulos article h2
+	{
+		font-size: 60px;
+	}
+
+	html body .comemoracao #cases #titulo,
+	html body .comemoracao #outros-clientes #titulo,
+	html body .hischool #escolas #titulo,
+	html body .hischool #mais-escolas #titulo,
+	html body .hischool #contrapartidas #titulo
+	{
+		font-size: 30px;
+		line-height: 1.1;
+	}
+
+	html body .hischool #escolas ul li.span4
+	{
+		width: 100%;
+		height: 300px;
+		float: none;
+		display: table;
+	}
+
+	html body .hischool #escolas ul li p
+	{
+		text-align: center;
+		font-size: 43px;
+		height: 248px;
+		width: 100%;
+		position: static;
+		display: table-cell;
+		vertical-align: middle;
+		margin: -24px auto;
+		padding: 24px;
+	}
+
+	html body .hischool #mais-escolas .container-fluid ul .span3
+	{
+		width: 100%;
+		float: none;
+	}
+
+}
+
+@media (max-width: 440px) {
+
+	html body #hightouch #wrap-case #grade-cases li #wrap-texto
+	{
+		display: none;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .case-normal
+	{
+		display: none;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .case-hover
+	{
+		position: relative;
+		padding-bottom: 1px;
+	}
+
+	body #hightouch #wrap-case #grade-cases li .case-normal,
+	body #hightouch #wrap-case #grade-cases li .case-hover,
+	body #hightouch #wrap-case #grade-cases li
+	{
+		height: auto;
+	}
+
+	html body #hightouch #wrap-case #grade-cases li .ver-mais-white
+	{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	html body #page-hi #wrap-header-hi
+	{
+		/*background-position: left center;*/
+		height: 150px !important;
+	}
+
+	html body .comemoracao #intro h3,
+	html body .comemoracao #intro h4,
+	html body .hischool #intro h3,
+	html body .hischool #intro h4
+	{
+		width: 100%;
+	}
+
+	body .comemoracao #intro h2,
+	body .hischool #intro h2
+	{
+		margin-top: 35px;
+	}
+
+}
+
+@media (max-width: 380px){
+
+	html body .hischool #contrapartidas ul h2
+	{
+		font-size: 20px;
+		line-height: 1.3;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	html body .hischool #contrapartidas ul p
+	{
+		font-size: 16px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+	}
+
+	html body #page-contato #wrap-form
+	{
+		padding: 0;
+	}
+
+}
+
+
+
+@media print,
+	   (-o-min-device-pixel-ratio: 5/4),
+	   (-webkit-min-device-pixel-ratio: 1.25),
+	   (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+
+
+
+@font-face{
+	font-family: "RaissaLuna";
+	src: url(fonts/RaissaLuna.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: "Tarzana";
+	src: url(fonts/TARNAREG.ttf) format("truetype");
+}
+
+
+@font-face{
+	font-family: "TarzanaB";
+	src: url(fonts/TARNABOL.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: "OpenSans";
+	src: url(fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: "OpenSansL";
+	src: url(fonts/OpenSans-Light.ttf) format("truetype");
+}
+
+@font-face{
+	font-family: "OpenSansSB";
+	src: url(fonts/OpenSans-Semibold.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'ralewaybold';
+	src: url(fonts/raleway-bold-webfont.eot);
+	src: url(fonts/raleway-bold-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-bold-webfont.woff) format('woff'),
+		 url(fonts/raleway-bold-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-bold-webfont.svg#ralewaybold) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewayextrabold';
+	src: url(fonts/raleway-extrabold-webfont.eot);
+	src: url(fonts/raleway-extrabold-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-extrabold-webfont.woff) format('woff'),
+		 url(fonts/raleway-extrabold-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-extrabold-webfont.svg#ralewayextrabold) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewayregular';
+	src: url(fonts/raleway-regular-webfont.eot);
+	src: url(fonts/raleway-regular-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-regular-webfont.woff) format('woff'),
+		 url(fonts/raleway-regular-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-regular-webfont.svg#ralewayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewaymedium';
+	src: url(fonts/raleway-medium-webfont.eot);
+	src: url(fonts/raleway-medium-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-medium-webfont.woff) format('woff'),
+		 url(fonts/raleway-medium-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-medium-webfont.svg#ralewayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewaylight';
+	src: url(fonts/raleway-light-webfont.eot);
+	src: url(fonts/raleway-light-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-light-webfont.woff) format('woff'),
+		 url(fonts/raleway-light-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-light-webfont.svg#ralewayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewayextralight';
+	src: url(fonts/raleway-extralight-webfont.eot);
+	src: url(fonts/raleway-extralight-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-extralight-webfont.woff) format('woff'),
+		 url(fonts/raleway-extralight-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-extralight-webfont.svg#ralewayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'ralewaythin';
+	src: url(fonts/raleway-thin-webfont.eot);
+	src: url(fonts/raleway-thin-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/raleway-thin-webfont.woff) format('woff'),
+		 url(fonts/raleway-thin-webfont.ttf) format('truetype'),
+		 url(fonts/raleway-thin-webfont.svg#ralewayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes sobe-desce {
+  0%    { bottom: 11px; }
+  50%   { bottom: 20px; }
+  100%  { bottom: 11px; }
+}
+@-moz-keyframes sobe-desce {
+  0%    { bottom: 11px; }
+  50%   { bottom: 20px; }
+  100%  { bottom: 11px; }
+}
+@-o-keyframes sobe-desce {
+  0%    { bottom: 11px; }
+  50%   { bottom: 20px; }
+  100%  { bottom: 11px; }
+}
+@keyframes sobe-desce {
+  0%    { bottom: 11px; }
+  50%   { bottom: 20px; }
+  100%  { bottom: 11px; }
+}
+
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6
+{
+	font-family: "TarzanaB", "Browallia New", sans-serif;
+	color: #0095da;
+	font-size: 30px;
+}
+
+p
+{
+	font-family: "OpenSansL", sans-serif;
+	font-size: 16px;
+	color: #666666;
+}
+
+
+blockquote
+{
+	font-family: "RaissaLuna", cursive, sans-serif;
+	font-size: 26px;
+	color: #999999;
+	border: none !important;
+	line-height: 39px;
+	margin: 0 !important;
+}
+
+
+.menu
+{
+	font-family: "ralewaylight", "Browallia New", sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+
+.figcaption
+{
+	width: 392px;
+	padding-right: 25px;
+	padding-left: 33px;
+	background: url(img/hi-bg-img-home.png);
+}
+
+.figcaption h2
+{
+	color: white;
+	font-size: 34px;
+}
+
+.figcaption h3
+{
+	color: white;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.figcaption p
+{
+	font-family: "OpenSans", sans-serif;
+	color: white;
+}
+
+
+.radius
+{
+	border-radius: 0 0 3px 0;
+}
+
+.radius-all
+{
+	border-radius: 3px 0 3px 3px;
+}
+
+.radius-left
+{
+	border-radius: 3px 0 0 3px;
+}
+
+
+.address
+{
+	width: 254px;
+	height: 254px;
+	display: inline-block;
+	background: url(img/hi-bg-white-ball-footer.png);
+}
+
+.address p
+{
+	font-family: "OpenSans", sans-serif;
+	padding-top: 127px;
+	line-height: 23px;
+	color: #ed1c24;
+}
+
+.address span
+{
+	line-height: 35px;
+}
+
+
+.icone-fale
+{
+	width: 276px;
+	height: 56px;
+	display: block;
+	margin: 44px auto 44px auto;
+}
+
+.icone-fale:hover,
+.icone-social:hover
+{
+	text-decoration: none;
+}
+
+.icone-fale i,
+.icone-social i
+{
+	width: 72px;
+	height: 56px;
+	float: left;
+	background: #620e11;
+	display: inline-block;
+}
+
+.icone-fale i img,
+.icone-social i img
+{
+	margin-top: 8px;
+}
+
+.icone-fale p,
+.icone-social p
+{
+	width: 204px;
+	height: 56px;
+	float: left;
+	display: inline-block;
+	font-family: "TarzanaB", "Browallia New", sans-serif;
+	text-transform: uppercase;
+	line-height: 56px !important;
+	font-size: 24px;
+	color: #ed1c24;
+	background: white;
+	margin: 0;
+}
+
+
+.redes-sociais
+{
+	margin: 30px 0 0;
+
+	list-style: none;
+	text-align: center;
+}
+
+.redes-sociais li
+{
+	padding: 0;
+	margin: 0 20px;
+	display: inline-block;
+}
+
+.redes-sociais p
+{
+	display: inline;
+	width: auto;
+	padding: 0 20px
+}
+
+.icone-social
+{
+	width: auto;
+	height: 46px;
+	display: block;
+	margin: 0 auto;
+}
+
+.ver-mais-red,
+.ver-mais-white
+{
+	width: 125px;
+	height: 34px;
+	text-align: center;
+	display: block;
+}
+
+.ver-mais-red:hover p
+{
+	background: #be161d;
+	-webkit-transition: 0.2s all ease-in-out;
+	-moz-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	-ms-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
+.ver-mais-white:hover p,
+.icone-fale:hover p
+{
+	background: #620E11;
+	color: white !important;
+	-webkit-transition: 0.2s all ease-in-out;
+	-moz-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	-ms-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
+.ver-mais-red i,
+.ver-mais-white i,
+.ver-mais-red p,
+.ver-mais-white p
+{
+	height: 34px;
+	display: inline-block;
+	float: left;
+}
+
+.ver-mais-red i,
+.ver-mais-white i
+{
+	width: 54px;
+	background: url(img/hi-icon-ver-mais.png) center no-repeat #be161d;
+}
+
+.ver-mais-red p,
+.ver-mais-white p
+{
+	width: 71px !important;
+	height: 34px;
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	background: #ed1c24;
+	line-height: 30px !important;
+	font-size: 18px;
+	color: white;
+	margin-left: 0 !important;
+}
+
+.ver-mais-white i
+{
+	background-color: #620e11;
+}
+
+.ver-mais-white p
+{
+	background: white;
+	color: #ed1c24 !important;
+}
+
+.tip
+{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 200px;
+	left: 400px;
+}
+
+.entrelinha
+{
+	height: 12px;
+	margin-bottom: -12px;
+}
+
+.page-section:after
+{
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 24px solid transparent;
+	position: absolute;
+	z-index: 10;
+	bottom: -47px;
+	/*top: 100%;*/
+	left: 50%;
+	border-top: 24px solid #B40909;
+	margin-left: -24px;
+}
+
+.overlines
+{
+	background: url('img/hi-overlines.png');
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+
+
+
+
+
+/*---------------------------HEADER----------------------------*/
+
+#header
+{
+	background: #00608e;
+	height: 104px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 4000;
+}
+
+#header #logo
+{
+	padding: 15px;
+	width: 79px;
+	height: 72px;
+	text-indent: -9999px;
+	background: url(img/hi-logo-branca.png) no-repeat center;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+}
+
+#header #logo h1,
+#header #logo h2
+{
+	text-indent: -9999px;
+}
+
+#header #menu
+{
+	height: 104px;
+	text-align: center;
+	margin-top: -104px;
+	/*pointer-events: none;*/
+	margin-left: 0;
+	
+}
+
+#header #ico-open-menu
+{
+	display: none;
+	position: relative;
+	z-index: 10000;
+}
+
+#header #ico-open-menu img
+{
+	max-width: 100%;
+}
+
+#header #menu ul
+{
+	margin: 0;
+}
+
+#header #menu ul li
+{
+	display: inline-block;
+	position: relative;
+	width: 120px;
+}
+
+#header #menu ul .space
+{
+	margin-left: 130px;
+}
+
+#header #menu ul li.link
+{
+	border-bottom: 3px solid transparent;
+}
+
+#header #menu ul li.link:hover
+{
+	border-bottom: 3px solid white;
+	background-color: #0095da;
+}
+
+#header #menu ul li.link.open,
+#header #menu ul li.link.open:hover
+{
+	border: none;
+	background-color: #0095da;
+}
+
+#header #menu ul li.link.open:after,
+#header #menu ul li.link.open:hover:after
+{
+	border: none;
+}
+
+#header #menu ul li.link:after
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	content: '';
+	border: 4px solid white;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	float: left;
+	position: absolute;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -11px;
+	-webkit-transition: 0.2s all ease-in-out;
+	-moz-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	-ms-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
+#header #menu ul li.link:hover:after
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#header #menu ul li.link.dropdown:after
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+	filter: alpha(opacity=50);
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	bottom: 0;
+}
+
+#header #menu ul li.link.dropdown:hover:after,
+#header #menu ul li.link.dropdown.open:after
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	bottom: -11px;
+}
+
+#header #menu ul li.link a
+{
+	display: inline-block;
+	color: white;
+	padding: 60px 0 23px;
+	pointer-events: auto;
+	width: 100%;
+}
+
+#header #menu ul li.link a:hover
+{
+	text-decoration: none;
+}
+
+#header #menu ul li.space.link.dropdown.animado-02-in-out:hover > .dropdown-menu
+{
+	display: block;
+}
+
+#header #menu ul .dropdown-menu
+{
+	position: relative;
+	top: 3px;
+	padding: 0;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width: auto;
+	height: auto;
+}
+
+#header #menu ul .dropdown-menu li
+{
+	width: 100%;
+}
+
+#header #menu ul .dropdown-menu li a
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	padding: 20px 15px;
+}
+
+#header #menu ul .dropdown-menu li a:hover
+{
+	background: #00608e;
+}
+
+/*------------------------Fim Header------------------------*/
+
+
+#hightouch.page-cases
+{
+	height: auto;
+}
+
+#hightouch
+{
+	height: 100%;
+}
+
+
+#hightouch #section-case-home
+{
+	height: 100%;
+}
+
+#hightouch #wrap-case-home
+{
+	padding: 0 !important;
+	height: 100%;
+	position: relative;
+}
+
+#hightouch #wrap-case-home:after
+{
+	z-index: 20;
+	border-top-color: #4B4C7A;
+}
+
+#hightouch #wrap-case-home p
+{
+	font-family: "ralewayextralight", sans-serif;
+	font-size: 40px;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+}
+
+#hightouch #wrap-case-home #msg-inicial
+{
+	position: absolute;
+	top: 15%;
+}
+
+#hightouch #wrap-case-home #msg-inicial .line
+{
+	display: block;
+	background: white;
+	width: 43%;
+	height: 1px;
+	margin: 0 auto;
+}
+
+#hightouch #wrap-case-home #msg-inicial #principal
+{
+	margin-bottom: 18px;
+	font-family: "ralewaylight", sans-serif;
+	font-size: 50px;
+}
+
+#hightouch #wrap-case-home #msg-inicial #secundario
+{
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+#hightouch #wrap-case-home #produtos
+{
+	position: relative;
+	top: 40%;
+}
+
+#hightouch #wrap-case-home #produtos .produto:hover .span3
+{
+	background: rgba(0, 0, 0, 0.2) !important;
+	padding-bottom: 30px;
+}
+
+#hightouch #wrap-case-home #produtos .produto:hover .bg-ico,
+#hightouch #wrap-case-home #produtos .produto:hover .layer1,
+#hightouch #wrap-case-home #produtos .produto:hover .layer2
+{
+	top: -10px;
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+
+#hightouch #wrap-case-home #produtos .span3 
+{
+	width: 27.27272727272727%;
+	margin-left: 0;
+}
+
+#hightouch #wrap-case-home #produtos .span1 
+{
+	width: 9.090909090909091%;
+	margin-left: 0;
+}
+
+#hightouch #wrap-case-home #produtos .hided
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	-webkit-transform: scale(0.2,0.2);
+	-moz-transform: scale(0.2,0.2);
+	-ms-transform: scale(0.2,0.2);
+	-o-transform: scale(0.2,0.2);
+	transform: scale(0.2,0.2);
+}
+
+#hightouch #wrap-case-home #produtos .appeared
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#hightouch #wrap-case-home #produtos #ou.appeared
+{
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+	-ms-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+#hightouch #wrap-case-home #produtos #comemoracao.appeared
+{
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+#hightouch #wrap-case-home #produtos #corporativo.appeared
+{
+	-webkit-transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	-ms-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+
+#hightouch #wrap-case-home #produtos #hischool.appeared
+{
+	-webkit-transition-delay: 0.8s;
+	-moz-transition-delay: 0.8s;
+	-o-transition-delay: 0.8s;
+	-ms-transition-delay: 0.8s;
+	transition-delay: 0.8s;
+}
+
+}
+
+#hightouch #wrap-case-home #produtos .desc
+{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+#hightouch #wrap-case-home #produtos .produto
+{
+	width: 27.27272727272727%;
+	float: left;
+}
+
+#hightouch #wrap-case-home #produtos .produto .desc
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+#hightouch #wrap-case-home #produtos #ou
+{
+	background: url("img/hi-bg-ou.png") no-repeat center;
+	height: 345px;
+	position: relative;
+}
+
+#hightouch #wrap-case-home #produtos #ou p
+{
+	font-family: "ralewaybold", sans-serif;
+	font-size: 18px;
+	color: #4d566b;
+	line-height: 18px;
+	margin-top: -15px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+
+#hightouch #wrap-case-home #produtos #ou p #line1
+{
+	font-size: 22px;
+	display: block;
+}
+
+#hightouch #wrap-case-home #produtos .ico-produto,
+#hightouch #wrap-case-home #produtos .bg-ico,
+#hightouch #wrap-case-home #produtos .layer1,
+#hightouch #wrap-case-home #produtos .layer2
+{
+	background: url("img/hi-bg-ico-produtos-home.png") no-repeat center;
+	display: block;
+	width: 152px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#hightouch #wrap-case-home #produtos .ico-produto
+{
+	background: none;
+	position: relative;
+	margin: 0 auto 25px;
+}
+
+#hightouch #wrap-case-home #produtos #comemoracao .layer1
+{
+	background: url("img/hi-ico-comemoracao-sombra.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home #produtos #comemoracao .layer2
+{
+	background: url("img/hi-ico-comemoracao-bolo.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home #produtos #corporativo .layer1
+{
+	background: url("img/hi-ico-corporativo-sombra.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home #produtos #corporativo .layer2
+{
+	background: url("img/hi-ico-corporativo-rocket.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home #produtos #hischool .layer1
+{
+	background: url("img/hi-ico-hischool-sombra.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home #produtos #hischool .layer2
+{
+	background: url("img/hi-ico-hischool-coracao.png") no-repeat center;
+}
+
+#hightouch #wrap-case-home ul
+{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#hightouch #wrap-case-home ul li
+{
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+
+#hightouch #wrap-case-home #img-case
+{
+	width: 100%;
+	height: 100%;
+	background: no-repeat center 69px;
+	background-size: cover;
+}
+
+#hightouch #wrap-case-home
+{
+	background: url('img/hi-bg-home.jpg') no-repeat bottom center;
+	background-size: cover;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul,
+#hightouch #wrap-case-principal #img-case #mascara-azul
+{
+	width: 100%;
+	height: 100%;
+	background: url(img/hi-mascara-azul-home.png);
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada
+{
+	width: 100%;
+	height: 100%;
+	background: url(img/hi-mascara-granulada-home.png);
+	position: relative;
+}
+
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img
+{
+	padding-top: 220px;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img h2
+{
+	padding: 5px 20px 5px 33px;
+	background: red;
+	display: inline-block;
+	font-size: 26px;
+	color: white;
+	float: left;
+	margin: 0;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img button
+{
+	background: #be161d;
+	width: 45px;
+	height: 50px;
+	border: none;
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img button:hover
+{
+	background: #9C0A10;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img button:hover i
+{
+	margin-top: -2px;
+	display: block;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img button:active i
+{
+	margin-top: 2px;
+	display: block;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #title-img #btn-right
+{
+	padding-left: 0px;
+	padding-right: 8px;
+
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada .figcaption
+{
+	height: 270px;
+	margin-top: 60px;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada .figcaption h2
+{
+	padding-top: 10px;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada .figcaption p
+{
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+
+#hightouch #wrap-case-home #img-case #mascara-azul #mascara-granulada #lbl-role
+{
+	-webkit-animation: sobe-desce 2s infinite; /* Safari 4+ */
+	-moz-animation:    sobe-desce 2s infinite; /* Fx 5+ */
+	-o-animation:      sobe-desce 2s infinite; /* Opera 12+ */
+	animation:         sobe-desce 2s infinite; /* IE 10+ */
+	animation-timing-function: ease-in-out;
+
+	width: 71px;
+	height: 71px;
+	display: block;
+	background: url(img/hi-icon-role-ball.png);
+	position: absolute;
+	bottom: 11px;
+	left: 50%;
+	margin-left: -35px;
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 53px;
+}
+
+/*--------------------------Fim Case Home--------------------------*/
+
+
+
+#hightouch #wrap-solucoes-home
+{
+	text-align: center;
+	padding-top: 70px;
+	background: white;
+	z-index: 2;
+	position: relative;
+}
+
+#hightouch #wrap-solucoes-home h2
+{
+	text-transform: uppercase;
+	font-size: 26px;
+	background: url(img/hi-bg-titulo-solucoes.png) no-repeat center;
+}
+
+
+#hightouch #wrap-solucoes-home article
+{
+	height: 350px;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+}
+
+#hightouch #wrap-solucoes-home article.appeared
+{
+	margin-top: 55px;
+	margin-bottom: 0;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#hightouch #wrap-solucoes-home article:hover figure
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#hightouch #wrap-solucoes-home article figure
+{
+	padding-top: 20px;
+}
+
+#hightouch #bottom-solucoes
+{
+	background: url('img/hi-bg-bottom-solucoes-home.png') center top;
+	position: relative;
+	z-index: 11;
+}
+
+/*---------------------Fim Soluções Home---------------------*/
+
+
+
+#hightouch #wrap-conheca-nos
+{
+	/*height: 452px;*/
+	background: url(img/hi-bg-red.png) center bottom no-repeat #cb0f16;
+	text-align: left;
+	position: relative;
+	z-index: 10;
+}
+
+#hightouch #wrap-conheca-nos .row-fluid
+{
+	margin-top: 230px;
+	margin-bottom: 230px;
+}
+
+#hightouch #wrap-conheca-nos img
+{
+	float: right;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	margin-right: 90px;
+}
+
+#hightouch #wrap-conheca-nos img.appeared
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	margin-right: 0;
+}
+
+#hightouch #wrap-conheca-nos #wrap-texto
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+}
+
+#hightouch #wrap-conheca-nos #wrap-texto.appeared
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#hightouch #wrap-conheca-nos p
+{
+	color: #ebbaba;
+	position: relative;
+	padding-left: 0;
+	margin-top: 10px;
+	line-height: 28px;
+	font-family: 'ralewayregular', sans-serif;
+	font-size: 24px;
+}
+
+#hightouch #wrap-conheca-nos p:before,
+#hightouch #wrap-conheca-nos p:after
+{
+	content: " ";
+	width: 22px;
+	height: 18px;
+	display: block;
+	background: url(img/hi-icon-aspas-left.png);
+	position: absolute;
+	left: -32px;
+	top: -2px;
+}
+
+#hightouch #wrap-conheca-nos p:after
+{
+	background: url(img/hi-icon-aspas-right.png);
+	left: auto;
+	top: auto;
+	right: -32px;
+	bottom: 5px;
+}
+
+#hightouch #wrap-conheca-nos a
+{
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	padding: 20px;
+	font-size: 32px;
+	color: #b60d13;
+	background: white;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+	font-weight: bolder;
+}
+
+#hightouch #wrap-conheca-nos a:hover
+{
+	padding: 15px 20px 25px 20px;
+}
+
+#hightouch #bottom-conheca-nos
+{
+	background: url('img/hi-bg-bottom-conhecanos-home.png') center top;
+	position: relative;
+	z-index: 1;
+}
+
+/*-----------------------Fim Wrap Conheça-nos-----------------------*/
+
+
+
+#hightouch #wrap-case-principal
+{
+	height: 505px;
+	padding: 0;
+}
+
+#hightouch #wrap-case-principal .row-fluid 
+{
+	background: url('img/hi-loading.gif ') no-repeat center;
+}
+
+#hightouch #wrap-case-principal #img-case 
+{
+	height: 505px;
+	background: no-repeat top center;
+	background-size: cover;
+}
+
+#hightouch #wrap-case-principal #img-case .figcaption
+{
+	height: 100%;
+	padding-top: 0.1px;
+}
+
+#hightouch #wrap-case-principal #img-case .figcaption h2
+{
+	font-size: 44px;
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	padding-top: 45px;
+	font-weight: normal;
+}
+
+#hightouch #wrap-case-principal #img-case .figcaption > p
+{
+	line-height: 23px;
+	margin-bottom: 60px;
+}
+
+/*--------------------------------Fim Case principal--------------------------------*/
+
+
+#hightouch #wrap-topo-case
+{
+	height: 340px;
+}
+
+#hightouch #wrap-topo-case .row-fluid
+{
+	margin-top: 99px;
+	margin-bottom: 100px;
+}
+
+#hightouch #wrap-topo-case figure
+{
+	margin: 0;
+}
+
+#hightouch #wrap-topo-case img
+{
+	width: 138px;
+	height: 138px;
+	float: right;
+	display: inline-block;
+}
+
+#hightouch #wrap-topo-case p
+{
+	margin-top: 44px;
+	line-height: 25px;
+}
+
+/*--------------------------------Fim Wrap Topo Case--------------------------------*/
+
+
+#hightouch #wrap-case
+{
+	padding: 0;
+}
+
+#hightouch #wrap-case #grade-cases
+{
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100%;
+	background: url(img/hi-bg-home.jpg);
+	background-size: cover;
+}
+
+#hightouch #wrap-case #grade-cases li
+{
+	width: 33% !important;
+	height: 407px;
+	margin: 3px 0.15%;
+	position: relative;
+}
+
+#hightouch #wrap-case #grade-cases li h2,
+#hightouch #wrap-case #grade-cases li h3
+{
+	margin: 24px 0 30px 33px;
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	font-size: 46px;
+	color: #a1a1a1;
+	font-weight: normal;
+}
+
+#hightouch #wrap-case #grade-cases li h2
+{
+	color: white;
+	margin-bottom: 25px;
+}
+
+#hightouch #wrap-case #grade-cases li #wrap-texto
+{
+	color: #f1d6d7;
+	margin-left: 33px;
+	line-height: 24px;
+	padding-right: 30px;
+}
+
+#hightouch #wrap-case #grade-cases li .ver-mais-white
+{
+	margin-left: 33px;
+	margin-top: 33px;
+}
+
+#hightouch #wrap-case #grade-cases li .case-normal,
+#hightouch #wrap-case #grade-cases li .case-hover
+{
+	height: 407px;
+	background: url(img/hi-bg-cases.png);
+	padding-top: 0.1px;
+}
+
+#hightouch #wrap-case #grade-cases li .case-normal figure
+{
+	height: 313px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#hightouch #wrap-case #grade-cases li .case-normal .img-logo
+{
+	top: 42%;
+	position: relative;
+}
+
+
+#hightouch #wrap-case #grade-cases li .tag-social
+{
+	width: 107px;
+	height: 107px;
+	display: block;
+	background: url(img/hi-tag-social.png) no-repeat top center;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+
+#hightouch #wrap-case #grade-cases li .case-hover
+{
+	background: url(img/hi-bg-cases-hover.png);
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	margin: 0;
+}
+
+#hightouch #wrap-case #grade-cases li .case-hover h3
+{
+	color: #eabcbd;
+}
+
+
+
+#hightouch #wrap-case #grade-cases li:hover .case-normal
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+}
+
+#hightouch #wrap-case #grade-cases li:hover .case-hover
+{
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#hightouch #wrap-case #grade-cases li:hover .tag-social
+{
+	background-position: bottom center;
+}
+
+
+
+#hightouch #wrap-case .bg-fim-cases
+{
+	height: 12px;
+	margin-bottom: -12px;
+	display: block;
+	position: relative;
+	z-index: 1;
+	background: url(img/hi-bg-seta-fim-case.png) center;
+}
+
+
+
+/*-------------------------Fim Cases-------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE SOBRE A HI*/
+
+#page-hi #wrap-header-hi
+{
+	background: url('img/hi-header-sobre-a-hi.jpg') no-repeat center;
+	background-size: cover;
+	height: 643px;
+	position: fixed;
+	z-index: -1;
+	top: 80px;
+	left: 0;
+	right: 0;
+}
+
+#page-hi #wrap-porque
+{
+	margin-top: 723px;
+	/*height: 1000px;*/
+	background: url('img/hi-bg-cinza.jpg') no-repeat white center bottom;
+	padding-top: 0.1px;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+#page-hi #wrap-porque:before
+{
+	content: '';
+	background: url('img/hi-bg-top-porque.png') center no-repeat;
+	width: 100%;
+	height: 12px;
+	padding: 0 20px;
+	margin-left: -20px;
+	margin-top: -12px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+#page-hi #wrap-porque:after
+{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -24px;
+	margin-left: -6px;
+	border: 12px solid transparent;
+	border-top-color: #f6f6f6;
+}
+
+#page-hi #wrap-porque h2
+{
+	background-size: contain !important;
+	background-position: center !important;
+	text-indent: -9999px;
+	width: 156px;    
+	height: 156px;    
+	display: block;
+	margin: 0 auto;
+}
+
+#page-hi #wrap-porque p
+{
+	margin-top: 30px;
+	font-size: 22px;
+	color: #666;
+	font-family: 'ralewayregular', sans-serif;
+	line-height: 24px;
+}
+
+#page-hi #wrap-porque .porque,
+#page-hi #wrap-porque .como,
+#page-hi #wrap-porque .oque
+{
+	margin-top: 100px;
+}
+
+#page-hi #wrap-porque .porque h2
+{
+	background: url('img/hi-icon-por-que.png') no-repeat;
+}
+
+#page-hi #wrap-porque .como h2
+{
+	background: url('img/hi-icon-como.png') no-repeat;
+}
+
+#page-hi #wrap-porque .como .right
+{
+	float: right;
+}
+
+#page-hi #wrap-porque .como .span2
+{
+	margin-right: 17.094017094017094%;
+	margin-left: 2.564102564102564%;
+}
+
+#page-hi #wrap-porque .como p
+{
+	text-align: right;
+}
+
+#page-hi #wrap-porque .oque h2
+{
+	background: url('img/hi-icon-o-que.png') no-repeat;
+}
+
+/*FIM PAGE CONTATO*/
+
+
+
+
+
+
+
+
+/*PAGE CONTATO*/
+
+#page-contato #map
+{
+	width: 100%;
+	height: 550px;
+}
+
+#page-contato #topo-bg-form
+{
+	background: url('img/hi-topo-bg-form-contato.png') center top;
+	margin-top: -95px;
+	height: 12px;
+	position: relative;
+}
+
+#page-contato #wrap-form
+{
+	background: url('img/hi-bg-form-contato.jpg') no-repeat center bottom #EC1B24;
+	position: relative;
+}
+
+#page-contato #wrap-form #wrap-endereco
+{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+#page-contato #wrap-form #wrap-endereco figure
+{
+	text-align: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+#page-contato #wrap-form #wrap-endereco address p
+{
+	line-height: 22px;
+	color: white;
+}
+
+#page-contato #wrap-form #form
+{
+	background: white;
+	height: 696px;
+	padding: 0 30px;
+}
+
+#page-contato #wrap-form #form .alert
+{
+	font-family: "OpenSans" sans-serif;
+	display: none;
+}
+
+#page-contato #wrap-form #form form
+{
+	margin: 50px auto 0;
+}
+
+#page-contato #wrap-form #form form input,
+#page-contato #wrap-form #form form textarea
+{
+	font-family: "OpenSans" sans-serif;
+
+	background: url('img/hi-bg-input.jpg') repeat-x #f7f7f7;
+	height: 30px;
+	width: 95%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#page-contato #wrap-form #form form textarea
+{
+	resize: none;
+	height: 120px;
+	padding-top: 10px;
+}
+
+#page-contato #wrap-form #form form input[type="submit"]
+{
+	width: 100%;
+	background-image: none;
+	background: #ed1c24;
+	border: 0;
+	height: 40px;
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	color: white;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+#page-contato #wrap-form #form form input[type="submit"]:hover
+{
+	background: #9C0A10;
+}
+
+#page-contato #wrap-form #form form label
+{
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	color: #0095da;
+	font-size: 20px;
+}
+
+#page-contato #wrap-form #form form label.error
+{
+	color: #ed1c24;
+	font-size: 16px;
+	margin-top: -10px;
+}
+
+/*FIM PAGE CONTATO*/
+
+
+
+
+
+
+/*PAGE SINGLE CASE*/
+
+.page-single-case ul,
+.page-single-case ol
+{
+	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+}
+
+.page-single-case ul li,
+.page-single-case ol li
+{
+	margin-bottom: 20px;
+}
+
+.page-single-case ol
+{
+	counter-reset:li; /* Initiate a counter */
+	margin: 0;
+}
+
+.page-single-case ol li
+{
+	list-style: none;
+}
+
+.page-single-case ul
+{
+	margin: 15px;
+}
+
+.page-single-case ul li
+{
+	list-style: url('img/hi-list-style-arrow.png');
+}
+
+.page-single-case ol li:before
+{
+	content: counter(li)  ". "; /* Use the counter as content */
+	counter-increment: li; 
+	font-family: "TarzanaB", "Browallia New", sans-serif;
+	font-size: 26px;
+	color: white;
+}
+
+.page-single-case h2,
+.page-single-case h3
+{
+	font-family: "Tarzana", "Browallia New", sans-serif;
+	font-size: 46px;
+	font-weight: normal;
+}
+
+.page-single-case p
+{
+	line-height: 24px;
+}
+
+.page-single-case #wrap-icon
+{
+	text-align: center;
+}
+
+.page-single-case #wrap-case-principal .row-fluid
+{
+	position: fixed;
+	z-index: -1;
+}
+
+.page-single-case #wrap-descricao-case
+{
+	background: #FFF;
+}
+
+.page-single-case #wrap-resumo-case .span3,
+.page-single-case #wrap-resumo-case .span9
+{
+	float: right;
+}
+
+.page-single-case #wrap-descricao-case h3
+{
+	font-size: 34px;
+	color: #666;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.page-single-case #bottom-descricao,
+.page-single-case #bottom-resumo,
+.page-single-case #bottom-objetivo
+{
+	height: 12px;
+	margin-bottom: -12px;
+	position: relative;
+}
+
+.page-single-case #bottom-descricao
+{
+	background: url('img/hi-bg-bottom-descricao-case.png') center top;
+}
+
+.page-single-case #bottom-resumo
+{
+	background: url('img/hi-bg-bottom-resumo-case.png') center top;
+}
+
+.page-single-case #bottom-objetivo
+{
+	background: url('img/hi-bg-bottom-objetivo-case.png') center top;
+}
+
+.page-single-case #wrap-descricao-case,
+.page-single-case #wrap-resumo-case,
+.page-single-case #wrap-objetivo-case,
+.page-single-case #wrap-agencia-case
+{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.page-single-case #wrap-resumo-case
+{
+	background: #f2f2f2
+}
+
+.page-single-case #wrap-resumo-case h2
+{
+	margin-bottom: 30px;
+}
+
+.page-single-case #wrap-resumo-case #wrap-texto
+{
+	text-align: right;
+}
+
+.page-single-case #wrap-objetivo-case
+{
+	background: #0095da;
+}
+
+.page-single-case #wrap-objetivo-case h1,
+.page-single-case #wrap-objetivo-case h2,
+.page-single-case #wrap-objetivo-case h3,
+.page-single-case #wrap-objetivo-case h4,
+.page-single-case #wrap-objetivo-case h5,
+.page-single-case #wrap-objetivo-case h6
+{
+	color: #BFDCF2;
+	font-size: 26px;
+	margin-top: 20px;
+}
+
+.page-single-case #wrap-objetivo-case a
+{
+	color: white;
+}
+
+.page-single-case #wrap-objetivo-case figure
+{
+	margin-top: -25px;
+}
+
+.page-single-case #wrap-objetivo-case figure,
+.page-single-case #wrap-objetivo-case h2
+{
+	text-align: center;
+}
+
+.page-single-case #wrap-objetivo-case h2
+{
+	color: white;
+	margin: 30px 0 60px;
+}
+
+.page-single-case #wrap-objetivo-case p,
+.page-single-case #wrap-objetivo-case ul,
+.page-single-case #wrap-objetivo-case ol
+{
+	color: #bfdcf2;
+}
+
+.page-single-case #wrap-objetivo-case .span4
+{
+	margin-top: 25px;
+	padding-bottom: 60px;
+}
+
+.page-single-case #wrap-objetivo-case .span4:hover
+{
+	background: #0086c4;
+}
+
+.page-single-case #wrap-objetivo-case .span4:hover figure
+{
+	margin-top: -35px;
+}
+
+.page-single-case #wrap-objetivo-case .span4:hover h2
+{
+	margin-top: 40px;
+}
+
+.page-single-case #wrap-objetivo-case #wrap-text
+{
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.page-single-case #wrap-agencia-case
+{
+	padding-bottom: 120px;
+	background: white;
+}
+
+.page-single-case #wrap-agencia-case h2,
+.page-single-case #wrap-agencia-case figure
+{
+	text-align: center;
+}
+
+.page-single-case #wrap-agencia-case h2
+{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.page-single-case #wrap-agencia-case a:hover img
+{
+	margin-top: -5px;
+	padding-bottom: 5px;
+}
+
+
+
+/*FIM PAGE SINGLE CASE*/
+
+
+
+
+
+#footer
+{
+	height: 529px;
+	background: url(img/hi-bg-map-footer-red.jpg) center top;
+	background-size: cover;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#footer.home
+{
+	position: relative;
+	background: url(img/hi-bg-map-footer.jpg) center top;
+	background-size: cover;
+}
+
+#footer.home .address
+{
+	background: url(img/hi-bg-azul-ball-footer.png);
+}
+
+#footer.home .icone-fale:hover p,
+#footer.home .icone-social:hover p
+{
+	background: #0095da;
+	color: white !important;
+}
+
+#footer.home .icone-fale i,
+#footer.home .icone-social i
+{
+	background: #0095da;
+}
+
+#footer.home .icone-fale p,
+#footer.home .icone-social p
+{
+	color: #0095da;
+}
+
+#footer.home .address p
+{
+	color: white;
+}
+
+
+
+
+/*STANDARD PAGE*/
+
+
+
+
+#def-page
+{
+	padding-top: 220px;
+	padding-bottom: 140px;
+}
+
+#def-page
+{
+	padding-top: 220px;
+	padding-bottom: 140px;
+}
+
+#def-page figure.icone-def-page img
+{
+	margin: 0 auto;
+	display: block;
+}
+
+#def-page h2.titulo-def-page
+{
+	margin-bottom: 40px;
+	font-size: 50px;
+}
+
+#def-page p
+{
+	font-size: 14px;
+}
+
+/*FIM STANDARD PAGE*/
+
+
+
+
+
+
+
+/*PAGE COMEMORACAO E HISCHOOL*/
+
+
+
+
+.comemoracao #intro,
+.hischool #intro
+{
+	min-height: 100%;
+	background: url('img/hi-bg-intro-comemoracao.jpg') no-repeat top center;
+	background-size: cover;
+	margin-bottom: -103px; /*altura do menu*/
+}
+
+.comemoracao #intro h2,
+.hischool #intro h2
+{
+	height: 125px;
+	text-indent: -9999px;
+	background: url('img/hi-logo-comemoracao.png') no-repeat left center;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-top: 104px;
+	margin-bottom: 55px;
+}
+
+.comemoracao #intro h3,
+.comemoracao #intro h4,
+.hischool #intro h3,
+.hischool #intro h4
+{
+	font-weight: normal;
+	font-family: "ralewaylight", sans-serif;
+	font-size: 36px;
+	color: white;
+}
+
+.comemoracao #intro h4,
+.hischool #intro h4
+{
+	margin-top: 20px;
+	margin-bottom: 163px;
+	font-size: 32px;
+	color: #bbb;
+	line-height: 32px;
+}
+
+.comemoracao #cases,
+.hischool #escolas
+{
+	background: #0081c4;
+	/*min-height: 100%;*/
+	position: relative;
+}
+
+.comemoracao #cases:after
+{
+	content: none;
+}
+
+.comemoracao #cases #titulo,
+.comemoracao #outros-clientes #titulo,
+.hischool #escolas #titulo,
+.hischool #mais-escolas #titulo,
+.hischool #contrapartidas #titulo
+{
+	font-family: "ralewaylight", sans-serif;
+	font-size: 58px;
+	font-weight: normal;
+	color: white;
+	margin: 50px 0 50px 80px;
+}
+
+.hischool #contrapartidas #titulo
+{
+	margin-bottom: 15px;
+}
+
+.comemoracao #cases .case
+{
+	height: 410px;
+	background: url('img/space.gif');
+	background-size: cover;
+}
+
+.comemoracao #cases .case h2
+{
+	margin-top: 45px;
+	font-family: "ralewaythin", sans-serif;
+	font-size: 84px;
+	line-height: 92px;
+	color: white;
+	font-weight: normal;
+}
+
+.comemoracao #cases .case .bg-hover
+{
+	height: 100%;
+}
+
+.comemoracao #cases .case .wrap-desc
+{
+	padding-top: 55px;
+}
+
+.comemoracao #cases .case .wrap-desc p
+{
+	display: none;
+	font-size: 26px;
+	line-height: 32px;
+	color: #008ad0;
+}
+
+.comemoracao #cases .case .wrap-desc .bt-mais
+{
+	background: white;
+	display: inline-block;
+	color: #008ad0;
+	padding: 6px 15px;
+	text-transform: uppercase;
+	display: none;
+}
+
+.comemoracao #cases .case:hover
+{
+	padding: 20px;
+}
+
+.comemoracao #cases .case:hover .bg-hover
+{
+	background: white;
+}
+
+.comemoracao #cases .case:hover .bg-hover h2
+{
+	color: #008ad0;
+}
+
+.comemoracao #cases .case:hover .wrap-desc p
+{
+	display: block;
+}
+
+
+.comemoracao #outros-clientes,
+.hischool #mais-escolas
+{
+	position: relative;
+	background: #db0f14;
+	/*min-height: 100%;*/
+	padding-bottom: 150px;
+	padding-top: 1px;
+	border-top: 2px solid white;
+}
+
+.comemoracao #outros-clientes:after
+{
+	border-top-color: #DB0F14;
+}
+
+.comemoracao #outros-clientes .container-fluid
+{
+	padding: 0 80px;
+}
+
+.comemoracao #outros-clientes ul
+{
+	margin: 0;
+	list-style: none;
+}
+
+.comemoracao #outros-clientes ul li
+{
+	padding: 80px;
+	border: 2px solid white;
+	text-align: center;
+	text-indent: -9999px;
+}
+
+
+/*FIM PAGE COMEMORACAO*/
+
+
+
+
+
+
+
+
+/*PAGE CORPORATIVO*/
+
+.corporativo #intro
+{
+	padding-top: 104px;
+	background: url('img/hi-bg-intro-corporativo.jpg') center bottom;
+	text-align: center;
+	height: 470px;
+}
+
+.corporativo #intro h2
+{
+	text-indent: -9999px;
+	height: 125px;
+	background: url('img/hi-logo-corporativo.png') no-repeat center;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.corporativo #intro p,
+.corporativo #modulos p,
+.hischool #contrapartidas p
+{
+	font-family: "ralewaylight", sans-serif;
+	font-size: 34px;
+	color: #ddd;
+	line-height: 1.2;
+}
+
+.corporativo #modulos
+{
+	padding-top: 80px;
+	padding-bottom: 170px;
+}
+
+.corporativo #modulos p,
+.hischool #contrapartidas p
+{
+	text-align: center;
+	margin-bottom: 70px;
+	color: #666;
+}
+
+.corporativo #modulos img
+{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.corporativo #desc-modulos
+{
+	background: #0081c4;
+	position: relative;
+}
+
+.corporativo #desc-modulos article
+{
+	border-bottom: 2px solid white;
+	position: relative;
+	color: white;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: url('img/hi-bg-modulo-corporativo.png') top right;
+}
+
+.corporativo #desc-modulos article p
+{
+	margin-left: -24px;
+	font-family: "ralewaylight", sans-serif;
+	font-size: 20px;
+	color: white;
+	line-height: 24px;
+}
+
+.corporativo #desc-modulos article h2
+{
+	margin-left: -24px;
+	font-family: "ralewaymedium", sans-serif;
+	font-size: 72px;
+	font-weight: normal;
+	color: white;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.corporativo #desc-modulos article ol
+{
+	counter-reset: my-badass-counter;
+	margin: 0;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: right;
+	font-family: "ralewaymedium", sans-serif;
+	font-size: 24px;
+	color: white;
+	font-style: italic;
+	list-style: none;
+}
+
+.corporativo #desc-modulos article ol li
+{
+	margin-bottom: 20px;
+	background: rgba( 0, 0, 0, 0.05 );
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.corporativo #desc-modulos article ol li:after
+{
+	content: " .0" counter(my-badass-counter);
+	counter-increment: my-badass-counter;
+	font-family: "Tarzana", sans-serif;
+	font-size: 82px;
+	font-style: normal;
+	margin-right: 80px;
+}
+
+.corporativo #desc-modulos article ol li:before
+{
+	display: none;
+}
+
+.corporativo #desc-modulos .bg-azul
+{
+	background: url('img/hi-blue-mask.png') no-repeat top left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.corporativo #desc-modulos nav
+{
+	position: absolute;
+	display: none;
+	background: white;
+	z-index: 10;
+	top: 20px;
+	left: 20px;
+}
+
+.corporativo #desc-modulos article figure
+{
+	position: relative;
+	z-index: 11;
+	margin-bottom: 100px;
+}
+
+/*FIM PAGE CORPORATIVO*/
+
+
+
+
+
+
+
+
+
+
+/*PAGE HISCHOOL*/
+
+.hischool #intro
+{
+	text-align: right;
+	background: url('img/hi-bg-intro-hischool.jpg') center bottom;
+	background-size: cover;
+}
+
+.hischool #intro h2
+{
+	text-align: left;
+	background: url('img/hi-logo-hischool.png') no-repeat right center;
+	-webkit-background-size: contain;
+	background-size: contain;
+	height: 130px;
+	margin-top: 204px;
+	margin-bottom: 45px;
+}
+
+.hischool #escolas
+{
+	padding-top: 1px;
+}
+
+.hischool #escolas .span4
+{
+	margin: 0;
+	width: 25%;
+	background-size: cover !important;
+}
+
+.hischool #escolas ul
+{
+	margin: 0;
+}
+
+.hischool #escolas ul li
+{
+	padding: 24px;
+	height: 710px;
+	position: relative;
+}
+
+.hischool #escolas ul li p
+{
+	width: 100%;
+	margin-right: -24px;
+	margin-left: -24px;
+	padding: 0 24px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "ralewaythin", sans-serif;
+	font-size: 50px;
+	line-height: 1;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+}
+
+.hischool #mais-escolas .container-fluid
+{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.hischool #mais-escolas ul
+{
+	columns: 3;
+}
+
+.hischool #mais-escolas ul li > h2
+{
+	font-family: "ralewaybold", sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.hischool #mais-escolas ul li
+{
+	font-family: "ralewayextralight", sans-serif;
+	font-size: 40px;
+	color: white;
+	list-style: none;
+	line-height: 46px;
+	margin-top: 20px;
+}
+
+.hischool #mais-escolas ul li ul
+{
+	border-left: 1px solid white;
+	padding-left: 10px;
+}
+
+.hischool #mais-escolas ul li li
+{
+	margin-top: 0;
+	font-size: 20px;
+	line-height: 34px;
+}
+
+
+.hischool #contrapartidas #titulo
+{
+	color: #008ad0;
+}
+
+.hischool #contrapartidas p
+{
+	font-size: 24px;
+	text-align: left;
+}
+
+.hischool #contrapartidas .container-fluid
+{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.hischool #contrapartidas ul
+{
+	margin: 0;
+	list-style: none;
+}
+
+.hischool #contrapartidas ul li
+{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.hischool #contrapartidas ul li article
+{
+	margin: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+.hischool #contrapartidas ul li article figure
+{
+	margin-top: -60px;
+}
+
+.hischool #contrapartidas ul li article figure img
+{
+	border: 10px solid white;
+}
+
+.hischool #contrapartidas ul h2
+{
+	font-family: "ralewayextralight", sans-serif;
+	font-size: 30px;
+	color: #666;
+	font-weight: normal;
+	padding: 0 40px;
+}
+
+.hischool #contrapartidas ul p
+{
+	text-align: center;
+	font-family: "ralewaylight", sans-serif;
+	font-size: 22px;
+	line-height: 28px;
+	color: #038ad0;
+	padding: 0 20px;
+}
+
+.hischool #contrapartidas #contate
+{
+	background: #038ad0;
+	margin-top: 20px;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+}
+
+.hischool #contrapartidas #contate:hover
+{
+	background: #db0f14;
+}
+
+.hischool #contrapartidas #contate:hover a
+{
+	text-decoration: none;
+}
+
+.hischool #contrapartidas #contate a
+{
+	padding: 20px 15px;
+	display: block;
+	color: white;
+}
+
+
+
+
+
+/*FIM PAGE HISCHOOL*/

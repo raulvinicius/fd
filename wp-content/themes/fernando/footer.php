@@ -1,8 +1,25 @@
 
 
-        <footer>
+        <footer class="container-fluid">
+            <div class="row">
+
+                <div class="vcards col-md-12">
+                    <p><i id="fone">Fone: </i>(61) 9 9631-0107</p>
+                    <p><i id="email">E-mail: </i>contato@fernandohi.com.br</p>
+                </div>
+
+            </div>
 
         </footer>
+
+        <div class="theater">
+
+            <button id="bt-fechar" class="ani-04"></button>
+            <div id="screen">
+                <div id="theater"></div>
+            </div>
+            
+        </div>
 
         <div class="padding-bot"></div>
 
