@@ -1,30 +1,28 @@
 <?php get_header(); ?>
 
-<div class="home">
+<div class="pagina home">
 
 <section class="container-fluid apresentacao bg-parallax" data-speed="15">
 	<div class="row">
 
 		<div class="logo-apresentacao col-sm-11">
-			<img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-branca.png" alt="">
+			<img src="<?php bloginfo('template_url') ?>/img/space.gif" width="274" height="189" nopin="nopin">
 		</div>
 
-		<div class="col-sm-offset-1 col-sm-4">
-			<h2 id="slogan">Palestras que geram valores</h2>
-			<ul>
+		<div class="col-sm-offset-1 col-sm-5 col-xs-10 col-xs-offset-1">
+			<h2 id="slogan">Seja [hi]!</h2>
+			<ul class="col-md-10 col-sm-11 col-xs-10">
 				<li class="highlight ani-06">
-					<i><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-icon-dm.png" alt=""></i>
-					<h2>Mais de <span>80.000 pessoas</span> já ouviram sobre valores humanos nas palestras</h2>
+					<!-- <i><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-icon-dm.png" nopin="nopin"></i> -->
+					<h2>Descubra sua <strong>grandeza</strong></h2>
 				</li>
 
 				<li class="ani-06">
-					<i><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-icon-dm.png" alt=""></i>
-					<h2><span>40 Empresas</span> já aumentaram o rendimento e a satisfação de seus funcionários</h2>
+					<h2>Desenvolva <strong>Competências Socioemocionais</strong></h2>
 				</li>
 
 				<li class="ani-06">
-					<i><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-icon-dm.png" alt=""></i>
-					<h2>O primeiro palestrante do Brasil a falar igualmente para <span>empresas</span> e <span>jovens</span></h2>
+					<h2>Conheça nossas <strong>soluções</strong></h2>
 				</li>
 
 			</ul>
@@ -41,113 +39,99 @@
 	<div class="row">
 		<div class="container">
 			<div class="col-sm-offset-2 col-sm-8">
-				<figure class="circle"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-foto-fernando.png" alt=""></figure>
-				<h3>Fala pessoal! Sou <span>Fernando duarte</span></h3>
-				<h6>Palestrante há mais de 20 anos, já falei para pessoas de diversas idades, dentro e fora do Brasil.</h6>
+				<figure class="circle"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-foto-fernando.png" nopin="nopin"></figure>
+				<h3 class="col-xs-12"><span>Fala pessoal!</span><br>Bem vindos ao meu site!</h3>
+				<h6 class="col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2">Sou palestrante há mais de 20 anos e já falei para pessoas de diversas idades, dentro e fora do Brasil.</h6>
 
-				<p>Com vasta experiência em empreendedorismo, sempre fui apaixonado pela capacidade transformadora das pessoas ao entrarem em contato com as <strong>competências socioemocionais</strong>.</p>
+				<p class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1">Sou um apaixonado pela capacidade transformadora das pessoas. Há mais de <strong>20 anos</strong> realizo palestras que geram valor para jovens e organizações e com o projeto <strong>[hi]School</strong> desenvolvi uma metodologia para inspirar e desenvolver suas <strong>Competências Socioemocionais - CSEs</strong></p>
 
-				<a class="bt" href="<?php bloginfo('url') ?>/quem-sou">Conheça mais da minha a história</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<section class="container-fluid frases">
+<section class="container-fluid socioemocional">
 	<div class="row">
 		<div class="container">
 			<div class="row">
-				<div id="box" class="col-md-8 col-md-offset-2 carousel">
-					<ul class="col-md-10 col-md-offset-1">
-						<li class="highlight">
-							<q>
-								<span>O passado é história, o futuro é ficção, o presente é real. É tudo que temos para deixar nossas melhores marcas.</span>
-								<small class="author">Fernando Duarte</small>
-							</q>
-						</li>
-						<li>
-							<q>
-								<span>O primeiro valor para transformar qualquer pessoa ou nação é o valor do amor.</span>
-								<small class="author">Fernando Duarte</small>
-							</q>
-						</li>
-					</ul>
-					<div class="contador-ferds col-md-12">
-						<button id="ant"></button>
-						<div id="item" class="highlight"></div>
-						<div id="item"></div>
-						<button id="pro"></button>
-					</div>
+				<div id="box" class="col-md-10 col-md-offset-1">
+					<i id="icon-duvida"></i>
+					<h3 class="col-md-10 col-md-offset-1"><span>Competências Socioemocionais?!</span></h3>
+					<h6 class="col-md-10 col-md-offset-1">Entenda melhor o que são e como elas podem melhorar a sua vida em diversos aspectos</h6>
+					<a class="bt" href="<?php bloginfo('url') ?>/artigos/competencias-socioemocionais">Vamos lá!</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="container-fluid aspectos bg-parallax" data-speed="10">
+<section class="container-fluid depoimentos bg-parallax" data-speed="10">
 	<div class="row">
 		<div class="container">
 			<div class="row">
-				<h3 class="col-md-8 col-md-offset-2">Palestras <span>Emocionantes</span></h3>
-				<h6 class="col-md-8 col-md-offset-2">Palestras corporativas customizadas de acordo com a necessidade específica de cada evento/empresa</h6>
+				<h3 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Palestras <span>Emocionantes</span></h3>
+				<h6 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Experiências de aprendizagem marcantes, feitas sob medida para as necessidades de cada cliente</h6>
 			</div>
 		</div>
 	</div>
-	<div id="w-aspectos" class="row">
+	<div id="w-depoimentos" class="row fd-depoimentos">
 		<div class="container">
-			<ul class="col-md-12">
-				<div class="col-md-5 col-md-offset-1">
-					<li>Fortalecem o clima organizacional</li>
-					<li>Transformam problemas em oportunidades</li>
-					<li>Destacam perspectivas para lidar com mudanças</li>
-					<li>Aumentam o engajamento dos colaboradores</li>
+<div class="row">
+
+			<div id="box" class="col-xs-8 col-xs-offset-2 carousel" data-t="7000">
+				<ul class="col-md-10 col-md-offset-1">
+					<li>
+						<q>
+							<span>De uma forma criativa, acessível e encantadora aborda temas de grande interesse dos adolescentes(…). São atividades belíssimas que merecem reconhecimento e apoio, pois além das experiências que são compartilhadas, há um aprendizado recíproco, há cidadania e há doação de tempo, há valores sendo divulgados, exercidos e compartilhados, há essência, há amor! </span>
+							<small class="author">Cristina Marques <span>Orientadora do Ensino Médio Leonardo da Vinci</span></small>
+						</q>
+					</li>
+					<li>
+						<q>
+							<span>A importância de despertar para uma consciência mais ampla e melhor, mais humana. Mudança de valor, retorno as raízes, momento de reflexão. Ainda há tempo para mudarmos para nosso bem e dos outros.</span>
+							<small class="author">Martelleto <span>Gerente Regional, SERPRO BH</span></small>
+						</q>
+					</li>
+					<li>
+						<q>
+							<span>Maravilhoso poder reconhecer pessoas importantes da minha vida. Me inspirou a continuar fazendo a diferença no mundo.</span>
+							<small class="author">Eliane Santos <span>Gerente de Recursos Humanos, BRBCard</span></small>
+						</q>
+					</li>
+				</ul>
+
+				<div class="contador-ferds col-md-12">
+					<button id="ant" class="ani-06"></button>
+					<div id="item" class="ani-04"></div>
+					<div id="item" class="ani-04"></div>
+					<div id="item" class="ani-04"></div>
+					<button id="pro" class="ani-06"></button>
 				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<li>Criatividade e inovação para solução de problemas</li>
-					<li>Desenvolvimento pessoal e Mindset socioemocional</li>
-					<li>Melhoram a comunicação e integração de equipes</li>
-					<li>Desenvolvem a atitude de liderança</li>
-				</div>
-				<div class="clearfix"></div>
-			</ul>
+			</div>
+</div>
+
+		</div>
+		<div id="clientes" class="container">
+
+			<div class="row">
+				<ul class="col-md-12">
+					<li id="caixa" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-caixa.png)"><p>Caixa Econômica Federal</p></li>
+					<li id="iesb" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-iesb.png)"><p>IESB</p></li>
+					<li id="uniceub" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-uniceub.png)"><p>UniCEUB</p></li>
+					<li id="brb-card" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-brbcard.png)"><p>BRB Card</p></li>
+					<li id="grafica-coronario" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-coronario.png)"><p>Gráfica Coronário</p></li>
+					<li id="agil" style="background-image: url(<?php bloginfo('template_url')?>/img/fernando-duarte-logo-agil.png)"><p>Ágil</p></li>
+					<li id="lk">
+						<a href="<?php bloginfo(url) ?>/hischool#escolas" class="bt">Veja mais Clientes</a>
+					</li>
+				</ul>
+			</div>
+			
 		</div>
 	</div>
 </section>
 
-<section class="container-fluid depoimentos">
-	<div class="row">
-		<div class="container">
-			<div id="bg-box" class="row">
-				<div id="box" class="col-md-6 col-md-offset-3">
-					<div id="inner" class="carousel">
-						<img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-aspas-depoimentos.png">
-						<ul>
-							<li class="highlight">
-								<q>
-									<span>O empenho em analisar a consulta aos diversos militantes prepara-nos para enfrentar situações atípicas decorrentes das novas proposições</span>
-									<small class="author">Carlos McFinn <span>Gerente no BRB</span></small>
-								</q>
-							</li>
-							<li>
-								<q>
-									<span>Por outro lado, a estrutura atual da organização auxilia a preparação e a composição dos procedimentos normalmente adotados.</span>
-									<small class="author">Julia Calahan <span>Caixa Econômica Federal</span></small>
-								</q>
-							</li>
-						</ul>
-						<div class="contador-ferds">
-							<button id="ant"></button>
-							<div id="item" class="highlight"></div>
-							<div id="item"></div>
-							<button id="pro"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="container-fluid solucoes bg-parallax" data-speed="10">
 	<div class="row">
@@ -159,12 +143,11 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-offset-2 col-sm-8">
-									<div class="tit">
-										<h3>Soluções</h3>
-										<h6>Muito mais do que palestras! Conheça nossas soluções para o Ensino Médio, empresas, eventos e oratória, desenvolvidos especialmente para buscar o melhor de cada um.</h6>
+									<div class="tit col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+										<h2>Soluções</h2>
+										<h3><strong>Conheça nossas soluções</strong></h3>
+										<h6>Nossas atividades são desenvolvidas para ativar as <strong>CSE’s</strong> em profissionais, educadores e jovens, utilizando metodologia própria para buscar o melhor de cada um</h6>
 									</div>
-									<p>Me diga o que você ou sua empresa precisam para avançar mais um degrau</p>
-									<input type="text" id="solucao" placeholder="Ex.: comunicar melhor minhas ideias">
 								</div>
 							</div>
 						</div>
@@ -172,76 +155,81 @@
 				</div>
 
 				<div class="col-sm-offset- col-sm-12">
-					<ul>
-
+					<ul class="produtos">
 						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-dm.png" alt=""></i>
-									<p class="ani-02">Deixando Marcas</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
+							<article>
+								<div class="produto" data-i="3,2">
+									<div class="conteudo">
+										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-dm.png" nopin="nopin"></i>
+										<h2 class="ani-02">Deixando Marcas</h2>
+										<h6>Atitudes e Valores</h6>
+										<span id="mais" class="ani-02"><a href="<?php bloginfo('url') ?>/deixando-marcas" class="ani-02">Saber mais</a></span>
+										<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02 ancora-ferds">Fazer um <br>orçamento</a></span>
+									</div>
 								</div>
-							</div>
+							</article>
 						</li>
 
 						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-av.png" alt=""></i>
-									<p class="ani-02">Alçando </br>Voo</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
+							<article>
+								<div class="produto" data-i="3,2">
+									<div class="conteudo">
+										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-av.png" nopin="nopin"></i>
+										<h2 class="ani-02">Alçando Voo</h2>
+										<h6>Métodos e Hábitos</h6>
+										<span id="mais" class="ani-02"><a href="<?php bloginfo('url') ?>/alcando-voo" class="ani-02">Saber mais</a></span>
+										<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02 ancora-ferds">Fazer um <br>orçamento</a></span>
+									</div>
 								</div>
-							</div>
+							</article>
 						</li>
 
-						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-jh.png" alt=""></i>
-									<p class="ani-02">Jornada </br>do Herói</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
-								</div>
-							</div>
-						</li>
-
-						<div class="clearfix"></div>
+						<div class="clearfix hidden"></div>
 
 						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-rt.png" alt=""></i>
-									<p class="ani-02">Rumo ao </br>Topo</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
+							<article>
+								<div class="produto" data-i="3,2">
+									<div class="conteudo">
+										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-jh.png" nopin="nopin"></i>
+										<h2 class="ani-02">Jornada do Herói</h2>
+										<h6>Escolhas e Princípios</h6>
+										<span id="mais" class="ani-02"><a href="<?php bloginfo('url') ?>/jornada-do-heroi" class="ani-02">Saber mais</a></span>
+										<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02 ancora-ferds">Fazer um <br>orçamento</a></span>
+									</div>
 								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-04"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-delions.png" alt=""></i>
-									<p class="ani-04">Delions</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
-								</div>
-							</div>
+							</article>
 						</li>
 
 						<div class="clearfix"></div>
 
 						<li>
-							<div class="produto">
-								<div class="conteudo">
-									<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-hi-school.png" alt=""></i>
-									<p class="ani-02">[hi] School</p>
-									<span id="mais" class="ani-02"><a href="#" class="ani-02">Saber mais</a></span>
-									<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02">Fazer um <br>orçamento</a></span>
+							<article>
+								<div class="produto" data-i="3,2">
+									<div class="conteudo">
+										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-rt.png" nopin="nopin"></i>
+										<h2 class="ani-02">Rumo ao Topo</h2>
+										<h6>Carreira e Futuro</h6>
+										<span id="mais" class="ani-02"><a href="<?php bloginfo('url') ?>/rumo-ao-topo" class="ani-02">Saber mais</a></span>
+										<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02 ancora-ferds">Fazer um <br>orçamento</a></span>
+									</div>
 								</div>
-							</div>
+							</article>
+						</li>
+
+						<div class="clearfix hidden"></div>
+
+						<li>
+							<article>
+								<div class="produto" data-i="3,2">
+									<div class="conteudo">
+										<i class="ani-02"><img src="<?php bloginfo('template_url') ?>/img/fernando-duarte-logo-dl.png" nopin="nopin"></i>
+										<h2 class="ani-02">Delions</h2>
+										<h6>Comunicação e Criatividade</h6>
+										<span id="mais" class="ani-02"><a href="<?php bloginfo('url') ?>/delions" class="ani-02">Saber mais</a></span>
+										<span id="orcamento" class="ani-02"><a href="<?php bloginfo('url') ?>/#contato" class="ani-02 ancora-ferds">Fazer um <br>orçamento</a></span>
+									</div>
+								</div>
+							</article>
 						</li>
 
 					</ul>
@@ -255,92 +243,15 @@
 
 <section class="video">
 
-	<button class="ani-04" id="play" data-id="xQQ0PFpMVcw">Assista ao vídeo</button>
+	<button class="ani-04 play-ferds" data-id="xMY4FOiDl3M">Assista ao vídeo</button>
 	<div id="msk"></div>
 	<div id="tv" class="screen mute"></div>
 
 	
 </section>
 
-<section id="contato" class="container-fluid contato">
-	<div class="row">
-		<div class="container">
-			<div class="row">
-				
-				<div id="box" class="col-sm-offset-3 col-sm-6" style="padding: 0;">
-
-					<h3 class="col-md-10 col-md-offset-1">garanta o sucesso do seu evento com <span>palestras emocionantes</span></h3>
-
-					<form class="js" action="<?php bloginfo('url')?>/envia-email" method="POST" role="form">
-						
-						<div class="form-group" id="assunto">
-							<label for="input-ssnt1" class="ani-04" id="checked">Fazer um orçamento</label><label for="input-ssnt2" class="ani-04">Tirar dúvidas</label>
-
-							<input type="radio" name="ssnt" id="input-ssnt1" value="Orçamento" checked="checked" />
-							<input type="radio" name="ssnt" id="input-ssnt2" value="Dúvida" />
-						</div>
-
-						<div class="form-group" id="dados">
-                            <div id="campo-nome" class="linha">
-                                <label class="" for="input-nm">Nome</label>
-                                <div id="w-input" class="required">
-                                    <input type="text" class=" required color-b" id="input-nm" name="nm">
-                                </div>
-                            </div>
-                            <div id="campo-email" class="linha">
-                                <label class="" for="input-ml">E-mail</label>
-                                <div id="w-input" class="required">
-                                    <input type="text" class="required color-b" id="input-ml" name="ml">
-                                </div>
-                            </div>
-                            <div id="campo-mensagem" class="linha">
-                                <label class="" for="input-mnsg">Mensagem</label>
-                                <div id="w-input" class="required">
-                                    <textarea name="mnsg" id="input-mnsg" class="auto-resize required color-b"></textarea>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>    
-                        </div>
-                    
-                        <input type="submit" class="ani-04 black" value="Enviar">
-
-                        <div id="notificacoes">
-                            
-                            <div id="processando" class="ani-04">
-
-                                <span>Enviando seu e-mail...</span>
-                                <div>
-                                    <!-- <img src="<?php bloginfo('template_url') ?>/img/premiomerito-loading.gif"> -->
-                                </div>
-                                
-                            </div>
-
-                            <div id="sucesso" class="ani-04">
-
-                                <span><span id="green">Obrigado pelo contato.</span> Seu e-mail foi enviado, responderemos em breve.</span>
-                                <button type="button" id="fecha-notificacao" class="merito-bt bg-cor-1 bg-cor-1-hover">OK</button>
-                                
-                            </div>
-
-                            <div id="erro" class="ani-04">
-
-                                <span>Houve um erro ao enviar seu e-mail, por favor, tente novamente.</span>
-                                <button type="button" id="fecha-notificacao" class="merito-bt bg-cor-1 bg-cor-1-hover">OK</button>
-                                
-                            </div>
-
-                        </div>
-
-
-					</form>
-				</div>
-
-				<div class="instrucao col-sm-offset-3 col-sm-6">Campos obrigatórios</div>
-
-			</div>
-		</div>
-	</div>
-</section>
+<?php $fraseContato = 'Entre em contato conosco: <strong>seja [hi]!</strong>' ?>
+<?php include 'contato-rodape.php' ?>
 
 </div>
 

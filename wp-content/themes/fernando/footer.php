@@ -3,12 +3,21 @@
         <footer class="container-fluid">
             <div class="row">
 
-                <div class="vcards col-md-12">
-                    <p><i id="fone">Fone: </i>(61) 9 9631-0107</p>
-                    <p><i id="email">E-mail: </i>contato@fernandohi.com.br</p>
+                <div class="secundario col-xs-1">
+                    <a id="home" href="<?php bloginfo('url') ?>">Home</a>
+                </div>
+
+                <div class="vcards col-xs-11">
+                    <p id="youtube"><i>Youtube: </i><span>YouTube</span></p>
+                    <p id="facebook"><i>Facebook: </i><span>Ferds.Duarte</span></p>
+                    <p id="email"><i>E-mail: </i><span>contato@fernandoduarte.bsb.br</span></p>
+                    <p id="fone"><i>Fone: </i><span>(61) 3248 7022</span></p>
+                    <p id="celular"><i>Celular: </i><span>(61) 9 9631-0107</span></p>
                 </div>
 
             </div>
+
+            <!-- <button class="go-top"></button> -->
 
         </footer>
 
@@ -21,7 +30,7 @@
             
         </div>
 
-        <div class="padding-bot"></div>
+        <!-- <div class="padding-bot"></div> -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src= "<?php bloginfo("template_url") ?>/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

@@ -1,0 +1,6049 @@
+/*
+Theme Name: Fernando Duarte
+Author: Humano Studio
+Author URI: http://humanostud.io
+Description: Tema desenvolvido exclusivamente para o Fernando Duarte.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: UX, UI, 
+Text Domain: fernandohi.com.br
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+
+/*----------------------FONTES----------------------*/
+
+@font-face {
+    font-family: 'clemente-hairline';
+    src: url(fonts/clementepdaa-hairline.eot);
+    src: url(fonts/clementepdaa-hairline.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdaa-hairline.woff) format('woff'),
+         url(fonts/clementepdaa-hairline.ttf) format('truetype'),
+         url(fonts/clementepdaa-hairline.svg#clementepdaa-hairline) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente';
+    src: url(fonts/clementepdai-regular.eot);
+    src: url(fonts/clementepdai-regular.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdai-regular.woff) format('woff'),
+         url(fonts/clementepdai-regular.ttf) format('truetype'),
+         url(fonts/clementepdai-regular.svg#clementepdai-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-light';
+    src: url(fonts/clementepdae-light.eot);
+    src: url(fonts/clementepdae-light.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdae-light.woff) format('woff'),
+         url(fonts/clementepdae-light.ttf) format('truetype'),
+         url(fonts/clementepdae-light.svg#clementepdae-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-italic';
+    src: url(fonts/clementepdaj-regularitalic.eot);
+    src: url(fonts/clementepdaj-regularitalic.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdaj-regularitalic.woff) format('woff'),
+         url(fonts/clementepdaj-regularitalic.ttf) format('truetype'),
+         url(fonts/clementepdaj-regularitalic.svg#clementepdaj-regularitalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clemente-heavy-italic';
+    src: url(fonts/clementepdap-heavyitalic.eot);
+    src: url(fonts/clementepdap-heavyitalic.eot?#iefix) format('embedded-opentype'),
+         url(fonts/clementepdap-heavyitalic.woff) format('woff'),
+         url(fonts/clementepdap-heavyitalic.ttf) format('truetype'),
+         url(fonts/clementepdap-heavyitalic.svg#clementepdap-heavyitalic) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ludicrous';
+    src: url(fonts/ludicrous.eot);
+    src: url(fonts/ludicrous.eot?#iefix) format('embedded-opentype'),
+         url(fonts/ludicrous.woff) format('woff'),
+         url(fonts/ludicrous.ttf) format('truetype'),
+         url(fonts/ludicrous.svg#ludicrous) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(fonts/montserrat-regular.eot);
+    src: url(fonts/montserrat-regular.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-regular.woff) format('woff'),
+         url(fonts/montserrat-regular.ttf) format('truetype'),
+         url(fonts/montserrat-regular.svg#montserrat-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-light';
+    src: url(fonts/montserrat-light.eot);
+    src: url(fonts/montserrat-light.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-light.woff) format('woff'),
+         url(fonts/montserrat-light.ttf) format('truetype'),
+         url(fonts/montserrat-light.svg#montserrat-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-ultralight';
+    src: url(fonts/montserrat-ultralight.eot);
+    src: url(fonts/montserrat-ultralight.eot?#iefix) format('embedded-opentype'),
+         url(fonts/montserrat-ultralight.woff) format('woff'),
+         url(fonts/montserrat-ultralight.ttf) format('truetype'),
+         url(fonts/montserrat-ultralight.svg#montserrat-ultralight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hipixochrome';
+    src: url(fonts/hipixochrome.eot);
+    src: url(fonts/hipixochrome.eot?#iefix) format('embedded-opentype'),
+         url(fonts/hipixochrome.woff) format('woff'),
+         url(fonts/hipixochrome.ttf) format('truetype'),
+         url(fonts/hipixochrome.svg#hipixochrome) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quadon-light';
+    src: url(fonts/quadon-light.eot);
+    src: url(fonts/quadon-light.eot?#iefix) format('embedded-opentype'),
+         url(fonts/quadon-light.woff) format('woff'),
+         url(fonts/quadon-light.ttf) format('truetype'),
+         url(fonts/quadon-light.svg#quadon-light) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quadon-regular';
+    src: url(fonts/quadon-regular.eot);
+    src: url(fonts/quadon-regular.eot?#iefix) format('embedded-opentype'),
+         url(fonts/quadon-regular.woff) format('woff'),
+         url(fonts/quadon-regular.ttf) format('truetype'),
+         url(fonts/quadon-regular.svg#quadon-regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quadon-bold';
+    src: url(fonts/quadon-bold.eot);
+    src: url(fonts/quadon-bold.eot?#iefix) format('embedded-opentype'),
+         url(fonts/quadon-bold.woff) format('woff'),
+         url(fonts/quadon-bold.ttf) format('truetype'),
+         url(fonts/quadon-bold.svg#quadon-bold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*----------------------FONTES----------------------*/
+
+
+
+
+
+/*----------------------CLASSES----------------------*/
+
+.ani-02,
+.hided,
+.appeared
+{
+    -webkit-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.ani-04
+{
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.ani-06
+{
+    -webkit-transition: 0.6s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.6s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.6s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.6s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.6s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+
+
+.ani-delay-04
+{
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.ani-delay-06
+{
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    -ms-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+.ani-delay-08
+{
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    -ms-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+
+.untouchable
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container-fluid
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.clemente-hair
+{
+    font-family: 'clemente-hairline', Arial, sans-serif;
+}
+
+.clemente-light
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+}
+
+.clemente
+{
+    font-family: 'clemente', Arial, sans-serif;
+}
+
+.clemente-i
+{
+    font-family: 'clemente-italic', Arial, sans-serif;
+}
+
+.clemente-h-i
+{
+    font-family: 'clemente-heavy-italic', Arial, sans-serif;
+}
+
+.lud
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+}
+
+.mont
+{
+    font-family: 'montserrat', Arial, sans-serif;
+}
+
+.mont-light
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+}
+
+.mont-ultralight
+{
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+}
+
+
+
+.circle
+{
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+a.bt,
+.bt-ferds
+{
+    color: #2767ab;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.bt-ferds
+{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a.bt:before,
+a.bt:after,
+.bt-ferds:before,
+.bt-ferds:after
+{
+    display: block;
+    content: "";
+    border-top: 1px solid #2767ab;
+    border-left: 1px solid #2767ab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 35%;
+    bottom: 0;
+    -webkit-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+
+a.bt:after,
+.bt-ferds:after
+{
+    left: 35%;
+    right: 0px;
+    border-top: none;
+    border-bottom: 1px solid #2767ab;
+    border-left: none;
+    border-right: 1px solid #2767ab;
+}
+
+
+a.bt:hover:before,
+.bt-ferds:hover:before
+{
+    right: 0;
+}
+
+a.bt:hover:after,
+.bt-ferds:hover:after
+{
+    left: 0;
+}
+
+.contador-ferds
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+}
+
+.contador-ferds button
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    margin: 5px;
+    background-color: #cacaca;
+}
+
+.contador-ferds button:hover,
+.contador-ferds button:active
+{
+    background-color: #dfdfdf
+}
+
+.contador-ferds button#ant
+{
+    background-image: url(img/fernando-duarte-seta-dir-contador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.contador-ferds button#pro
+{
+    background-image: url(img/fernando-duarte-seta-esq-contador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.contador-ferds #item
+{
+    display: inline-block;
+    margin: 10px;
+    background: #dedede;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.contador-ferds #item.highlight
+{
+    background: #2767ab;
+}
+
+.carousel li
+{
+    display: none;
+}
+
+.carousel li.highlight
+{
+    display: block;
+}
+
+button.go-top
+{
+    background: none;
+    background-image: url(img/gotop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    position: fixed;
+    bottom: -30px;
+    right: 15px;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+button.go-top:hover,
+button.go-top:active
+{
+    background-position: center -10%
+}
+
+button.go-top.up
+{
+    bottom: 15px;
+}
+
+.full-h
+{
+    height: 100%;
+}
+
+.bt-ferds-jh
+{
+    background: #fff;
+    text-transform: uppercase;
+    color: #566564;
+    font-size: 14px;
+    padding: 16px;
+    margin: 20px 0;
+    letter-spacing: 0.2em;
+    position: relative;
+    border: 1px solid #566564;
+    box-shadow: 0 0 0 8px white;
+}
+
+.bt-ferds-jh:before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    width: 0;
+    height: 1px;
+    background: #566564;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.bt-ferds-jh:hover:before
+{
+    width: 18px;
+}
+
+a.bt-ferds-jh
+{
+    display: inline-block;
+}
+
+a.bt-ferds-jh:hover,
+a.bt-ferds-jh:active,
+a.bt-ferds-jh:focus
+{
+    text-decoration: none;
+}
+
+.fd-depoimentos #box
+{
+    text-align: center;
+    background: #fff;
+    padding: 62px;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    margin-bottom: -80px;
+}
+
+.fd-depoimentos #box q
+{
+    position: relative;
+}
+
+.fd-depoimentos #box q:after
+{
+    display: inline;
+    content: none;
+}
+
+.fd-depoimentos #box q:before
+{
+    position: absolute;
+    top: 4px;
+    right: 106%;
+    margin-right: 15px;
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-pre-aspas-amarela.png) no-repeat center;
+    width: 31px;
+    height: 22px;
+}
+
+.fd-depoimentos #box small
+{
+    display: block;
+    font-family: 'ludicrous', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #2767ab;
+    border-top: 1px solid #dedede;
+    margin-top: 24px;
+    padding-top: 8px;
+}
+
+.fd-depoimentos #box small span
+{
+    text-transform: none;
+    font-style: italic;
+    display: block;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 14px;
+    color: #999;
+    margin-top: -5px;
+}
+
+.fd-depoimentos #box .contador-ferds
+{
+    margin-top: 25px;
+    text-align: center;
+    bottom: 25px;
+}
+
+.bate-papo .conteudo #lista-produtos
+{
+    text-align: center;
+}
+
+.bate-papo .depoimentos ul li h3
+{
+    color: #454545;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #0a6390;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.bate-papo .conteudo #lista-produtos .produto
+{
+    display: inline-block;
+    float: none;
+}
+
+.bate-papo .conteudo #lista-produtos .produto article
+{
+    position: relative;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto article:after
+{
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-splash1-bg-produto.png) no-repeat top center;
+    position: absolute;
+    left: 0;
+    top: -45px;
+    right: 0;
+    height: 48px;
+    z-index: -1;
+}
+
+.bate-papo .conteudo #lista-produtos .produto h2
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    padding: 29px;
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: -80px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto h2:after
+{
+    display: block;
+    content: '';
+    border: 1px solid white;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    left: 6px;
+    border-radius: 50%;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto ul
+{
+    text-align: left;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto h2
+{
+    height: 60px;
+    padding: 13px 30px;
+    width: auto;
+    border-radius: 50px;
+    font-size: 35px;
+    margin-top: -60px;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto h2:after
+{
+    border-radius: 50px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul .prop
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul .formato
+{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul .duracao,
+.bate-papo .conteudo #lista-produtos .produto ul .publico
+{
+    font-size: 30px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul .publico
+{
+    text-transform: uppercase;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul #tit-prop,
+.bate-papo .depoimentos #em-video #tit-prop
+{
+    display: block;
+    color: #adadad;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'montserrat-light', Arial, sans-serif;
+}
+
+.bate-papo .conteudo #lista-produtos .produto ul .conteudo-produto li
+{
+    display: inline;
+}
+
+.bate-papo .conteudo #lista-produtos.principais .produto .duracao,
+.bate-papo .conteudo #lista-produtos.principais .produto .metodologia
+{
+    padding-top: 10px;
+    border-top: 1px solid #d5d3d7;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto .descricao
+{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d5d3d7;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto .l-duracao
+{
+    border-left: 1px solid #d5d3d7;
+}
+
+.bate-papo .conteudo #lista-produtos.segmentados .produto .conteudo-produto
+{
+    border-top: 1px solid #d5d3d7;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto .metodologia li,
+.bate-papo .depoimentos #em-video #produto .fd-ht,
+.bate-papo .depoimentos #em-video #produto .fd-hs
+{
+    /*text-indent: -9999px;*/
+    display: inline-block;
+    margin: 10px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto .metodologia #ht,
+.bate-papo .depoimentos #em-video #produto .fd-ht
+{
+    background: url(img/fernando-duarte-logo-metodologia-hightouch.png);
+    width: 103px;
+    height: 30px;
+}
+
+.bate-papo .conteudo #lista-produtos .produto .metodologia #hs,
+.bate-papo .depoimentos #em-video #produto .fd-hs
+{
+    background: url(img/fernando-duarte-logo-metodologia-hischool.png);
+    width: 91px;
+    height: 28px;
+}
+
+.bate-papo .depoimentos .fd-depoimentos
+{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.bate-papo .depoimentos #box
+{
+    padding-bottom: 120px;
+    padding-top: 0;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background: #f4f4f4;
+}
+
+/*----------------------CLASSES----------------------*/
+
+
+
+
+
+
+
+
+/*----------------------KEYFRAMES----------------------*/
+
+@keyframes rodando {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+    }
+}
+
+/*----------------------KEYFRAMES----------------------*/
+
+
+
+
+
+
+/*----------------------MEDIAS----------------------*/
+
+@media (max-width: 479px) {
+
+    html body .moldura.l,
+    html body .moldura.r
+    {
+        width: 30px;
+    }
+
+    html body .moldura.l
+    {
+        border-left-width: 19px;
+    }
+
+    html body .moldura.r
+    {
+        border-right-width: 19px;
+    }
+
+    html body footer .go-top
+    {
+        left: 30px;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 630px){
+
+    body footer .vcards
+    {
+        display: none;
+    }
+
+}
+
+@media (max-width: 752px){
+
+    body .home .solucoes .produtos li
+    {
+        margin-top: 0;
+        margin-bottom: 110px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    body .quem-sou p
+    {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    body .quem-sou .timeline ul li h2
+    {
+        font-size: 40px;
+    }
+
+    body .quem-sou .timeline ul li.inverte .ano 
+    {
+        margin-left: 8.33333333%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body 
+    {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    body .fd-depoimentos #box small
+    {
+        font-size: 20px;
+    }
+
+    body .fd-depoimentos #box small span
+    {
+        font-size: 10px;
+    }
+
+    html body h3
+    {
+        font-size: 20px !important;
+    }
+
+    html body h6
+    {
+        font-size: 14px !important;
+        line-height: 1.4;
+    }
+
+
+    body .home .video button, 
+    body .video-theater button
+    {
+        font-size: 30px;
+    }
+
+    html body .menu h1 a
+    {
+        width: 47px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header .menu .nv-1
+    {
+        display: none;
+    }
+    
+    header .menu #menu-btn
+    {
+        display: block;
+    }
+
+    html body .home .apresentacao
+    {
+        min-height: 390px !important;
+    }
+
+    body .home .apresentacao ul
+    {
+        text-align: left;
+    }
+
+    body .home .apresentacao .logo-apresentacao
+    {
+        margin-left: 0;
+    }
+
+    body .home .apresentacao .logo-apresentacao img
+    {
+        height: 0;
+    }
+
+    html body .home .apresentacao #slogan
+    {
+        margin-top: 70px;
+    }
+
+    body .home .aspectos
+    {
+        height: auto;
+    }
+
+    body .home .aspectos #w-aspectos
+    {
+        position: static;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    body .home .solucoes
+    {
+        padding-bottom: 0;
+    }
+
+    body .home .solucoes .produtos
+    {
+        margin-top: 80px;
+    }
+
+    body .home .solucoes .tit h2
+    {
+        height: 60px;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+
+    body .solucoes .produtos li
+    {
+        margin-bottom: 180px;
+    }
+
+    body .quem-sou .timeline ul li.inverte .ano,
+    body .quem-sou .timeline ul li .container .col-sm-5,
+    body .quem-sou .timeline ul li.inverte .txt,
+    body .quem-sou .timeline ul li .ano,
+    body .quem-sou .timeline ul li .txt
+    {
+        text-align: left;
+    }
+
+    body .quem-sou .timeline ul li.inverte .txt ul,
+    body .quem-sou .timeline ul li .txt ul
+    {
+        direction: ltr;
+    }
+}
+
+@media (max-width: 880px) {
+
+    html body .deixando-marcas .container
+    {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    body .home .apresentacao,
+    body .home .apresentacao #over
+    {
+        -ms-background-position-x: 60%;
+        background-position-x: 60%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    body .moldura.r,
+    body .moldura.l
+    {
+        width: 41px;
+    }
+
+    body .moldura.l
+    {
+        border-left-width: 30px;
+    }
+
+    body .moldura.r
+    {
+        border-right-width: 30px;
+    }
+
+    html body h3
+    {
+        font-size: 26px;
+    }
+
+    html body h6
+    {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    footer .vcards p
+    {
+        margin-left: 0;
+    }
+
+    footer .vcards p#fone,
+    footer .vcards p#celular
+    {
+        margin-left: 20px;
+    }
+    
+    footer .vcards p span
+    {
+        display: none;
+    }
+    
+    footer .vcards p#fone span,
+    footer .vcards p#celular span
+    {
+        display: inline;
+    }
+    
+    html body .home .apres
+    {
+        min-height: 510px;
+    }
+
+    body .home .apresentacao .logo-apresentacao img
+    {
+        height: 0;
+    }
+
+    body .clientes .marcas ul li
+    {
+        margin-bottom: 200px;
+    }
+
+    body .deixando-marcas .conteudo #tit
+    {
+        margin-bottom: 30px;
+    }
+
+    body .deixando-marcas .conteudo #w-pontos
+    {
+        padding-bottom: 200px;
+        background: none;
+    }
+
+    body .deixando-marcas .conteudo #w-pontos ul
+    {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    body h3
+    {
+        font-size: 32px;
+    }
+    
+    body h6
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    body p
+    {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    body a.bt,
+    body .bt-ferds
+    {
+        font-size: 14px;
+    }
+
+    body .menu h1 a
+    {
+        width: 77px;
+        height: 60px;
+    }
+
+    body .menu ul li a
+    {
+        font-size: 14px;
+        padding: 22px 15px;
+    }
+
+    body .menu .submenu ul li a
+    {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    body footer p
+    {
+        font-size: 10px;
+    }
+
+    body footer p i
+    {
+        vertical-align: 10%;
+        width: 24px;
+        height: 24px;
+        -webkit-background-size: contain !important;
+        background-size: contain !important;
+    }
+
+    body footer #home
+    {
+        width: 32px;
+        height: 30px;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body footer .go-top
+    {
+        left: 51px;
+        margin-left: 0;
+    }
+
+    body .bt-ferds
+    {
+        font-size: 14px;
+    }
+
+    body .home .apresentacao
+    {
+        min-height: 710px;
+    }
+
+    .home .apresentacao .logo-apresentacao img
+    {
+        width: 210px;
+    }
+
+    body .home .apresentacao #slogan
+    {
+        font-size: 57px;
+        margin-top: 90px;
+    }
+
+    body .home .apresentacao ul
+    {
+        margin-top: 20px;
+    }
+
+    body .home .apresentacao ul li h2
+    {
+        font-size: 23px;
+    }
+
+    body .home .sobre figure.circle img
+    {
+        width: 160px;
+        height: auto;
+    }
+
+    body .home .sobre p
+    {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
+
+    body .home .socioemocional #box h6,
+    body .home .solucoes .tit h6
+    {
+        font-size: 18px;
+    }
+
+
+    /*CONTATO---------------*/
+
+    body .form-contato form #assunto label,
+    body .form-contato form #notificacoes #txt
+    {
+        font-size: 14px;
+    }
+
+    /*CONTATO---------------*/
+
+    
+
+    /*DEIXANDO MARCAS---------------*/
+
+    body .deixando-marcas .apresentacao h2
+    {
+        font-size: 40px;
+    }
+
+    body .deixando-marcas .apresentacao h3
+    {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    body .deixando-marcas .apresentacao #camada2
+    {
+        display: none;
+    }
+
+    /*DEIXANDO MARCAS---------------*/
+
+
+
+}
+
+@media (max-width: 1330px) {
+
+
+    body .deixando-marcas .container
+    {
+        width: 750px;
+    }
+
+    body .deixando-marcas .conteudo #tit h2
+    {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    body .deixando-marcas .conteudo #tit h2 span
+    {
+        font-size: 78px;
+    }
+
+}
+
+@media (max-width: 1130px) {
+
+
+    .deixando-marcas .container
+    {
+        width: 970px;
+    }
+
+}
+
+@media (max-width: 1435px) {
+
+    body .deixando-marcas .apresentacao #camada1,
+    body .deixando-marcas .apresentacao #camada2
+    {
+        /*background-position: 30% center;*/
+    }
+
+}
+
+/*----------------------MEDIAS----------------------*/
+
+
+
+
+
+
+html,
+body
+{
+	height: 100%;
+	padding-top: 0;
+}
+
+body
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+*, *:before, *:after
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h2, h3, h4
+{
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 53px;
+}
+
+h2 span,
+h3 span,
+h4 span,
+h2 strong,
+h3 strong,
+h4 strong
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 110%;
+}
+
+h3
+{
+    font-size: 42px;
+}
+
+h3 span,
+h3 strong
+{
+    font-size: 110%;
+}
+
+h4
+{
+    font-size: 33px;
+}
+
+h4 span,
+h4 strong
+{
+    font-size: 36px;
+}
+
+h6
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+}
+
+
+/*----------------------ANIMAÇÃO ON SCROLL----------------------*/
+
+
+.summon.hided
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	-webkit-transform: scale(0.2,0.2);
+	-moz-transform: scale(0.2,0.2);
+	-ms-transform: scale(0.2,0.2);
+	-o-transform: scale(0.2,0.2);
+	transform: scale(0.2,0.2);
+}
+
+.summon.appeared
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
+
+/*----------------------ANIMAÇÃO ON SCROLL----------------------*/
+
+
+
+
+
+
+
+
+/*-------------------MOLDURA-------------------*/
+
+.moldura
+{
+    position: fixed;
+    z-index: 2000;
+}
+
+.moldura.t,
+.moldura.b
+{
+    left: 0;
+    right: 0;
+}
+
+.moldura.r,
+.moldura.l
+{
+    width: 51px;
+    top: 0;
+    bottom: 0;
+}
+
+.moldura.t
+{
+    display: none;
+    background: url(img/fernando-duarte-moldura-top.png) bottom;
+    height: 81px;
+    border-top: 70px solid white;
+    top: 0;
+}
+
+.moldura.b
+{
+    background: url(img/fernando-duarte-moldura-bottom.png) top;
+    height: 78px;
+    border-bottom: 60px solid white;
+    bottom: 0;
+}
+
+.moldura.r
+{
+    background: url(img/fernando-duarte-moldura-right.png) left;
+    border-right: 40px solid white;
+    right: 0px;
+}
+
+.moldura.l
+{
+    background: url(img/fernando-duarte-moldura-left.png) left;
+    border-left: 40px solid white;
+    left: 0px;
+}
+
+/*-------------------MOLDURA-------------------*/
+
+
+
+
+
+/*-------------------MENU-------------------*/
+/* RAISSA------------------
+.menu
+{
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.menu.aberto
+{
+    background: url(img/fernando-duarte-bg-menu.png);
+    width: 100%;
+}
+
+.menu.fechado
+{
+    background: white;
+}
+
+.menu .wrap-menu
+{
+    position: fixed;
+    z-index: 3000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.menu.fechado .wrap-menu
+{
+    width: 40px;
+}
+
+.menu.fechado .wrap-menu h1,
+.menu.fechado .wrap-menu ul
+{
+    display: none;
+}
+
+.menu .moldura-l
+{
+    width: 11px;
+    position: absolute;
+    background: url(img/fernando-duarte-moldura-left.png) right no-repeat;
+    top: 0;
+    bottom: 0;
+    right: -11px;
+} 
+
+.menu h1
+{
+    display: inline-block;
+    margin: 0 0 0 70px;
+    vertical-align: top;
+}
+
+.menu h1 a
+{
+    width: 223px;
+    height: 150px;
+    background: url(img/fernando-duarte-logo.png) center left no-repeat;
+    text-indent: -9999px;
+    border-right: 1px solid #ececec; 
+    display: inline-block;
+    padding: 88px;
+    padding-right: 170px;
+}
+
+.menu ul 
+{
+    margin: 0 20px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.menu ul li
+{
+    font-size: 58.37px;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    text-transform: lowercase;
+    display: block;
+}
+
+.menu ul li a
+{
+    color: #6a6a6a;
+    display: block;
+    padding-right: 85px;
+    background-position-y: 49px;
+}
+
+.menu ul li a:hover,
+.menu.sub .submenu .click
+{
+    text-decoration: none;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 75px;
+    background: url(img/fernando-duarte-bg-hover-menu.png) repeat-x;
+    background-position-y: 49px;
+}
+
+.menu ul li a:focus
+{
+    text-decoration: none;
+}
+
+
+.menu.sub .submenu ul
+{
+    width: 521px;
+}
+
+.menu .submenu ul
+{
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    bottom: 70px;
+    left: 750px;
+    margin: 0;
+    padding: 0;
+    background-color: #155879;
+}
+
+.menu .submenu ul h6
+{
+    font-size: 30.82px;
+    text-transform: lowercase;
+    padding: 13px 0 13px 22px;
+    background-color: #145475;
+    margin-top: 60px;
+}
+
+.menu .submenu ul li
+{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.menu .submenu ul li a
+{
+    color: white;
+    padding: 0;
+    padding-left: 30px;
+    white-space: nowrap;
+}
+
+.menu .submenu ul li a:hover
+{
+    background: none;
+    padding-left: 35px;
+}
+
+RAISSA-------------------
+
+*/
+
+
+.menu-btn
+{
+    width: 61px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color: white;
+    padding: 1px 13px;
+    outline: none;
+    position: absolute;
+    right: 15px;
+}
+
+.menu-btn i
+{
+    width: 16px;
+    height: 2px;
+    background-color: #2767AB;
+    display: inline-block;
+    margin-top: 3px;
+    transition: all .2s cubic-bezier(.6,.2,.5,.9);
+}
+
+.menu-btn i.b
+{
+    transform-origin: left;
+    -webkit-transform: scaleX(.56);
+    transform: scaleX(.56);
+}
+
+.menu-btn:hover i.b
+{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);    
+}
+
+.menu.aberto .menu-btn i
+{
+    display: none;
+}
+
+.menu.aberto .menu-btn .fecha-menu
+{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(img/fernando-duarte-bg-button-fecha-menu.png);
+}
+
+.menu.sub .menu-btn
+{
+    width: 51px;
+    right: -628px;
+}
+
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+    background: #fff;
+}
+
+.menu.aberto .nv-1
+{
+    width: 100%;
+    display: block;
+}
+
+.menu.aberto .nv-1 li
+{
+    float: none;
+    text-align: center;
+}
+
+.menu.aberto .nv-1 li a
+{
+    padding: 10px;
+}
+
+.menu.aberto .submenu#solucoes.aberto > ul
+{
+    height: 95px;
+}
+
+.menu.aberto ul .submenu > a:after
+{
+    bottom: 4px;
+}
+
+.menu.aberto .nv-1 li li a
+{
+    padding: 3px;
+}
+
+body.wp-deixando-marcas .menu,
+body.wp-deixando-marcas footer,
+body.wp-deixando-marcas .moldura,
+body.wp-rumo-ao-topo .menu,
+body.wp-rumo-ao-topo footer,
+body.wp-rumo-ao-topo .moldura,
+body.wp-jornada-do-heroi .menu,
+body.wp-jornada-do-heroi footer,
+body.wp-jornada-do-heroi .moldura,
+body.wp-hischooll .menu,
+body.wp-hischooll footer,
+body.wp-hischooll .moldura,
+body.wp-hischool .menu,
+body.wp-hischool footer,
+body.wp-hischool .moldura
+{
+    display: none;
+}
+
+.menu:after
+{
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-moldura-top.png) bottom;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    z-index: 5000;
+}
+
+.menu h1
+{
+    display: inline-block;
+    margin: 0 0 0 50px;
+    vertical-align: top;
+}
+
+.menu h1 a
+{
+    outline: none;
+    width: 107px;
+    height: 75px;
+    background: url(img/fernando-duarte-tipia.png) top left no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 16px;
+    text-indent: -9999px;
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.menu .menu-btn
+{
+    display: none;
+}
+
+.menu ul li
+{
+    list-style: none;
+}
+
+.menu ul li a
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: lowercase;
+    padding: 22px 30px;
+    letter-spacing: 0.05em;
+    display: block;
+}
+
+.menu ul a:hover,
+.menu .submenu.aberto .click
+{
+    background: #337ab7;
+    color: #fff;
+}
+
+.menu ul a:hover,
+.menu ul a:focus,
+.menu ul a:active
+{
+    text-decoration: none;
+}
+
+.menu ul .submenu a
+{
+    position: relative;
+    text-align: center;
+}
+
+.menu ul .submenu > a:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 16px;
+    background: url(img/fernando-duarte-seta-submenu.png) no-repeat center;
+    width: 12px;
+    height: 4px;
+}
+
+.menu .nv-1
+{
+    float: right;
+    margin-right: 15px;
+}
+
+.menu .nv-1 > li
+{
+    float: left;
+}
+
+.menu .submenu ul
+{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.menu .submenu#solucoes.aberto > ul
+{
+    height: 180px;
+}
+
+.menu .submenu#palestras.aberto > ul
+{
+    /*height: 360px;*/
+    height: 180px;
+}
+
+.menu .submenu ul h6
+{
+    text-transform: lowercase;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    text-align: center;
+    color: #999;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+.menu .submenu ul li a
+{
+    font-size: 14px;
+    padding: 10px 18px;
+}
+
+/*-------------------MENU-------------------*/
+
+
+
+
+/*-------------------FOOTER-------------------*/
+
+footer
+{
+    position: fixed;
+    bottom: 8px;
+    left: 0px;
+    right: 0px;
+    z-index: 4000;
+    text-align: right;
+}
+
+footer .secundario
+{
+    text-align: left;
+}
+
+footer #home
+{
+    display: block;
+    background: url(img/fernando-duarte-logo-resumida.png);
+    width: 42px;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+footer p
+{
+    display: inline-block;
+    margin-left: 32px;
+    text-align: right;
+    color: #666666;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+ 
+footer p i
+{
+    text-align: left;
+    vertical-align: 40%;
+    background: url(img/fernando-duarte-icon-telefone.png);
+    text-indent: -9999px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+footer p#youtube i
+{
+    background: url(img/fernando-duarte-icon-youtube.png);
+}
+
+footer p#facebook i
+{
+    background: url(img/fernando-duarte-icon-facebook.png);
+}
+
+footer p#email i
+{
+    background: url(img/fernando-duarte-icon-email.png);
+}
+
+footer p#fone i
+{
+    background: url(img/fernando-duarte-icon-fone.png);
+}
+
+footer p#celular i
+{
+    background: url(img/fernando-duarte-icon-celular.png);
+}
+
+footer .go-top
+{
+    left: 50%;
+    margin-left: -20px;
+}
+
+/*-------------------FOOTER-------------------*/
+
+
+
+
+/*-------------------HOME-------------------*/
+/*APRESENTACAO-------------------*/
+.home .apresentacao
+{
+    background-image: url(img/fernando-duarte-bg-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 960px;
+    /*min-height: 100vh;*/
+    position: relative;
+    z-index: -1;
+}
+
+.home .apresentacao #tinta,
+.home .apresentacao #over
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/fernando-duarte-tinta-intro.png) no-repeat center top;
+    z-index: -1;
+}
+
+.home .apresentacao #over
+{
+    background-image: url(img/fernando-duarte-bg-home-over.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.home .apresentacao .logo-apresentacao
+{
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+.home .apresentacao #slogan
+{
+    font-size: 87px;
+    font-family: 'ludicrous', Arial, sans-serif;
+    color: #fff;
+    line-height: 0.9;
+    margin-top: 150px;
+}
+
+.home .apresentacao ul
+{
+    padding: 0;
+    margin-top: 30px;
+    position: relative;
+}
+
+.home .apresentacao ul li
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+.home .apresentacao ul li.highlight
+{
+    opacity: 1;
+    filter: alpha(opacity=1);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+
+.home .apresentacao ul li i
+{
+    position: absolute;
+    left: -70px;
+}
+
+.home .apresentacao ul li h2
+{
+    color: white;
+    margin: 0;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+/*APRESENTACAO-------------------*/
+
+
+
+/*SOBRE-------------------*/
+.home .sobre
+{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 73px;
+    padding-bottom: 270px;
+}
+
+.home .sobre img
+{
+    width: 240px;
+    height: 240px;
+}
+
+.home .sobre h6
+{
+    color: #666666;
+}
+
+.home .sobre h3
+{
+    color: #2767ab;
+    margin-top: 50px;
+}
+
+.home .sobre p
+{
+    color: #999999;
+    font-size: 16px;
+    padding: 0 9%;
+    line-height: 26px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+
+/*SOBRE-------------------*/
+
+
+
+
+/*SOCIOEMOCIONAL-------------------*/
+
+.home .socioemocional
+{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: -130px;
+    background: #F5F5F5;
+    color: #666;
+}
+
+.home .socioemocional #box
+{
+    text-align: center;
+    background: #fff;
+    padding: 62px;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    margin-bottom: -80px;
+    z-index: 1;
+}
+
+.home .socioemocional #box #icon-duvida
+{
+    background: url(img/fernando-duarte-icon-duvida-logo-hi.png) no-repeat center;
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
+.home .socioemocional #box h3
+{
+    color: #2767ab;
+    margin-bottom: 0;
+}
+
+.home .socioemocional #box h6
+{
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/*SOCIOEMOCIONAL-------------------*/
+
+
+
+
+/*DEPOIMENTOS-------------------*/
+
+.home .depoimentos
+{
+    margin-top: -260px;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    background: url(img/fernando-duarte-bg-aspectos.jpg) top center;
+    text-align: center;
+    /*height: 100vh;*/
+    min-height: 710px;
+    position: relative;
+}
+
+.home .depoimentos h3,
+.home .depoimentos h6
+{
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.home .depoimentos h6
+{
+    margin-bottom: 100px;
+}
+
+.home .depoimentos #clientes
+{
+    margin-top: 200px;
+}
+
+.home .depoimentos #clientes li
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.home .depoimentos #clientes li#lk
+{
+    display: block;
+    width: auto;
+    margin-top: 30px;
+}
+
+.home .depoimentos #clientes li p
+{
+    color: #fff;
+    text-indent: -9999px;
+}
+
+.home .depoimentos #clientes li a
+{
+    color: #fff;
+}
+
+.home .depoimentos #clientes li a:before,
+.home .depoimentos #clientes li a:after
+{
+    border-color: #fff
+}
+
+/*DEPOIMENTOS-------------------*/
+
+
+
+
+/*DEPOIMENTOS-------------------*/
+
+
+.home .frases
+{
+    padding-top: 80px;
+    background: url(img/fernando-duarte-bg-depoimentos-home.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.home .frases #bg-box
+{
+    background: url(img/fernando-duarte-sombra-bg-depoimentos.png) repeat-y center;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+.home .frases #box
+{
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.home .frases #inner
+{
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 57px;
+    padding-right: 57px;
+    color: #2767ab;
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.home .frases #box img
+{
+    margin-bottom: 20px;
+}
+
+.home .frases q:after,
+.home .frases q:before
+{
+    display: none;
+    content: none;
+}
+
+.home .frases q small
+{
+    text-transform: none;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    color: #666;
+    font-family: 'clemente', Arial, sans-serif;
+}
+
+.home .frases q small span
+{
+    display: block;
+    font-size: 14px;
+    color: #1f6181;
+    margin-top: -12px;
+}
+
+.home .frases .contador-ferds
+{
+    margin-top: 20px;
+}
+
+
+/*DEPOIMENTOS-------------------*/
+
+
+
+
+/*PRODUTOS-------------------*/
+.home .solucoes
+{
+    background: url(img/fernando-duarte-bg-solucoes.jpg);
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.home .solucoes .title-solucoes
+{
+    background: url(img/marrom-70.png);
+    color: white;
+    font-size: 16px;
+}
+
+.home .solucoes .tit
+{
+    background: url(img/fernando-duarte-bg-asas.png) center center no-repeat;
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+
+.home .solucoes .tit h2
+{
+    text-indent: -9999px;    
+    background: url(img/fernando-duarte-selo.png) no-repeat center;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 24px;
+}
+
+.home .solucoes .tit h6
+{
+    font-size: 22px;
+}
+
+.home .solucoes .title-solucoes p
+{
+    margin: 34px 0 16px;
+}
+
+/*.home .solucoes .title-solucoes #w-input-solucao
+{
+    position: relative;
+    margin: 0 10%;
+    width: 80%;
+    z-index: 5;
+}
+
+.home .solucoes .title-solucoes input
+{
+    border: none;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    font-size: 30px;
+    color: #2767ab;
+    width: 100%;
+    padding: 16px 60px;
+    text-align: center;
+    outline: none;
+    margin-bottom: -40px;
+    color: #096D9C;
+}
+
+.home .solucoes .title-solucoes #bt-limpa
+{
+    display: none;
+    background: url(img/fernando-duarte-x-limpa-input.png) no-repeat center;
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 37px;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 16px;
+}
+
+.home .solucoes .title-solucoes #bt-limpa:hover
+{
+    background: url(img/fernando-duarte-x-limpa-input-hover.png) no-repeat center;
+}
+
+.home .solucoes .title-solucoes .ativo #bt-limpa
+{
+    display: block;
+}
+
+.home .solucoes .title-solucoes #opcoes
+{
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    background: url(img/marrom-70.png);
+    padding: 0;
+    text-align: center;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    display: none;
+}
+
+.home .solucoes .title-solucoes .ativo #opcoes
+{
+    display: block;
+    padding-bottom: 30px;
+}
+
+.home .solucoes .title-solucoes #opcoes i
+{
+    text-indent: -9999px;
+    display: none;
+    position: relative;
+    background: url(img/fernando-duarte-spinner-24x24.png) no-repeat center;
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+}
+*/
+/*.home .solucoes .title-solucoes .ativo #opcoes i
+{
+*/
+    /*display: inline-block;*/
+    /*animation: rodando 0.5s linear infinite;*/
+/*
+}
+*/
+/*.home .solucoes .title-solucoes .ativo #opcoes li
+{
+    background: url(img/space.gif);
+}
+
+.home .solucoes .title-solucoes .ativo #opcoes li:hover
+{
+    background: url(img/amarelo3-70.png);
+}
+
+.home .solucoes .title-solucoes .ativo #opcoes li button
+{
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+}
+*/
+.home .solucoes .produtos
+{
+    margin-top: 225px;
+    padding: 0;
+}
+
+.home .solucoes .produtos li 
+{
+    border: 1px solid #eeb85e;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    display: inline-block;
+    margin: -63px 49px 0;
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+.home .solucoes .produtos li .produto
+{
+    width: 196px;
+    height: 196px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.home .solucoes .produtos li .produto .conteudo
+{
+    transform: rotate(+45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 23px;
+}
+
+.home .solucoes .produtos li .produto:hover .conteudo
+{
+    padding-top: 10px;
+}
+
+.home .solucoes .produtos li .produto .conteudo i
+{
+    height: 109px;
+    display: block;
+}
+
+.home .solucoes .produtos li .produto:hover .conteudo i
+{
+    height: 97px;
+}
+
+.home .solucoes .produtos li .produto .conteudo i img
+{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.home .solucoes .produtos li .produto .conteudo h2
+{
+    text-indent: -9999px;
+    height: 0;
+    margin: 0;
+}
+
+.home .solucoes .produtos li .produto .conteudo h6
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 11px 30px;
+    line-height: 1.3;
+}
+
+.home .solucoes .produtos li .produto .conteudo span
+{
+    height: 40px;
+    position: absolute;
+    left: -40px;
+    right: -40px;
+}
+
+.home .solucoes .produtos li .produto .conteudo #mais
+{
+    padding-top: 13px;
+    background: #216382;
+    bottom: -100px;
+}
+
+.home .solucoes .produtos li .produto .conteudo #mais:hover
+{
+    background: #103653;
+}
+
+.home .solucoes .produtos li .produto .conteudo #orcamento
+{
+    padding-top: 6px;
+    background: #447c97;
+    bottom: -140px;
+}
+
+.home .solucoes .produtos li .produto .conteudo #orcamento:hover
+{
+    background: #224461;
+}
+
+.home .solucoes .produtos li .produto .conteudo span a
+{
+    display: block;
+    color: white;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+.home .solucoes .produtos li .produto .conteudo span a:hover,
+.home .solucoes .produtos li .produto .conteudo span a:active,
+.home .solucoes .produtos li .produto .conteudo span a:focus
+{
+    text-decoration: none;
+}
+
+.home .solucoes .produtos li .produto:hover .conteudo span a
+{
+    font-size: 13px;
+}
+
+.home .solucoes .produtos li .produto:hover .conteudo #mais
+{
+    bottom: 40px;
+}
+
+.home .solucoes .produtos li .produto:hover .conteudo #orcamento
+{
+    bottom: 0px;
+}
+
+/*PRODUTOS-------------------*/
+
+
+
+
+/*VIDEO-------------------*/
+
+.home .video,
+.video-theater
+{
+    background: url(img/fernando-duarte-bg-video.jpg) no-repeat;
+    position: relative;
+    padding-top: 270px;
+    padding-bottom: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home .video #msk,
+.video-theater #msk
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background: url(img/azul-70.png);
+    z-index: 1;
+}
+
+.home .video #tv,
+.video-theater #tv
+{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    text-align: left;
+}
+
+.home .video button,
+.video-theater button
+{
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    display: block;
+    background: url(img/fernando-duarte-ico-play.png) no-repeat center top;
+    padding-top: 103px;
+    border: none;
+    outline: none;
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+.home .video button:hover,
+.home .video button:focus,
+.home .video button:active,
+.video-the button:hover,
+.video-the button:focus,
+.video-the button:active
+{
+    text-decoration: none;
+}
+
+.home .video button:hover,
+.home .video button:focus,
+.video-the button:hover,
+.video-the button:focus
+{
+    padding-top: 98px;
+    padding-bottom: 6px;
+}
+
+.home .video button:before,
+.home .video button:after,
+.video-the button:before,
+.video-the button:after
+{
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+    height: 1px;
+    bottom: 0;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.home .video button:before,
+.video-the button:before
+{
+    right: 50%;
+    left: 50%;
+}
+
+.home .video button:after,
+.video-the button:after
+{
+    right: 50%;
+    left: 50%;
+}
+
+.home .video button:hover:before,
+.home .video button:focus:before,
+.video-the button:hover:before,
+.video-the button:focus:before
+{
+    right: 50%;
+    left: 0;
+}
+
+.home .video button:hover:after,
+.home .video button:focus:after,
+.video-the button:hover:after,
+.video-the button:focus:after
+{
+    left: 50%;
+    right: 0;
+}
+
+/*VIDEO-------------------*/
+
+
+
+
+/*CONTATO-------------------*/
+
+.form-contato
+{
+    background: url(img/fernando-duarte-bg-contato.jpg);
+    background-size: cover;
+    /*padding-top: 103px;*/
+    padding-bottom: 150px;
+    padding-top: 110px;
+    margin-top: -270px;
+}
+
+.form-contato #box
+{
+    background: #fff;
+    z-index: 5;
+}
+
+.form-contato h3
+{
+    color: #216382;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-contato p
+{
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.form-contato p.mont
+{
+    margin-bottom: 16px;
+}
+
+.form-contato p i
+{
+    vertical-align: -12px;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.form-contato p i.email
+{
+    background: url(img/fernando-duarte-icon-email.png);
+
+}
+
+.form-contato p i.telefone
+{
+    background: url(img/fernando-duarte-icon-telefone.png);
+}
+
+.form-contato form
+{
+    margin-top: 29px;
+}
+
+.form-contato form #assunto label
+{
+      
+    background: #eeeeee;
+    color: #666;
+    padding: 20px;
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.form-contato form #assunto #checked
+{
+    background: #ff9b0d;
+    color: #fff;
+}
+
+.form-contato form #assunto label:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -3px;
+    width: 1px;
+    border: 7px solid transparent;
+    border-top-color: #eeeeee;
+    -webkit-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.4s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.form-contato form #assunto label#checked:after
+{
+    border-top-color: #ff9b0d;
+    margin-top: 0;
+}
+
+.form-contato form #assunto input
+{
+    display: none;
+}
+
+.form-contato form #dados label.error
+{
+    font-size: 12px;
+    color: #FF9B0D;
+    line-height: 2;
+    height: auto;
+    display: block;
+    padding-bottom: 5px;
+    font-style: italic;
+    text-transform: none;
+    text-align: right;
+}
+
+.form-contato form #dados
+{
+    margin-bottom: 20px;
+}
+
+.form-contato form #dados input
+{
+    margin-top: 2px;
+    margin-left: 1px;
+    padding-right: 16px;
+}
+
+.form-contato form #dados input.required,
+.form-contato form #dados textarea.required
+{
+    border-right: 5px solid #216382;
+}
+
+.form-contato form #dados .linha
+{
+    color: #ffcd0d;
+    font-style: italic;
+    border-bottom: 1px dashed #287da6;
+}
+
+.form-contato form #dados #campo-mensagem.linha
+{
+    border: none;
+}
+
+.form-contato form #dados label
+{
+    color: #777777;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'montserrat', Arial, sans-serif;
+    line-height: 94px;
+    height: 90px;
+    padding-right: 30px;
+    padding-left: 13px;
+    position: relative;
+    vertical-align: top;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.form-contato form #dados label:after
+{
+    content: "";
+    display: block;
+    background: url(img/fernando-duarte-after-form.png);
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    right: 11px;
+    top: 41px;
+
+}
+
+.form-contato form #dados #w-input
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.form-contato form #dados #campo-nome label
+{
+    margin-left: -86px;
+    left: 96px;
+}
+
+.form-contato form #dados #campo-nome #w-input
+{
+    padding-left: 96px;
+}
+
+.form-contato form #dados #campo-email label
+{
+    margin-left: -90px;
+    left: 100px;
+}
+
+.form-contato form #dados #campo-email #w-input
+{
+    padding-left: 100px;
+}
+
+.form-contato form #dados #campo-mensagem label
+{
+    margin-left: -120px;
+    left: 130px;
+}
+
+.form-contato form #dados #campo-mensagem #w-input
+{
+    padding-left: 118px;
+}
+
+.form-contato form #dados input,
+.form-contato form #dados textarea
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    height: 90px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    background: none;
+    width: 100%;
+}
+
+.form-contato form #dados textarea
+{
+    resize: none;
+    padding: 0px 12px 10px;
+    height: 105px;
+    margin-top: 35px;
+    height: 135px;
+    padding-top: 35px;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+.form-contato form input[type="submit"]
+{
+    width: 100%;
+    padding: 28px 0px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    letter-spacing: 0.08em;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #515151;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.form-contato form input[type="submit"]:hover,
+.form-contato form input[type="submit"]:active
+{
+    background-color: #ff9b0d;
+}
+
+.form-contato form input[type="submit"]:hover
+{
+    content: "*";
+}
+
+
+.form-contato form input[type="submit"]:disabled
+{
+    color: #8e8e8e;
+}
+
+.form-contato form #notificacoes
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.form-contato form #notificacoes #processando,
+.form-contato form #notificacoes #sucesso,
+.form-contato form #notificacoes #erro
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-left: 100%;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    padding: 110px;
+    top: 0;
+}
+
+.form-contato form #notificacoes #processando img
+{
+    margin-top: 20px;
+}
+
+.form-contato form #notificacoes #sucesso
+{
+    /*margin-left: 0;*/
+}
+
+.form-contato form #notificacoes button
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form-contato form #notificacoes #tit
+{
+    font-family: 'clemente-hairline', Arial, sans-serif;
+    color: #2767ab;
+    display: block;
+    font-size: 26px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.form-contato form #notificacoes #tit strong
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 110%;
+}
+
+.form-contato form #notificacoes #txt
+{
+    font-size: 16px;
+    text-transform: none;
+}
+
+.form-contato .instrucao
+{
+    text-align: right;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
+    margin-top: 16px;
+    border-right: 5px solid  #216382;
+}
+
+/*CONTATO-------------------*/
+/*-------------------HOME-------------------*/
+
+
+
+
+/*-------------------THEATER-------------------*/
+
+.theater
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(img/black-70.png);
+    z-index: 5000;
+}
+
+.theater #screen
+{
+    background: #000;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    bottom: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+.theater #bt-fechar
+{
+    width: 50px;
+    height: 50px;
+    background: url(img/fernando-duarte-x-fecha.png) no-repeat center;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+
+.theater #bt-fechar:hover
+{
+    background-color: #000;
+}
+
+/*-------------------THEATER-------------------*/
+
+
+
+
+/*-------------------CLIENTES-------------------*/
+.clientes .cliente-titulo
+{
+    background: url(img/fernando-duarte-bg-gray-clientes.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 238px;
+}
+
+.clientes .cliente-titulo h3
+{
+    color: #2767ab;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.clientes .cliente-titulo h6
+{
+    margin-bottom: 345px;
+    color: #666666;
+}
+
+.clientes .wrap-clientes
+{
+    background: url(img/fernando-duarte-bg-clientes.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 330px;
+}
+
+.clientes .depoimentos
+{
+    margin-top: -188px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.clientes .depoimentos figure,
+.clientes .depoimentos figure img
+{
+    width: 100%;
+}
+
+.clientes .depoimentos p.depoimento
+{
+    color: #999999;
+    font-size: 16px;
+    padding-left: 45px;
+    line-height: 26px;
+    margin-bottom: 19px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.clientes .depoimentos p.depoimento:before
+{
+    content: "";
+    width: 31px;
+    height: 22px;
+    background: url(img/fernando-duarte-icon-aspas.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clientes .depoimentos p.depoimento:after
+{
+    content: "";
+    width: 75%;
+    height: 1px;
+    background-color: #dedede;
+    position: absolute;
+    left: 45px;
+    bottom: 0;
+}
+
+.clientes .depoimentos .nome
+{
+    background: url(img/fernando-duarte-bg-nome-depoimento.png) no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding-left: 45px;
+    padding-right: 60px;
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.clientes .depoimentos .nome p
+{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 3px;
+    padding-top: 27px;
+}
+
+.clientes .depoimentos .nome span
+{
+    color: #ced8de;
+    font-size: 16px;
+    padding-bottom: 17px;
+    display: block;
+}
+
+.clientes .depoimentos .carousel
+{
+    padding-bottom: 70px;
+}
+
+.clientes .buttons
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.clientes .buttons button
+{
+    width: 29px;
+    height: 29px;
+    border: none;
+    outline: none;
+}
+
+.clientes .buttons .seta-left
+{
+    background: url(img/fernando-duarte-bg-bt-left.png) center no-repeat;
+    background-color: #cacaca;
+    margin-right: 15px;
+}
+
+.clientes .buttons .seta-right
+{
+    background: url(img/fernando-duarte-bg-bt-right.png) center no-repeat;
+    background-color: #cacaca;
+    margin-left: 15px;
+}
+
+.clientes .buttons button:hover
+{
+    background-color: #2767ab;
+}
+
+.clientes .buttons .passadores
+{
+    display: inline-block;
+    vertical-align: 8px;
+}
+
+.clientes .buttons .passadores span
+{
+    width: 10px;
+    height: 10px;
+    background-color: #dedede;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.clientes .buttons .passadores span.ativo
+{
+    background-color: #2767ab;
+}
+
+.clientes .marcas
+{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.clientes .marcas ul
+{
+    margin-top: 125px;
+    padding: 0;
+}
+
+.clientes .marcas ul li
+{
+    width: 259px;
+    height: 259px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: -71px 64px 0;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    position: relative;
+}
+
+.clientes .marcas ul li .conteudo
+{
+    transform: rotate(+45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 40px;
+}
+
+.clientes .marcas ul li .conteudo i
+{
+    height: 165px;
+    display: block;
+}
+
+.clientes .marcas ul li:hover .conteudo i
+{
+    height: 175px;
+}
+
+.clientes .marcas ul li .conteudo i img
+{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.clientes .marcas ul li .conteudo p
+{
+    display: none;
+}
+
+/*-------------------CLIENTES-------------------*/
+
+
+
+/*-------------------CONTATO-------------------*/
+
+.contato .form-contato
+{
+    margin-top: 70px;
+}
+
+/*-------------------CONTATO-------------------*/
+
+
+
+/*-------------------QUEM SOU-------------------*/
+.quem-sou p
+{
+    font-size: 16px;
+    padding: 0 9%;
+    line-height: 26px;
+    margin-top: 45px;
+}
+
+.quem-sou .title-quem-sou
+{
+    background: url(img/fernando-duarte-bg-quem-sou.jpg) no-repeat;
+    text-align: center;
+    padding-top: 152px;
+    padding-bottom: 152px;
+    /*padding-bottom: 259px;*/
+    color: white;
+}
+
+.quem-sou .title-quem-sou h3
+{
+    letter-spacing: 0.05em;
+}
+
+.quem-sou .timeline
+{
+    background-color: #f5f5f5;
+}
+
+.quem-sou .timeline ul
+{
+    /*margin-top: -155px;*/
+}
+
+.quem-sou .timeline ul li:first-child .container
+{
+    background: #F5F5F5;
+    padding-top: 40px;
+}
+
+.quem-sou .timeline ul li.inverte:first-child .container
+{
+    background: #EFEFEF;
+}
+
+.quem-sou .timeline ul li.midia figure
+{
+    width: 100%;
+}
+
+.quem-sou .timeline ul li.midia figure img
+{
+    width: 100%;
+}
+
+.quem-sou .timeline ul li h2
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+    font-size: 58px;
+}
+
+.quem-sou .timeline ul li.midia h2
+{
+    font-size: 72px;
+}
+
+.quem-sou .timeline ul li h2,
+.quem-sou .timeline ul li h3
+{
+    color: #2767ab;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.quem-sou .timeline ul li h6
+{
+    color: #666666;
+    margin-top: 5px;
+}
+
+.quem-sou .timeline ul li p
+{
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.quem-sou .timeline ul li
+{
+    padding: 80px 0;
+}
+
+.quem-sou .timeline ul li.row
+{
+    opacity: 0.5;
+    filter: alpha(opacity=0.5);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+}
+
+.quem-sou .timeline ul li.row.focus
+{
+    opacity: 1;
+    filter: alpha(opacity=1);
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+
+.quem-sou .timeline ul li.midia h2
+{
+    margin-top: 134px;
+}
+
+.quem-sou .timeline ul li .container .col-sm-5
+{
+    text-align: right;
+}
+
+.quem-sou .timeline ul li .ano
+{
+    text-align: right;
+}
+
+.quem-sou .timeline ul li .txt
+{
+    text-align: left;
+}
+
+.quem-sou .timeline ul li .txt ul
+{
+    margin: 0;
+}
+
+.quem-sou .timeline ul li.inverte .txt ul
+{
+    direction: rtl;
+}
+
+.quem-sou .timeline ul li .txt li
+{
+    list-style-type: circle;
+    margin: 0 0 10px 20px;
+    padding: 0 0 0 15px;
+    position: static;
+}
+
+.quem-sou .timeline ul li.inverte .txt li p
+{
+    direction: ltr;
+}
+
+.quem-sou .timeline ul li .pin
+{
+    text-align: center;
+}
+
+.quem-sou .timeline ul li.inverte .ano
+{
+    text-align: left;
+}
+
+.quem-sou .timeline ul li.inverte .txt
+{
+    text-align: right;
+}
+
+.quem-sou .timeline ul li.inverte
+{
+    background-color: #efefef;
+}
+
+.quem-sou .timeline ul li .circle
+{
+    width: 10px;
+    height: 10px;
+    border: 3px solid #efb23e;
+    margin-top: 20px;
+}
+
+
+.quem-sou .timeline ul li.focus .circle
+{
+    width: 23px;
+    height: 23px;
+    margin-top: 9px;
+}
+
+
+.quem-sou .timeline ul li.midia .circle
+{
+    margin-top: 158px;
+}
+
+.quem-sou .timeline ul #compensa
+{
+    height: 40vh;
+}
+
+.quem-sou .final
+{
+    background: url(img/fernando-duarte-bg-fim-biografia.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    /*height: 890px;*/
+}
+
+.quem-sou .final #ico-final
+{
+    text-indent: -9999px;    
+    background: url(img/fernando-duarte-selo.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 112px;
+    margin-top: 400px;
+    margin-bottom: 24px;
+    display: block;
+    height: 65px;
+}
+
+.quem-sou .final p
+{
+    margin-top: 10px;
+}
+
+/*-------------------QUEM SOU-------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------BATE PAPO-------------------*/
+
+.bate-papo
+{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.bate-papo h2
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+}
+
+.bate-papo #moldura-produto
+{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 3000;
+}
+
+.bate-papo #moldura-produto .linha
+{
+    position: fixed;
+}
+
+.bate-papo #moldura-produto .linha.r
+{
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 42px;
+    border: 20px solid white;
+    border-top-width: 26px;
+}
+
+.bate-papo #moldura-produto .linha.b
+{
+    bottom: 0;
+    right: 22px;
+    left: 22px;
+    height: 42px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
+}
+
+.bate-papo #moldura-produto .linha.l
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 42px;
+    border: 20px solid white;
+    border-top-width: 26px;
+}
+
+.bate-papo #moldura-produto:after
+{
+    right: 0;
+}
+
+.bate-papo #moldura-produto #menu-produto ul
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 18px 0;
+    text-align: center;
+    /*margin-top: -39px;*/
+    overflow: hidden;
+    background: white;
+}
+
+.bate-papo #moldura-produto #menu-produto ul #w-links
+{
+    display: inline-block;
+    position: relative;
+}
+
+.bate-papo #moldura-produto #menu-produto ul #w-links:before,
+.bate-papo #moldura-produto #menu-produto ul #w-links:after
+{
+    display: block;
+    content: '';
+    width: 1920px;
+    height: 2px;
+    background: #f6ba17;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    z-index: 1;
+}
+
+.bate-papo #moldura-produto #menu-produto ul #w-links:before
+{
+    left: 100%;
+}
+
+.bate-papo #moldura-produto #menu-produto ul #w-links:after
+{
+    right: 100%;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li
+{
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    color: #ae802f;
+    text-transform: uppercase;
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li:before,
+.bate-papo #moldura-produto #menu-produto ul li:after
+{
+    display: block;
+    content: '';
+    width: 2px;
+    height: 2px;
+    background: #f6ba17;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li a
+{
+    position: relative;
+    padding: 16px 32px;
+    color: #ae802f;
+    position: relative;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar:before
+{
+    display: block;
+    content: none;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar:after
+{
+    top: 49%;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar a
+{
+    font-size: 12px;
+    position: relative;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar a:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    top: 10px;
+    right: 15px;
+    bottom: 10px;
+    left: 15px;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar a
+{
+    font-size: 11px;
+    position: relative;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li.voltar a i
+{
+    margin-left: -5px;
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li a:before
+{
+    position: relative;
+    display: block;
+    content: '';
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 10px;
+    background: #519492;
+    -webkit-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -moz-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -o-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    -ms-transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+    transition: 0.2s all cubic-bezier(0.34, 0, 0, 1);
+}
+
+.bate-papo #moldura-produto #menu-produto ul li a:hover:before
+{
+    left: 24px;
+    right: 24px;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li a:hover,
+.bate-papo #moldura-produto #menu-produto ul li a:active,
+.bate-papo #moldura-produto #menu-produto ul li a:focus
+{
+    text-decoration: none;
+}
+
+.bate-papo #moldura-produto #rodape-produto
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -20px;
+}
+
+.bate-papo #moldura-produto #rodape-produto ul li
+{
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.bate-papo #moldura-produto #rodape-produto #home
+{
+    display: block;
+    text-indent: -9999px;
+    background: url(img/fernando-duarte-logo-resumida.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 33px;
+    height: 40px;
+    margin-top: -5px;
+}
+
+.bate-papo #moldura-produto #rodape-produto .sociais
+{
+    text-align: right;
+}
+
+.bate-papo #moldura-produto #rodape-produto .sociais a
+{
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 22px;
+    height: 34px;
+}
+
+.bate-papo #moldura-produto #rodape-produto .sociais #youtube
+{
+    background-image: url(img/fernando-duarte-icon-youtube.png);
+}
+
+.bate-papo #moldura-produto #rodape-produto .sociais #facebook
+{
+    background-image: url(img/fernando-duarte-icon-facebook.png);
+}
+
+.bate-papo .apresentacao h3
+{
+    font-size: 20px;
+}
+
+.bate-papo .depoimentos
+{
+    background: #fafafa;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 320px;
+}
+
+.bate-papo .depoimentos #tit h2
+{
+    font-size: 40px;
+    text-align: center;
+}
+
+.bate-papo .depoimentos #tit p
+{
+    text-align: center;
+    color: #999;
+}
+
+.bate-papo .depoimentos ul
+{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.bate-papo .depoimentos ul li
+{
+    margin-bottom: 20px;
+}
+
+.bate-papo .depoimentos ul li #box
+{
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px #eaeaea;
+    padding-bottom: 20px;
+}
+
+.bate-papo .depoimentos ul li #vid
+{
+    position: relative;
+}
+
+.bate-papo .depoimentos ul li #vid:before,
+.bate-papo .depoimentos ul li #vid:after
+{
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(img/marrom-40.png);
+}
+
+.bate-papo .depoimentos ul li button
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background: url(img/space.gif) no-repeat center;
+}
+
+.bate-papo .depoimentos ul li button:hover,
+.bate-papo .depoimentos ul li button:focus
+{
+    background: url(img/fernando-duarte-ico-play.png) no-repeat center;
+}
+
+.bate-papo .depoimentos ul li #vid:before
+{
+    background: url(img/marrom-40.png);
+}
+
+.bate-papo .depoimentos ul li h2
+{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.bate-papo .depoimentos ul li h3
+{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #0a6390;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.bate-papo .depoimentos #em-video #produto
+{
+    margin: 0 20px;
+    padding-top: 16px;
+    margin-top: 24px;
+    border-top: 1px solid #D5D3D7;
+    text-align: center;
+    font-family: 'hipixochrome', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.bate-papo .depoimentos #em-video #produto #tit-prop
+{
+    display: block;
+}
+
+/*-------------------BATE PAPO-------------------*/
+
+
+
+
+/*-------------------DEIXANDO MARCAS-------------------*/
+
+.deixando-marcas #moldura-produto .linha
+{
+    background: #f6ba17;
+}
+
+.bate-papo .deixando-marcas #moldura-produto .linha
+{
+    background: #f6ba17;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li:before,
+.deixando-marcas #moldura-produto #menu-produto ul li:after
+{
+    background: #f6ba17;
+}
+
+.deixando-marcas #moldura-produto .linha
+{
+    background: #f6ba17;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li a:before
+{
+    background: #f6ba17;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a:before
+{
+    background: none;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a:hover
+{
+    margin-right: -5px;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a:hover:after
+{
+    right: 20px;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a:hover i
+{
+    margin-right: 15px;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a:after
+{
+    border-color: #F6BA17;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a i
+{
+    border-color: #F6BA17;
+}
+
+.deixando-marcas #moldura-produto #menu-produto ul li.voltar a i .st0
+{
+    fill: #F6BA17;
+}
+
+.deixando-marcas .apresentacao
+{
+    text-align: right;
+    padding-top: 100px;
+    height: 100vh;
+    background: url(img/fernando-duarte-bg-apresentacao-dm-foto.jpg) no-repeat center top;
+    position: relative;
+}
+
+.deixando-marcas .apresentacao #camada1,
+.deixando-marcas .apresentacao #camada2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/fernando-duarte-bg-apresentacao-dm-tinta.png) no-repeat right top;
+}
+
+.deixando-marcas .apresentacao #camada1 
+{
+    bottom: -60%;
+    background-position: 55% top;
+}
+
+.deixando-marcas .apresentacao #camada2
+{
+    background: url(img/fernando-duarte-bg-apresentacao-dm-logo.png) no-repeat;
+    background-position: 55% center;
+}
+
+.deixando-marcas .apresentacao h2
+{
+    display: inline-block;
+    font-family: 'hipixochrome', Arial, sans-serif;
+    color: #ae802f;
+    font-size: 56px;
+    text-transform: none;
+    letter-spacing: 8px;
+    border-bottom: 1px solid #f6ba17;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.deixando-marcas .apresentacao h3
+{
+    display: block;
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    color: #666;
+    letter-spacing: 4px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.deixando-marcas .apresentacao p
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #bbbbbb;
+    line-height: 1.5;
+}
+
+.deixando-marcas .apresentacao p strong
+{
+    color: #999;
+}
+
+.deixando-marcas .apresentacao a.ancora-ferds
+{
+    margin-top: 40px;
+    background: #f6ba17;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 26px 32px;
+    outline: none;
+    display: inline-block;
+}
+
+.deixando-marcas .apresentacao a.ancora-ferds:hover,
+.deixando-marcas .apresentacao a.ancora-ferds:focus
+{
+    background: #ae802f;
+}
+
+.deixando-marcas .conteudo
+{
+    background: url(img/fernando-duarte-bg-dm-produtos.jpg) no-repeat top center fixed;
+    padding-bottom: 150px;
+}
+
+.deixando-marcas .conteudo section
+{
+    margin-bottom: 30px;
+}
+
+.deixando-marcas .conteudo #camada1
+{
+    background: url(img/fernando-duarte-bg-conteudo-dm-tinta.png) no-repeat top right;
+}
+
+.deixando-marcas .conteudo #tit
+{
+    margin-bottom: 70px;
+}
+
+.deixando-marcas .conteudo #tit h2
+{
+    margin-top: 120px;
+    text-align: center;
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.deixando-marcas .conteudo #tit h2 span
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 86px;
+    color: #fff;
+    display: block;
+}
+
+.deixando-marcas .conteudo #tit p
+{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.deixando-marcas .conteudo #lista-produtos .produto h2
+{
+    background: #f6ba17;
+}
+
+.deixando-marcas .conteudo #lista-produtos .produto ul .prop
+{
+    color: #f6ba17;
+}
+
+.deixando-marcas .conteudo #lista-produtos .produto ul .formato
+{
+    color: #f6ba17;
+}
+
+.deixando-marcas .conteudo #lista-produtos .produto ul .duracao,
+.deixando-marcas .conteudo #lista-produtos .produto ul .publico
+{
+    color: #216382;
+}
+
+.deixando-marcas #produtos #lista-produtos li .bt
+{
+    color: #F6BA17;
+    margin-top: 30px;
+}
+
+.deixando-marcas #produtos #lista-produtos li .bt:before
+{
+    border-top-color: #F6BA17;
+    border-left-color: #F6BA17;
+}
+
+.deixando-marcas #produtos #lista-produtos li .bt:after
+{
+    border-bottom-color: #F6BA17;
+    border-right-color: #F6BA17;
+}
+
+.deixando-marcas .conteudo #w-pontos
+{
+    background: url(img/fernando-duarte-bg-pontos-conteudo-dm.png) center top;
+}
+
+.deixando-marcas .conteudo #w-pontos h2
+{
+    margin-top: 40px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.deixando-marcas .conteudo #w-pontos ul
+{
+    margin-bottom: 200px;
+}
+
+.deixando-marcas .conteudo #w-pontos ul li
+{
+    color: #fff;
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.1em;
+}
+
+.deixando-marcas .video-theater #msk
+{
+    background: url(img/amarelo3-70.png);
+}
+
+.deixando-marcas .conteudo #w-pontos ul li strong
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+}
+
+.deixando-marcas .depoimentos
+{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 210px;
+}
+
+.deixando-marcas .depoimentos:before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -180px;
+    right: 0;
+    background: url(img/fernando-duarte-bg-topo-depoimentos-dm.png) no-repeat top center;
+    height: 189px;
+    z-index: 10;
+}
+
+.deixando-marcas .depoimentos #tit h2
+{
+    color: #f6ba17;
+}
+
+.deixando-marcas .depoimentos ul li h2
+{
+    color: #f6ba17;
+}
+
+.deixando-marcas .depoimentos .fd-depoimentos #box q:before
+{
+    display: none;
+    content: none;
+}
+
+.deixando-marcas .depoimentos .fd-depoimentos #box small
+{
+    color: #2767ab;
+}
+
+.deixando-marcas .depoimentos .fd-depoimentos .contador-ferds #item.highlight 
+{
+    background: #2767ab;
+}
+
+.deixando-marcas .depoimentos #em-video #produto
+{
+    color: #2767ab;
+}
+
+.deixando-marcas .depoimentos #em-video ul li #vid:before, 
+.deixando-marcas .depoimentos #em-video ul li #vid:after
+{
+    background: url(img/marrom-40.png);
+}
+
+.deixando-marcas .form-contato h3
+{
+    color: #2767ab;
+}
+
+.deixando-marcas .form-contato form #dados input.required,
+.deixando-marcas .form-contato form #dados textarea.required,
+.deixando-marcas .form-contato .instrucao
+{
+    border-right-color: #2767ab;
+}
+
+.deixando-marcas .form-contato form #assunto #checked
+{
+    background: #F6BA17;
+}
+
+.deixando-marcas .form-contato form #assunto label#checked:after
+{
+    border-top-color: #F6BA17;
+}
+
+.deixando-marcas .form-contato form input[type="submit"]:hover, 
+.deixando-marcas .form-contato form input[type="submit"]:active
+{
+    background: #F6BA17;
+}
+
+/*-------------------DEIXANDO MARCAS-------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------JORNADA DO HERÓI-------------------*/
+
+
+.jornada-do-heroi #moldura-produto .linha
+{
+    background: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul #w-links:before,
+.jornada-do-heroi #moldura-produto #menu-produto ul #w-links:after
+{
+    background: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul #w-links li a
+{
+    color: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li:before,
+.jornada-do-heroi #moldura-produto #menu-produto ul li:after
+{
+    background: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a:before
+{
+    background: none;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a:hover
+{
+    margin-right: -5px;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a:hover:after
+{
+    right: 20px;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a:hover i
+{
+    margin-right: 15px;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a:after
+{
+    border-color: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a i
+{
+    border-color: #519492;
+}
+
+.jornada-do-heroi #moldura-produto #menu-produto ul li.voltar a i .st0
+{
+    fill: #519492;
+}
+
+.jornada-do-heroi .apresentacao
+{
+    background: url(img/fernando-duarte-bg-apresentacao-jh.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.jornada-do-heroi .apresentacao h2
+{
+    margin: 150px auto 30px auto;
+    position: relative;
+    top: 110px;
+    text-indent: -9999px;
+    background: url(img/fernando-duarte-jh-simbolo.png) no-repeat center;
+    width: 189px;
+    height: 189px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.jornada-do-heroi .apresentacao h3
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 43px;
+    letter-spacing: 0.2em;
+    margin-bottom: 110px;
+    position: relative;
+    top: -200px;
+}
+
+.jornada-do-heroi .apresentacao h4
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+.jornada-do-heroi .apresentacao p
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 13px;
+    color: #d0f4f3;
+}
+
+.jornada-do-heroi #produtos
+{
+    padding-top: 40px;
+    /*padding-bottom: 80px;*/
+    text-align: center;
+    color: #fff;
+    background-color: #519493;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto article
+{
+    border-radius: 4px;
+    color: #666;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto article:after
+{
+    content: none;
+    display: none;
+}
+
+.jornada-do-heroi .conteudo #w-principais,
+.jornada-do-heroi .conteudo #w-segmentados
+{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.jornada-do-heroi .conteudo #w-segmentados
+{
+    background-color: #437A78;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto
+{
+    margin-bottom: 80px;
+    float: left;
+}
+
+.jornada-do-heroi #produtos #lista-produtos li .bt
+{
+    color: #519493;
+    margin-top: 30px;
+}
+
+.jornada-do-heroi #produtos #lista-produtos li .bt:before
+{
+    border-top-color: #519493;
+    border-left-color: #519493;
+}
+
+.jornada-do-heroi #produtos #lista-produtos li .bt:after
+{
+    border-bottom-color: #519493;
+    border-right-color: #519493;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto h2
+{
+    background-color: #519493;
+    margin-top: -50px;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto .formato
+{
+    color: #519493;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos .produto .publico,
+.jornada-do-heroi .conteudo #lista-produtos .produto .duracao
+{
+    color: #437A78;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos.segmentados .produto
+{
+    color: #333;
+    float: left;
+}
+
+.jornada-do-heroi .conteudo #lista-produtos.segmentados .produto h2
+{
+    margin-top: -30px;
+}
+
+.jornada-do-heroi .video-theater #msk
+{
+    background: url(img/black-70.png);
+}
+
+.jornada-do-heroi .depoimentos #tit h2,
+.jornada-do-heroi .depoimentos ul li h2
+{
+    color: #519492;
+}
+
+.jornada-do-heroi .fd-depoimentos #box small
+{
+    color: #437A78;
+}
+
+.jornada-do-heroi .contador-ferds #item.highlight
+{
+    background: #519493;
+}
+
+.jornada-do-heroi .depoimentos #em-video #produto
+{
+    color: #437A78;
+}
+
+.jornada-do-heroi .depoimentos #em-video ul li h2
+{
+    color: #519492;
+}
+
+.jornada-do-heroi .depoimentos .fd-depoimentos #box q:before
+{
+    display: none;
+    content: none;
+}
+
+.jornada-do-heroi .depoimentos .fd-depoimentos #box small
+{
+    color: #519493;
+}
+
+.jornada-do-heroi .depoimentos .fd-depoimentos .contador-ferds #item.highlight 
+{
+    background: #519493;
+}
+
+.jornada-do-heroi .depoimentos #em-video #produto
+{
+    color: #519493;
+}
+
+.jornada-do-heroi .depoimentos #em-video ul li #vid:before, 
+.jornada-do-heroi .depoimentos #em-video ul li #vid:after
+{
+    background: url(img/verde2-40.png);
+}
+
+.jornada-do-heroi .form-contato h3
+{
+    color: #519493;
+}
+
+.jornada-do-heroi .form-contato form #dados input.required,
+.jornada-do-heroi .form-contato form #dados textarea.required,
+.jornada-do-heroi .form-contato .instrucao
+{
+    border-right-color: #519493;
+}
+
+.jornada-do-heroi .form-contato form #assunto #checked
+{
+    background: #437A78;
+}
+
+.jornada-do-heroi .form-contato form #assunto label#checked:after
+{
+    border-top-color: #437A78;
+}
+
+.jornada-do-heroi .form-contato form input[type="submit"]:hover, 
+.jornada-do-heroi .form-contato form input[type="submit"]:active
+{
+    background: #437A78;
+}
+
+
+
+@media (max-width: 970px){
+
+    body .jornada-do-heroi .conteudo .etapas ul li h3
+    {
+        font-size: 30px;
+    }
+
+    body .jornada-do-heroi .conteudo .etapas ul li p
+    {
+        font-size: 15px;
+    }
+
+}
+
+/*-------------------JORNADA DO HERÓI-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------RUMO AO TOPO-------------------*/
+
+.rumo-ao-topo 
+{
+    background: url(img/fernando-duarte-bg-rt.jpg) no-repeat 910% 100% fixed white;
+    position: relative;
+    z-index: 0;
+}
+
+.rumo-ao-topo .nuvens
+{
+    position: absolute;
+    top: 0;
+    right: 57.7%;
+    bottom: 0;
+    left: 0;
+    background: url(img/fernando-duarte-bg-nuvens-rt.png) no-repeat top left fixed;
+    z-index: -1;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul #w-links:before,
+.rumo-ao-topo #moldura-produto #menu-produto ul #w-links:after
+{
+    background: #76c043;
+}
+
+.rumo-ao-topo #moldura-produto .linha
+{
+    background: #76c043;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul #w-links li a
+{
+    color: #445C4A;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li:before,
+.rumo-ao-topo #moldura-produto #menu-produto ul li:after
+{
+    background: #76c043;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li a
+{
+    color: #445c4a;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li a:before
+{
+    background: #76c043;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a:before
+{
+    background: none;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a:hover
+{
+    margin-right: -5px;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a:hover:after
+{
+    right: 20px;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a:hover i
+{
+    margin-right: 15px;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a:after
+{
+    border-color: #76C043;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a i
+{
+    border-color: #76C043;
+}
+
+.rumo-ao-topo #moldura-produto #menu-produto ul li.voltar a i .st0
+{
+    fill: #76C043;
+}
+
+.rumo-ao-topo .apresentacao
+{
+    padding-top: 70px;
+}
+
+.rumo-ao-topo .apresentacao h2
+{
+    text-indent: -9999px;
+    background: url(img/fernando-duarte-simbolo-rt.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 281px;
+}
+
+.rumo-ao-topo .apresentacao #w-txt
+{
+    text-align: center;
+}
+
+.rumo-ao-topo .apresentacao h3,
+.rumo-ao-topo .conteudo h2
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 43px;
+    letter-spacing: 0.2em;
+    color: #445c4a;
+    position: relative;
+    display: inline-block;
+    padding: 8px 0 5px;
+    margin-bottom: 40px;
+    margin-top: -50px;
+}
+
+.rumo-ao-topo .apresentacao h3:before,
+.rumo-ao-topo .conteudo h2:before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    right: 40px;
+    border-top: 1px solid #76c043;
+    border-bottom: 1px solid #76c043;
+}
+
+.rumo-ao-topo .apresentacao h4
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #76c043;
+    font-weight: bold;
+}
+
+.rumo-ao-topo .apresentacao p
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 13px;
+    color: #777777;
+}
+
+.rumo-ao-topo .apresentacao a
+{
+    background: url(img/fernando-duarte-bg-bt-rt.png) repeat-x center;
+    border: none;
+    padding: 26px 8px;
+    color: #fff;
+    position: relative;
+    box-shadow: none;
+}
+
+.rumo-ao-topo .apresentacao a:before,
+.rumo-ao-topo .apresentacao a:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.rumo-ao-topo .apresentacao a:before
+{
+    background: url(img/fernando-duarte-bg-esq-bt-rt.png) no-repeat left center;
+    width: 38px;
+    height: 72px;
+    left: -30px;
+}
+
+.rumo-ao-topo .apresentacao a:after
+{
+    background: url(img/fernando-duarte-bg-dir-bt-rt.png) no-repeat left center;
+    width: 38px;
+    height: 72px;
+    right: -30px;
+}
+
+.rumo-ao-topo #produtos #tit
+{
+    color: #fff;
+    text-align: center;
+}
+
+.rumo-ao-topo #produtos #tit h2
+{
+    margin-top: 20px;
+    color: #fff;
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+
+.rumo-ao-topo #produtos #tit h2:before
+{
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+
+.rumo-ao-topo .conteudo #lista-produtos .produto article
+{
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.rumo-ao-topo .conteudo #lista-produtos .produto article:after
+{
+    content: none;
+    display: none;
+}
+
+.rumo-ao-topo .conteudo #lista-produtos.segmentados .produto ul #tit-prop,
+.jornada-do-heroi .conteudo #lista-produtos.segmentados .produto ul #tit-prop
+{
+    margin-bottom: 10px;
+}
+
+.rumo-ao-topo .conteudo #lista-produtos.segmentados .produto ul ul li,
+.jornada-do-heroi .conteudo #lista-produtos.segmentados .produto ul ul li
+{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rumo-ao-topo #produtos #w-principais #lista-produtos h2,
+.rumo-ao-topo #produtos #w-segmentados #lista-produtos h2
+{
+    background: #76c043;
+    text-align: center;
+    letter-spacing: 0;
+    margin-top: -50px;
+}
+
+.rumo-ao-topo #produtos #w-segmentados #lista-produtos h2
+{
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.rumo-ao-topo #produtos #w-principais #lista-produtos h2:before,
+.rumo-ao-topo #produtos #w-segmentados #lista-produtos h2:before
+{
+    border: none;
+}
+
+.rumo-ao-topo #produtos #lista-produtos .formato
+{
+    color: #76c043;
+}
+
+.rumo-ao-topo #produtos #lista-produtos .duracao
+{
+    color: #445c4a;
+}
+
+.rumo-ao-topo #produtos #lista-produtos li .bt
+{
+    color: #629e37;
+    margin-top: 30px;
+}
+
+.rumo-ao-topo #produtos #lista-produtos li .bt:before
+{
+    border-top-color: #629e37;
+    border-left-color: #629e37;
+}
+
+.rumo-ao-topo #produtos #lista-produtos li .bt:after
+{
+    border-bottom-color: #629e37;
+    border-right-color: #629e37;
+}
+
+.rumo-ao-topo #produtos #w-principais #tit
+{
+    padding-top: 40px;
+}
+
+.rumo-ao-topo #produtos #w-principais #tit,
+.rumo-ao-topo #produtos #w-principais #lista-produtos
+{
+    background-color: #445c4a;
+}
+
+.rumo-ao-topo #produtos #w-principais #lista-produtos
+{
+    padding-bottom: 80px;
+}
+
+.rumo-ao-topo #produtos #w-segmentados #tit
+{
+    padding-top: 40px;
+}
+
+.rumo-ao-topo #produtos #w-segmentados #tit,
+.rumo-ao-topo #produtos #w-segmentados #lista-produtos
+{
+    background-color: #629e37;
+}
+
+.rumo-ao-topo #produtos #w-segmentados #lista-produtos
+{
+    padding-bottom: 80px;
+}
+
+.rumo-ao-topo .depoimentos #tit h2
+{
+    color: #445C4A;
+}
+
+.rumo-ao-topo .depoimentos .fd-depoimentos #box small
+{
+    color: #629e37;
+}
+
+.rumo-ao-topo .depoimentos .fd-depoimentos #box q:before
+{
+    display: none;
+    content: none;
+}
+
+.rumo-ao-topo .depoimentos .fd-depoimentos .contador-ferds #item.highlight
+{
+    background: #629e37;
+}
+
+.rumo-ao-topo .depoimentos #em-video #produto
+{
+    color: #76c043;
+}
+
+.rumo-ao-topo .depoimentos #em-video ul li h2
+{
+    color: #445c4a;
+}
+
+.rumo-ao-topo .conteudo .intro #tit
+{
+    background: #445c4a;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.rumo-ao-topo .conteudo .intro #tit h2
+{
+    margin: 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #fff;
+}
+
+.rumo-ao-topo .conteudo .intro #tit h2:before,
+.rumo-ao-topo .conteudo .intro #tit h2:after
+{
+    display: none;
+    content: normal;
+}
+
+.rumo-ao-topo .conteudo .intro #tit h2 span
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    display: inline-block;
+    color: #77c043;
+    font-size: 69px;
+    letter-spacing: 0.19em;
+}
+
+.rumo-ao-topo .conteudo .intro #tit p
+{
+    color: #fff;
+}
+
+.rumo-ao-topo .conteudo .etapas
+{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.rumo-ao-topo .conteudo .etapas #tit
+{
+    margin-bottom: 70px;
+}
+
+.rumo-ao-topo .conteudo .etapas #tit h2
+{
+    margin-top: 10px;
+}
+
+.rumo-ao-topo .conteudo .etapas #tit p
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 14px;
+    color: #76c043;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+
+.rumo-ao-topo .conteudo .etapas ul li
+{
+    margin-bottom: 30px;
+}
+
+.rumo-ao-topo .conteudo .etapas ul li #w-txt
+{
+    padding-top: 20px;
+}
+
+.rumo-ao-topo .conteudo .etapas ul li #w-txt,
+.rumo-ao-topo .conteudo .etapas ul li #w-txt h3,
+.rumo-ao-topo .conteudo .etapas ul li #w-txt p
+{
+    text-align: left;
+}
+
+.rumo-ao-topo .conteudo .etapas ul li #w-txt h3
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    border-bottom: 1px solid #76c043;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.rumo-ao-topo .conteudo .etapas ul li #w-txt p
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    color: #76c043;
+    text-transform: uppercase;
+}
+
+.rumo-ao-topo .video-theater #msk
+{
+    background: url(img/black-70.png);
+}
+
+.rumo-ao-topo .form-contato h3
+{
+    color: #445c4a;
+}
+
+.rumo-ao-topo .form-contato form #dados input.required,
+.rumo-ao-topo .form-contato form #dados textarea.required,
+.rumo-ao-topo .form-contato .instrucao
+{
+    border-right-color: #445c4a;
+}
+
+.rumo-ao-topo .form-contato form #assunto #checked
+{
+    background: #629E37;
+}
+
+.rumo-ao-topo .form-contato form #assunto label#checked:after
+{
+    border-top-color: #629E37;
+}
+
+.rumo-ao-topo .form-contato form input[type="submit"]:hover, 
+.rumo-ao-topo .form-contato form input[type="submit"]:active
+{
+    background: #629E37;
+}
+
+.bate-papo .depoimentos ul li #vid:before,
+.bate-papo .depoimentos ul li #vid:after
+{
+    background: url(img/verde2-40.png);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1450px) {
+
+    body .rumo-ao-topo .apresentacao h3,
+    body .rumo-ao-topo .conteudo h2
+    {
+        font-size: 32px;
+    }
+
+    body .rumo-ao-topo .apresentacao h2
+    {
+        height: 200px;
+    }
+
+    body .rumo-ao-topo .apresentacao h3
+    {
+        margin-top: 0px;
+    }
+
+    body .rumo-ao-topo .conteudo .intro h2
+    {
+        font-size: 27px;
+    }
+
+    body .rumo-ao-topo .conteudo .intro #tit h2 span
+    {
+        font-size: 51px;
+        letter-spacing: 0.1em;
+    }
+
+}
+
+/*-------------------RUMO AO TOPO-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------HISCHOOL-------------------*/
+
+.hischool #moldura-produto #menu-produto ul #w-links:before, 
+.hischool #moldura-produto #menu-produto ul #w-links:after,
+.hischool #moldura-produto #menu-produto ul li:before, 
+.hischool #moldura-produto #menu-produto ul li:after,
+.hischool #moldura-produto #menu-produto ul li a:before,
+.hischool #moldura-produto .linha
+{
+    background: #30435f;
+}
+
+.bate-papo #moldura-produto #menu-produto ul li a
+{
+    color: #722;
+}
+
+.hischool #apresentacao
+{
+    background: url(img/fernando-duarte-bg-apresentacao-hischool.jpg) bottom right;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.hischool #apresentacao:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: url(img/fernando-duarte-bg-bottom-apresentacao-hischool.png) no-repeat top right;
+    height: 246px;
+}
+
+.hischool h2,
+.hischool h3,
+.hischool h4,
+.hischool h5,
+.hischool h6
+{
+    font-family: 'quadon-regular', Arial, sans-serif;
+}
+
+.hischool h2 strong,
+.hischool h3 strong,
+.hischool h4 strong,
+.hischool h5 strong,
+.hischool h6 strong
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    font-size: 100%;
+}
+
+.hischool p
+{
+    color: #666;
+}
+
+.hischool #apresentacao
+{
+    text-align: center;
+}
+
+.hischool #apresentacao h2
+{
+    margin-top: 280px;
+    text-indent: -9999px;
+    background: url(img/fernando-duarte-logo-apresentacao-hischool.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 164px;
+}
+
+.hischool #apresentacao h3
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hischool #apresentacao p
+{
+    color: #fff;
+}
+
+.hischool #bate-papos
+{
+    background: url(img/fernando-duarte-bg-bate-papos-hischool.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 320px;
+    text-align: center;
+}
+
+.hischool #bate-papos h2
+{
+    font-family: 'quadon-regular', Arial, sans-serif;
+    font-size: 38px;
+    color: #30435f;
+}
+
+.hischool #bate-papos h2 #destaque
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    font-size: 82px;
+    color: #722;
+    display: block;
+    margin-top: 8px;
+}
+
+.hischool #bate-papos #txt-intro
+{
+    margin-bottom: 120px;
+}
+
+.hischool #bate-papos article
+{
+    background: #fff;
+    padding-bottom: 40px;
+    border-bottom: 20px solid #722;
+}
+
+.hischool #bate-papos article h2
+{
+    text-indent: -9999px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: -45px auto 0;
+}
+
+.hischool #bate-papos article#dm h2
+{
+    background: url(img/fernando-duarte-logo-deixando-marcas-hischool.png) no-repeat center;
+    width: 256px;
+    height: 131px;
+}
+
+.hischool #bate-papos article#rt h2
+{
+    background: url(img/fernando-duarte-logo-rumo-ao-topo-hischool.png) no-repeat center;
+    width: 201px;
+    height: 138px;
+}
+
+.hischool #bate-papos article#jh h2
+{
+    background: url(img/fernando-duarte-logo-jornada-do-heroi-hischool.png) no-repeat center;
+    width: 258px;
+    height: 139px;
+}
+
+.hischool #bate-papos article#av h2
+{
+    background: url(img/fernando-duarte-logo-alcando-voo-hischool.png) no-repeat center;
+    width: 177px;
+    height: 139px;
+}
+
+.hischool #bate-papos article h3
+{
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    font-size: 20px;
+    color: #adadad;
+    text-transform: none;
+}
+
+.hischool #bate-papos article #nota
+{
+    background: #30435f;
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    margin: 40px auto -120px;
+    padding-top: 1px;
+}
+
+.hischool #bate-papos article #nota p
+{
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 60%;
+}
+
+.hischool #bate-papos article #nota p #valor
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    font-size: 48px;
+    position: relative;
+    display: block;
+    margin-top: -80px;
+}
+
+.hischool #socioemocional
+{
+    background: #f5f5f5;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    margin-top: -120px;
+    -webkit-transform: skewY(-7.3deg);
+    -moz-transform:    skewY(-7.3deg);
+    -ms-transform:     skewY(-7.3deg);
+    -o-transform:      skewY(-7.3deg);
+    transform:         skewY(-7.3deg);
+}
+
+.hischool #socioemocional #box
+{
+    text-align: center;
+    background: #fff;
+    border-top: 20px solid #e8e8e8;
+    padding-bottom: 50px;
+    -webkit-transform: skewY(7.3deg);
+    -moz-transform:    skewY(7.3deg);
+    -ms-transform:     skewY(7.3deg);
+    -o-transform:      skewY(7.3deg);
+    transform:         skewY(7.3deg);
+}
+
+.hischool #socioemocional #box #icon-duvida
+{
+    background: url(img/fernando-duarte-icon-duvida-hischool-logo-hi.png) no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+    display: block;
+    margin-top: -50px;
+}
+
+.hischool #socioemocional #box h3
+{
+    color: #722;
+    font-size: 36px;
+}
+
+.hischool #socioemocional #box h3
+{
+    color: #722;
+}
+
+.hischool #socioemocional #box a
+{
+    font-family: 'montserrat-ultralight', Arial, sans-serif;
+    background: #30435f;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.hischool #numeros
+{
+    background: url(img/fernando-duarte-bg-numeros-hischool.jpg) no-repeat bottom right;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+    color: #fff;
+    padding-top: 280px;
+    padding-bottom: 80px;
+    margin-top: -150px;
+}
+
+.hischool #numeros:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: url(img/fernando-duarte-bg-bottom-numeros-hischool.png) no-repeat bottom right;
+    height: 263px;
+}
+
+.hischool #numeros h2
+{
+    font-size: 44px;
+}
+
+.hischool #numeros #txt
+{
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.hischool #numeros #wrap
+{
+    background: #fff;
+    border-top: 20px solid #e8e8e8;
+    padding-bottom: 30px;
+}
+
+.hischool #numeros #wrap p
+{
+    font-family: 'quadon-light', Arial, sans-serif;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hischool #numeros #wrap p i
+{
+    display: block;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: #722;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -70px auto 5px;
+}
+
+.hischool #numeros #wrap p i img
+{
+    display: none;
+}
+
+.hischool #numeros #wrap p span
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    color: #30435f;
+    text-transform: uppercase;
+    font-size: 44px;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.hischool #video
+{
+    z-index: -2;
+}
+
+.hischool #video #msk
+{
+    background: url(img/black-70.png);
+}
+
+.hischool #quem-assistiu
+{
+    background: url(img/fernando-duarte-bg-depoimentos-hischool.jpg) repeat top left;
+    position: relative;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 260px;
+}
+
+.hischool #quem-assistiu:before
+{
+    display: block;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: url(img/fernando-duarte-bg-top-depoimentos-hischool.jpg) no-repeat bottom left;
+    height: 252px;
+}
+
+.hischool #quem-assistiu h2
+{
+    font-family: 'quadon-light', Arial, sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+.hischool #quem-assistiu #txt
+{
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.hischool #quem-assistiu .fd-depoimentos
+{
+    padding-bottom: 50px;
+}
+
+.hischool #quem-assistiu .fd-depoimentos #box
+{
+    border-top: 20px solid #e4e2e2;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.hischool #quem-assistiu .fd-depoimentos #box small
+{
+    color: #722;
+}
+
+.hischool #quem-assistiu #em-video #box
+{
+    margin-top: 0;
+    box-shadow: none;
+    border-bottom: 60px solid #eaeaea;
+    margin-bottom: 0;
+}
+
+.hischool #quem-assistiu #em-video #box h2
+{
+    font-family: 'quadon-bold', Arial, sans-serif;
+    color: #30435f;
+    font-size: 26px;
+}
+
+.hischool #quem-assistiu #em-video #box h3
+{
+    color: #722;
+    font-size: 14px;
+    letter-spacing: normal;    
+}
+
+.hischool #quem-assistiu #em-video #vid:before
+{
+    background: none;
+}
+
+.hischool #quem-assistiu #em-video #vid:after
+{
+    background: url(img/azul-hischool-40.png);
+}
+
+.hischool #quem-assistiu #em-video #box #produto
+{
+    background: #fff;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: none;
+    text-indent: -9999px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: -65px;
+}
+
+.hischool #quem-assistiu #em-video #box #produto.dm
+{
+    background: url(img/fernando-duarte-selo-deixando-marcas.png) no-repeat center #fff;
+}
+
+.hischool #quem-assistiu #em-video #box #produto.jh
+{
+    background: url(img/fernando-duarte-selo-jornada-do-heroi.png) no-repeat center #fff;
+}
+
+.hischool #quem-assistiu #em-video #box #produto span
+{
+    display: inline;
+}
+
+/*-------------------HISCHOOL-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------ARTIGOS-------------------*/
+
+.artigos .busca
+{
+    background-color: #ebeced;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.artigos .busca form input[type="text"]
+{
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    padding-right: 55px;
+}
+
+.artigos .busca form input[type="submit"]
+{
+    background-color: #666666;
+    background-image: url(img/fernando-duarte-icon-busca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 50px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.artigos .busca form input[type="submit"]:hover,
+.artigos .busca form input[type="submit"]:focus
+{
+    background-color: #2767ab;
+}
+
+.artigos .busca form:hover input[type="submit"]
+{
+    background-color: #999
+}
+
+.artigos .lista
+{
+    padding-top: 40px;
+    padding-top: 150px;
+}
+
+.artigos .lista .destaque figure img
+{
+    width: 100%;
+}
+
+.artigos .lista .destaque #categoria
+{
+    position: absolute;
+    top: 23px;
+    right: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ff9b0d;
+    padding: 0 10px;
+}
+
+.artigos .lista .destaque #categoria:hover,
+.artigos .lista .destaque #categoria:focus
+{
+    text-decoration: none;
+    background: #ffc40d;
+}
+
+.artigos .lista .destaque #categoria h6
+{
+    font-family: 'montserrat', Arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.artigos .lista article h3
+{
+    color: #206181;
+    font-size: 39px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.artigos .lista article time
+{
+    margin-top: 20px;
+    display: block;
+}
+
+/*-------------------ARTIGOS-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------ARTIGO-------------------*/
+
+.artigo .header
+{
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 400px;
+}
+
+.artigo .header p,
+.artigo .header h3,
+.artigo .header h3 span,
+.artigo .header h3 strong
+{
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+.artigo .header p span
+{
+    font-family: 'ludicrous', Arial, sans-serif;
+}
+
+.artigo .header h3,
+.artigo .header h3 span,
+.artigo .header h3 strong
+{
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.artigo .header h4,
+.artigo .header h4 span,
+.artigo .header h4 strong
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 16px;
+    color: #206181;
+    line-height: 1.5;
+}
+
+.artigo .header #w-chamada
+{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin-top: 70px;
+    background: #fafafa;
+}
+
+.artigo .corpo #w-texto
+{
+    padding-bottom: 80px;
+    background: #fafafa;
+    margin-bottom: 150px;
+}
+
+.artigo .corpo #w-texto:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -100px;
+    background: #bbb;
+}
+
+.artigo .corpo #w-texto h1,
+.artigo .corpo #w-texto h2,
+.artigo .corpo #w-texto h3,
+.artigo .corpo #w-texto h4,
+.artigo .corpo #w-texto h5,
+.artigo .corpo #w-texto h6
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.artigo .corpo #w-texto p
+{
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #838383;
+    margin-bottom: 40px;
+}
+
+.artigo .corpo #w-texto blockquote
+{
+    border-color: #ffaf0d;
+    margin-left: 30px;
+    font-style: italic;
+    font-family: 'montserrat-regular', Arial, sans-serif;
+    color: #838383;
+}
+
+.artigo .corpo #w-texto blockquote.super
+{
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    font-family: 'clemente-light', Arial, sans-serif;
+    font-size: 31px;
+    line-height: 1.2;
+    padding: 40px;
+    background: #206181;
+    font-style: normal;
+    color: #fff;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.artigo .corpo #w-texto blockquote.super.right
+{
+    float: right;
+    margin-right: -50%;
+    margin-left: 20px;
+}
+
+.artigo .corpo #w-texto blockquote.super.left
+{
+    float: left;
+    margin-left: -50%;
+    margin-right: 20px;
+}
+
+.artigo .corpo #w-texto blockquote footer
+{
+    position: static;
+}
+
+.artigo .corpo #w-texto ol
+{
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.artigo .corpo #w-texto ol li
+{
+    /*list-style-type: decimal-leading-zero;*/
+    margin-bottom: 30px;
+}
+
+.artigo .corpo #w-texto ol p,
+.artigo .corpo #w-texto ul p
+{
+    margin-bottom: 10px;
+}
+
+.artigo .corpo #w-texto img
+{
+    width: 130%;
+    margin-bottom: 40px;
+    margin-left: -15%;
+    margin-right: -15%;
+}
+
+.artigo .corpo #w-texto img.right
+{
+    width: auto;
+    float: right;
+    margin-right: -50%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.artigo .corpo #w-texto img.left
+{
+    width: auto;
+    float: left;
+    margin-left: -50%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+/*-------------------ARTIGO-------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------FOOTER-------------------*/
+.padding-bot
+{
+    height: 50px;
+}
+/*-------------------FOOTER-------------------*/
+

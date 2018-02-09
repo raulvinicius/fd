@@ -67,10 +67,10 @@
         <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#f7931e">
 
-        <?php if (!is_user_logged_in()): ?>
+<!--         <?php if (!is_user_logged_in()): ?>
             <meta http-equiv="refresh" content="0; URL=http://facebook.com/Ferds.Duarte">
         <?php endif ?>
-
+ -->
         <!-- PUBLICAÇÃO EM REDES SOCIAIS -->
 
         <!-- FACEBOOK -->
@@ -110,13 +110,17 @@
 
     </head>
 
-    <?php if (!is_user_logged_in()): 
+    <?php 
+    /*
+    if (!is_user_logged_in()): 
 
     die();
 
-    endif ?>
+    endif 
+    */
+    ?>
 
-    <body>
+    <body class="wp-<?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>">
         <?php wp_path_to_js(); ?>
 
         <!--[if lt IE 8]>
@@ -149,54 +153,44 @@
                     <span class="fecha-menu"></span>
                 </button>
 
-                <h1><a href="#">Fernando Duarte</a></h1>
+                <h1><a href="<?php bloginfo('url') ?>">Fernando Duarte</a></h1>
 
                 <ul class="nv-1">
-                    <li><a class="ani-02" href="#">Quem sou</a></li>
-                    <li id="palestras" class="submenu">
-                        <a class="ani-02 click" href="#">Palestras</a>
-                        <ul class="ani-02">
-                            <h6>Jovens</h6>
-                            <li>
-                                <a class="ani-02" href="#">Deixando Marcas</a>
-                            </li>
-                            <li>
-                                <a class="ani-02" href="#">Rumo ao Topo</a>
-                            </li>
-                            <li>
-                                <a class="ani-02" href="#">Jornada do Herói</a>
-                            </li>
-                            <h6>Empresas</h6>
-                            <li>
-                                <a class="ani-02" href="#">Deixando Marcas Corporativo</a>
-                            </li>
-                            <h6>Instituições</h6>
-                            <li>
-                                <a class="ani-02" href="#">Alma do Educador</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a class="ani-02" href="<?php bloginfo('url') ?>/competencias-socioemocionais">Socioemocional</a></li>
+                    <li><a class="ani-02" href="<?php bloginfo('url') ?>/hischooll">[hi]School</a></li>
                     <li id="solucoes" class="submenu">
-                        <a class="ani-02 click" href="#">Soluções</a>
+                        <a class="ani-02 click" href="#">Produtos</a>
                         <ul class="ani-02">
-                            <h6>Empresas</h6>
+
                             <li>
-                                <a class="ani-02" href="#">[hi] Corporativo</a>
+                                <a class="ani-02" href="<?php bloginfo('url') ?>/deixando-marcas">Deixando Marcas</a>
                             </li>
+ 
                             <li>
-                                <a class="ani-02" href="#">[hi] Comemoração</a>
+                                <a class="ani-02" href="<?php bloginfo('url') ?>/rumo-ao-topo">Rumo ao Topo</a>
                             </li>
+
                             <li>
-                                <a class="ani-02" href="#">[hi] School</a>
+                                <a class="ani-02" href="<?php bloginfo('url') ?>/jornada-do-heroi">Jornada do Herói</a>
                             </li>
-                        </ul>
+ 
+                            <li>
+                                <a class="ani-02" href="<?php bloginfo('url') ?>/alcando-voo">Alçando Voo</a>
+                            </li>
+
+                            <li>
+                                <a class="ani-02" href="<?php bloginfo('url') ?>/delions">Delions</a>
+                            </li>
+
+                         </ul>
                     </li>
-                    <li><a class="ani-02" href="#">Clientes</a></li>
-                    <li><a class="ani-02" href="#">Artigos</a></li>
-                    <li><a class="ani-02" href="#">Contato</a></li>
+                    <li><a class="ani-02" href="<?php bloginfo('url') ?>/artigos">Artigos</a></li>
+                    <li><a class="ani-02" href="<?php bloginfo('url') ?>/o-palestrante">O Palestrante</a></li>
                 </ul>
 
             </div>
         </nav>
-    </header>        
+    </header> 
+
+
 

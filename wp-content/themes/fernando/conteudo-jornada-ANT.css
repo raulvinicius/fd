@@ -1,0 +1,172 @@
+.jornada-do-heroi .conteudo
+{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: #519493;
+}
+
+.jornada-do-heroi .conteudo .intro
+{
+    padding-top: 60px;
+    padding-bottom: 160px;
+    background: url(img/fernando-duarte-bg-conteudo-jh.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.jornada-do-heroi .conteudo .intro h2
+{
+    font-size: 43px;
+    letter-spacing: 0.2em;
+    margin-bottom: 50px;
+    padding-top: 90px;
+    position: relative;
+}
+
+.jornada-do-heroi .conteudo .intro h2:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background: url(img/fernando-duarte-simbolo-jh.png) no-repeat center;
+    height: 60px;
+}
+
+.jornada-do-heroi .conteudo .intro h2 span
+{
+    display: block;
+    color: #244847;
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 69px;
+    letter-spacing: 0.19em;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit
+{
+    background: #354745;
+    padding-top: 125px;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit h2
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 43px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    letter-spacing: 0.2em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px 0px 8px 8px;
+    position: relative;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit h2:before,
+.jornada-do-heroi .conteudo .etapas #tit h2:after
+{
+    position: absolute;
+    display: block;
+    content: '';
+    top: -1px;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit h2:before
+{
+    left: -18px;
+    background: url(img/fernando-duarte-bg-esq-tit-jh.png) no-repeat top left;
+    width: 18px;
+    height: 73px;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit h2:after
+{
+    right: -18px;
+    background: url(img/fernando-duarte-bg-dir-tit-jh.png) no-repeat top right;
+    width: 18px;
+    height: 67px;
+}
+
+.jornada-do-heroi .conteudo .etapas #tit #divisa
+{
+    background: url(img/fernando-duarte-divisa-conteudo-jh.png) no-repeat center;
+    height: 49px;
+    margin-bottom: 30px;
+}
+
+.jornada-do-heroi .conteudo .etapas ul li
+{
+    text-align: left;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.jornada-do-heroi .conteudo .etapas ul li h3
+{
+    font-family: 'hipixochrome', Arial, sans-serif;
+    font-size: 43px;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-right: 24px;
+    text-align: left;
+}
+
+.jornada-do-heroi .conteudo .etapas ul li p
+{
+    font-family: 'montserrat-light', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-align: left;
+}
+
+.jornada-do-heroi .conteudo .etapas #mundo-comum
+{
+    background: url(img/fernando-duarte-bg-mundo-comum-jh.jpg) repeat-x center bottom #245969;
+}
+
+.jornada-do-heroi .conteudo .etapas #mundo-comum
+{
+    background: url(img/fernando-duarte-bg-mundo-comum-jh.jpg) repeat-x center bottom #245969;
+}
+
+.jornada-do-heroi .conteudo .etapas #chamado-da-aventura
+{
+    background: url(img/fernando-duarte-bg-chamado-da-aventura-jh.jpg) repeat-x center bottom #c33227;
+}
+
+.jornada-do-heroi .conteudo .etapas #queda-do-heroi
+{
+    background: url(img/fernando-duarte-bg-queda-do-heroi-jh.jpg) repeat-x center bottom #252b34;
+}
+
+.jornada-do-heroi .conteudo .etapas #pior-inimigo
+{
+    background: url(img/fernando-duarte-bg-pior-inimigo-jh.jpg) repeat-x center bottom #67582f;
+}
+
+.jornada-do-heroi .conteudo .etapas #mentor
+{
+    background: url(img/fernando-duarte-bg-mentor-jh.jpg) repeat-x center bottom #333332;
+}
+
+.jornada-do-heroi .conteudo .etapas #aliados-e-inimigos
+{
+    background: url(img/fernando-duarte-bg-aliados-e-inimigos-jh.jpg) repeat-x center bottom #333332;
+}
+
+.jornada-do-heroi .conteudo .etapas #provacao-suprema
+{
+    background: url(img/fernando-duarte-bg-provacao-suprema-jh.jpg) repeat-x center bottom #a0bf3a;
+}
+
+.jornada-do-heroi .conteudo .etapas #o-retorno
+{
+    background: url(img/fernando-duarte-bg-o-retorno-jh.jpg) repeat-x center bottom #d9b369;
+}
+
